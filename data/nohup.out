@@ -1,0 +1,29 @@
+[I 2025-03-20 10:59:55.860 ServerApp] Extension package jupyter_lsp took 0.3128s to import
+[I 2025-03-20 10:59:56.074 ServerApp] Extension package jupyter_server_terminals took 0.2138s to import
+[I 2025-03-20 10:59:56.559 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-03-20 10:59:56.563 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-03-20 10:59:56.568 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-03-20 10:59:56.572 ServerApp] notebook | extension was successfully linked.
+[I 2025-03-20 10:59:59.254 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-03-20 10:59:59.422 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-03-20 10:59:59.426 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-03-20 10:59:59.427 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-03-20 10:59:59.431 LabApp] JupyterLab extension loaded from C:\Users\gavin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jupyterlab
+[I 2025-03-20 10:59:59.431 LabApp] JupyterLab application directory is C:\Users\gavin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\share\jupyter\lab
+[I 2025-03-20 10:59:59.432 LabApp] Extension Manager is 'pypi'.
+[I 2025-03-20 10:59:59.970 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-03-20 10:59:59.975 ServerApp] notebook | extension was successfully loaded.
+[I 2025-03-20 10:59:59.975 ServerApp] The port 8888 is already in use, trying another port.
+[I 2025-03-20 10:59:59.976 ServerApp] Serving notebooks from local directory: C:\Users\gavin\Documents\ds_files\random-stuff\data
+[I 2025-03-20 10:59:59.976 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-03-20 10:59:59.976 ServerApp] http://localhost:8889/tree?token=1afd5131a8d5868acfce8e384ff8952d503d9f38006d5554
+[I 2025-03-20 10:59:59.976 ServerApp]     http://127.0.0.1:8889/tree?token=1afd5131a8d5868acfce8e384ff8952d503d9f38006d5554
+[I 2025-03-20 10:59:59.976 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-03-20 11:00:00.047 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///C:/Users/gavin/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/Roaming/jupyter/runtime/jpserver-1252-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/tree?token=1afd5131a8d5868acfce8e384ff8952d503d9f38006d5554
+        http://127.0.0.1:8889/tree?token=1afd5131a8d5868acfce8e384ff8952d503d9f38006d5554
+[I 2025-03-20 11:00:00.164 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
