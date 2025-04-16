@@ -1,0 +1,1064 @@
+f * SDik (C)> Users >) g977209 > gt > numpy_nelpers  
+151
+s
+oies
+Tears Chat Files
+Name
+| 8451
+| git
+t github
+\ idea
+| pytest_cache
+| docs  
+L sre
+D tests
+I venv
+ ) pumpversion ctg
+@) editorcontig
+~) flakes
+we gitignore
+@) pre-commit-canfig yami
+@} pump. version sh
+> UCENSE
+ MANIFESTIn
+  pyproject.tomi
+a) README ma
+@) cewp py
+  0 || earch numpy helpers
+4/29/2024 1.08  M
+"a2a 10-23 AM
+G24 1231 PM
+124 1718 PM
+<24(2_ 4  18 PA
+az wey ive
+et Pe
+az De PM
+men aw
+mai
+42 pu new
+feo] _) Pee
+Veaanea 1291 PM
+a 13) Pe
+W2JDB 1291 PM
+apDe2Ode 1231 Pe
+amavanga 1231 PM
+aesz0ns eM
+aan 2
+om
+eae
+roe
+------------------------------------------------------------------------------------------------------------------------
+import os
+from setuptools import setup, find_packages
+version = os.environ.get("package_version", "@.6")
+# required paFE
+  required packages for specific purposes
+install_requires = [
+"numpy",
+"pandas"
+i]
+'doc_requires = [}
+test_requires = ["pytest", "pytest-cov", "databricks_test", "fenix"]
+build_requires = ["datapricks-cli", "requests", "flakeB", "wheel", "black"] + test_requires
+dev_requires = ["pyspark-stubs", "pre-commit"] + build requires + doc_requires
+setup(  
+name="numpy_ helpers',
+version=version,
+license="proprietary",
+description="Some useful functions for manipulating NumPy arrays",
+url="nttps://githud.com/8451LLC/numpy_ helpers',
+| @ package author(s)/maintainer(s) info
+author="Gavin Gilcnrist',
+author _email="gavin.gilcnrist@B451.com',
+  package into
+| packages-find_packages(),
+  identify any dependency packages (and versions) required
+Anstall_requires<install_requires,
+' extras _require=("aocs":
+(ewlle requires),
+doc_requires, "tests": test_requires, "dew": dev_requires, "build":
+------------------------------------------------------------------------------------------------------------------------
+1) Osdek (C) > Users  / 9977209 > git > numpy_helpers See
+1 Channel Allocation "Name pee
+ii | 3451 125/72 RA 08
+b at ~ "924 BAM
+al I github 42 M241; 1PM
+' \ idea rane EA
+| pytest_cache 42 MeetiieM
+docs a2 men iPM
+Yeams Chat Files 4 Be on ie
+t B tests Mn pM
+3 1b venv cae |
+F i > pumpversion.ctg <2 ee
+ueethaiees @) editorconfig Dal
+i ~ flake'  i
+| gitignore a 9a) AM
+' 3) pre-commit-config yamt foe 1 Pee
+wx @B bump version sh _ Bae eM
+.   LICENSE it "Waa 29)
+  ) MANIFEST.in
+@) README mat
+------------------------------------------------------------------------------------------------------------------------
+{* OSDek (C)   Users   9977209 > git >  numpy_helpers
+nd Channel Allocation
+sl
+Lf
+a
+~ UD Search numpy, selpers
+Name Date modified Type
+| 9451 4/29/2024 1.08 PM File folder |
+git (24 113 AM File folder
+1PM File folder
+How do you want to open this file? 'opm = File folder
+mM File folder
+je | Look for an app in the Microsoft Store 7PM File folder  
+mu File folder
+Ph File foider
+More apps + 4, ia ene
+a CFG File
+/ Always use this app to open tom! files
+ed AM Test Oocument
+2PM YAML Fle
+= ee Sh File
+) UCENSE aa eer) File.
+MANIFEST in. acpavnens 12g) Pas Nhe  
+------------------------------------------------------------------------------------------------------------------------
+v DU Search numpy_heipers
+{ (PSDak (C) > Users > g977209   git > numpy_helpers
+td Channel Allocation
+M5)
+s
+reat
+ ~ OU Search nump, 'elpers
+rw
+How do you want to open this file?
+a Look for an app in the Microsoft Store
+| Internet Explorer
+NS
+a | Office XML Handier
+a | Paint
+PyCharm 2022.13
+| Windows Media Player
+7) Always use this app to open .tomi files
+a
+me Type See
+PM File folder
+3AM File folder
+APM File folder
+ ==2 Pe File folder
+Pa File feider
+mu File toxser
+pu File fotder
+mu Fue folaer
+mm File folder
+ma CG File
+ad EDITORCONFIG File
+i FLAKES File
+| Text Document
+"eM YAML Pile
+PM SH File
+bm
+mu IN Se a ey
+~ one ed rene lp
+" MO bee mf
+7m Py te
+------------------------------------------------------------------------------------------------------------------------
+'Pouild-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.ouila_meta"
+[project)}
+name = "numpy_nelpers"
+authors = [
+{name = "Gavin Gilchrist", email = "g977209@8451.com"),
+}
+description = "Functions to help with data manipulation in NumPy"
+readme = "README.ma"
+reguires-pytnon = ">=3.6"
+classifiers = [
+"Development Status :: 1 - Planning",
+"License :: Otner/Proprietary License",
+"Operating System :: MacOS",
+f "Operating System :: Microsoft :: Windows",
+"Operating System :: Bes ge OT am
+. "Programming Language =: Python :: 3",
+"Programming Language *: Python :: 3.6",
+"Programming Language :: Python :: 3.7",
+"Programming Language :: Python :: 3.8",
+| "Programming Language ::
+3: Python :: 3.9",
+i "Programing Language :: Pytnon ;; 3.10",
+ie "Programming Language :: Python",
+ 
+_ eemponent Loggers=1.2.1",
+------------------------------------------------------------------------------------------------------------------------
+"component_logger>=1.2.1",
+"numpy",
+"pandas",
+dynamic = ["version"]
+(project. license)
+file = "LICENSE"
+[tool .setuptools.dynamic]
+version = {attr = ~
+numpy_nelpers_8451._version.__version__"} i
+{project.urls}
+repository = "https://gitnub.com/8451LLC/numpy_helpers
+documentation = "https://numpy_helpers.pages.8451.com"
+bugs = "nttps://githud.com/8451LLC/numpy_nelpers/issues
+Z
+[tool .setuptools.packages. figd)
+mere = ("src")
+{project .optional -dependencies)
+------------------------------------------------------------------------------------------------------------------------
+"recommonmark",
+"sphinx",
+"sphinx_rtd_theme",
+"myst-parser",
+"sphinxemoji",
+"ipykernel"
+dev = [
+"numpy_nelpers[test, doc]",
+"bump2version",
+"mypy".
+"black",
+"flakeB>=3.7.9",
+"pre-commit"
+\[teol .pytest.ini_options]
+testpaths = [
+"nests/*
+[te0l .pleck}
+Aame-Length = 86
+Apclude =_'\.pyi?s 
+eachude = *""
+es
+------------------------------------------------------------------------------------------------------------------------
+F OSDisk (Cj > Users > g977209 > git > numpy_helpers
+A
+od Channel Allocation Name
+| 8451
+i gh
+\ github
+\ idea
+\ j | pytest_cache
+b docs
+Seams Chat Files   sre
+' D tests
+Lb venv
+7 ~ flake'
+wf gitignore
+BD) pre-commit-config yarns
+: P bump_version.sh
+' |   UCENSE
+vil ne] MANIFEST in
+i DB pyprojecttornt
+af) README ma
+  setup py
+451
+  0 jarch numpy_helpers
+    bp |
+Date modified Type _ Sie
+42 0241:18PM File folder
+024 10:13 AM File foider
+O24 1:51 PM File folder
+a File folder
+jem File folder
+man CFG File
+------------------------------------------------------------------------------------------------------------------------
+exclude: "docs/
+repos: x
+repo: https://gitnub.com/pre-commit/pre-commit hooks
+rev: v4.4.8
+hooks:
+- id: end-of-file-fixer
+- id: trailing-whitespace
+- id: check-yaml
+- id: cneck-addea-large-files
+~ id: check-docstring-first
+- repo: nttps://gitnubd.com/psf/black
+rev: 23.9.1
+hooks:
+- id: black
+- repo: nttps://github.com/pycaa/isort
+rev: 5.12.8
+hooks -
+- id: isort
+args: ["--profile", "black", ~.- illter-files"]
+repo: mes Wainy. com/pycqa/flekea
+pev; "6.1.0" _
+phat
+~ Ad: flakes
+repo: nttps://gitnud.com/pre-commit/mirrors-mypy
+rev: wh.S,1
+hawks =
+Cokie: ae
+------------------------------------------------------------------------------------------------------------------------
+fo OSDek(C) > Users > 9977209 > git > numpy_helpers
+es as ses
+wd Channei Allocation "Name Date modified Type | Sate
+M1 | east 4/23/2024 1.08 PM File folder
+ts | git 241023AM _ 'Flle folder
+| github O24 1231 PM File fokkier
+' | idea as. BPM File folder
+5 \ pytest_cache 4a mat File folder
+b docs Pe File tolder
+ee   sre az met ip Fle folder
+' D tests iz 1. = File folder
+bh venv a File folder
+ile  ) pumpversion.cfg   CFG File
+pet ie @ edinorcontig ' }PM = - EDITORCONFIG File
+" ) flakes mene FLAKED file
+B 3 vump version sn aa oe SH Fle
+ta ) UCENSE A2ROON LT PM fe
+LI y MANIFESTIn QUEM Ne
+rt D pyproject tort A2NE PM TOM He
+2 pain a
+_ a setup py aezpeaena 1257 PM om
+------------------------------------------------------------------------------------------------------------------------
+e
+'
+peated Videos
+'
+  Users   g977209 * git   numpy_helpers   src
+a
+vv   earch src
+Name
+L numpy_helpers.egg-info
+1b numpy_helpers_8451
+Date modified
+  ty PM
+O24 SAM
+Type
+File foicker
+File folder
+a
+------------------------------------------------------------------------------------------------------------------------
+r"Top-level package for numpy_helpers_8451.
+from .pivot import (get_sort_ix,
+. = by_map,
+by_pivot,
+by_pivot_split,
+by_pivot_multi)
+from . import txt
+from ._version import __version__ as version
+__author__ = "Gavin Gilcnrist"
+_email_ = "g977209@8451.com"
+\ version__ = version -
+------------------------------------------------------------------------------------------------------------------------
+ie:
+a
+g877203 > git > numpy_nelpers > src > numpy_helpers_8451
+Name
+-  pycache_
+@ version py
+@ package logger py
+  pivor py
+=) py.typed
+ @ opy
+~ 0 Search numpy_heipers_ 6451
+Date modified
+4 024 12:31 PM
+------------------------------------------------------------------------------------------------------------------------
+'e"simplified version management.
+Python packages can contain version numbers in various locations
+(i.e. setup.py, _init__). This leads to a bit of a painful process
+of remembering where all version numbers are located and need to be
+changed wnen its time to bump the version num
+r. APTS has found
+that centralizing the version number to this tile location an easy
+way to manage versioning.
+_version_ = "6.1.0"
+------------------------------------------------------------------------------------------------------------------------
+& g877209 >! igit > numpy_helpers > src > numpy_helpers 8451
+Vearns Chat Files
+ 
+ated Vioeus
+a
+Name
+= _pycache_
+ri)  Init_py
+rr) _version py
+"D package
+@ pivorpy
+@ mopy
+Search das 26 fm 8451
+Date modified
+Type
+4/25/2024 1, 1 PM File folder
+124 1_\1 PM
+mee a ve! ay
+men eM PY Fie |
+mat TYPED File
+maa PY File
+------------------------------------------------------------------------------------------------------------------------
+limport typing
+import numpy as np
+import pandas as pd
+def get_sort_ix(in_array: typing.Union(np.ndarray,
+pd.DataFrame,
+pd.Series,
+typing. List(np.ndarray}}) -> ap.ndarray:
+Return an array of indices that can be used to sort the input data by all columns in ascending order.
+Inputs:
+in_array - NumPy/Pandas Series/Pandas DataFrame or list of arrays (or lists, series, etc.)
+(must all have same length).
+Returns:
+NumPy array, sort indices
+if isinstance(in_array, list):
+in_array = (np.array(i) for i in in_array)
+assert len({i.snape( ) for i in in_array}) < 2
+in_array _np = np.column_stack(in_array)
+else:
+in_array_np = | convert_to, _np2d(in_array)(0)
+return np.lexsort([np.arange(in_array_np.shape[0)))
++ {in_array_np(:, 1] for 1 in range(in_array_np.shape[1) - 1, -1, -2))) |
+FSi]
+------------------------------------------------------------------------------------------------------------------------
+def by_map(by_array: typing.Union[np.ndarray,
+pd.DataFrame,
+pd.Series},
+checksort: bool = True) -> typing. Tuple(np.ndarray,
+typing.Union[np.ndarray,
+pd.DataFrame,
+pd.Series)}]:
+From input denoting "group-by" column(s) for a dataset, return 2-colum array of indices and an
+array of unique group-by values, indicating where each group begins and ends in the input data.
+Inputs MUST be sorted by group-by column values.
+| Inputs:
+by_array - NumPy/Pandas Series/Pandas DataFrame; group-by columm(s).
+checksort - Bool, if True checks that the input is sorted as required.
+Set to False to avoid redundant check, if sure of correctly-ordered input.
+Returns:
+1. NumPy array, start and end indices for each group-DBy subset of input data.
+2. NumPy/Pandas (to match input format), corresponding unique growp-by column values.
+  Convert input to 2-D array if needed
+by_array_np, in_type = _convert_to_np2d(by array)
+|   Check that input is sorted
+\ Mf ghecksort:
+check array_sort(by array np)
+8 Guild map
+------------------------------------------------------------------------------------------------------------------------
+@ Build map
+ix = np.arange(1, by_array_np.shape[@])[np.max(by_ array _np[1:] f= by_array_np[:-1], axis=1)]
+byep_map = np.column_stack((np.append([@], ix),
+np.append(ix, [by_array_np.shape[@}])))
+# Output as required - match by_uniques to input format
+if in_type in (pd.DataFrame, pd.Series):
+by_uniques = by_array.iloc(bygp_map[:, @))-reset_index(drop=True)
+else:
+by_uniques = by_array[bygp_map[:, 0]]
+return bygp_map,
+by_uniques
+def by_pivot(by_array: typing.Union[np.ndarray,
+pd.DataFrame,
+pd.Series),
+val_array: typing.Union[np.ndarray,
+= pd.DataFrame,
+pd.Series},
+padding value: typing.Union[{int, float, str] = np.nan,
+checksort: bool = True) -> typing. Tuple[np.ndarray,
+typing. Union[np.edarray,
+po. OataFrame,
+pd. Series)}):
+Sorted input denoting "group by" column(s) for a dataset and a set of related values,
+) meray values pivotea by group-by values, and corresponding array of unique group-by
+return
+values.
+------------------------------------------------------------------------------------------------------------------------
+an array of values pivoted by group-by values, and corresponding array of unique group-by values
+Inputs MUST be sorted by group-by column values.
+Inputs:
+by_array - NumPy/Pandas Series/Pandas DataFrame; group-by column(s)-.
+val_array - NumPy/Pandas Series/Pandas DataFrame; column(s) to pivot.
+padding_value - Scalar value, used to pad output cells for smaller groups.
+(Should be chosen to be compatible with val_array contents; default
+= np.nan.)
+checksort - Bool, if True checks that the input is sorted as required.
+Set to False to avoid redundant check, if sure of correctly-ordered input.
+Returns:
+1. NumPy array, val_array data pivoted along axis 1 with ome axis @ row per unique set of
+by_array values. For multi-column val_array input, output shape is 3-dimensional with
+val_array columns on axis 2.
+2. NumPy/Pandas (to match input format), corresponding umique group-Dy column values.
+|   Get by-array map
+listmap, by_uniques = by_map(by_array, checksortechecksort)
+@ Construct index to copy data values into array padded for pivoting
+mrows_per_gp = listmap[:, 1] - listmap[:, 0)
+max_nrows per_gp = np.max(nrows_per_gp)
+cpop = (np.expand_dims(np.arange(max_nrows _per_gp, dtype=int), @)
+4 mp.expand_dims(nrows per_gp, 1)).reshape(~1)
+'is   np.arange(cpop.snape[ @})[cpop)
+  Convert val_array to 2-D array if needed
+| el array np *| _conyert_to_np2d(vel_array)( )
+ee |
+------------------------------------------------------------------------------------------------------------------------
+@ Make destination array, transfer values, and resnape
+pivot_array = np.full((listmap.shape[ @] " max_nrows_per_gp, val_array_np.shape[1]),
+padding value,
+dtype=float if padding value is np.nan else val_array_np.dtype)
+pivot_array[ix] = val_array_np
+aif np.ndim(val_array) == 1:
+pivot_array = pivot_array.reshape(listmap.shape[@], max_nrows_per_gp)
+else:
+pivot_array = pivot_array.reshape(listmap.shape[@], =ax_nrows_per_gp, wal_array.shape[1])
+return pivot_array, by_uniques
+def vy_pivot_split(by_array: typing.Union([np.ndarray,
+pd.DataFrame,
+pd.Series},
+val_array: typing.Union[np.ndarray,
+3 pd. Dataframe,
+pda.Series)},
+padding value; typing.Union([int, float, ste} = ap.man,
+cnecksort: bool = True,
+density target: float = 0.9) => typing, Tuple[typing.List[{[np.ndarray),
+typing. List({ typing.Union[np.ndarray,
+pd. DataFrame,
+pe. Series }},
+np .ndarray):
+Lomi
+------------------------------------------------------------------------------------------------------------------------
+From sorted input denoting "group by" columns for a dataset and a set of related values, return
+an array of values pivoted by group-by values, and corresponding array of unique group-by values
+Inputs MUST be sorted by group-by column values.
+This function differs from by_pivot() in that it mitigates for the issue where frequency of
+values in by_array varies widely, for which by pivot would return a pivoted array containing -
+a large numper of "padding" cells. Instead of one pivoted array it creates several smaller ones
+whose populated cells account for a specified % of all cells, plus am array of indices that can
+be usea to return arrays based on the outputs to the original order.
+Inputs:
+by_array - NumPy/Pandas Series/Pandas DataFrame; group-by columm(s).
+val_array - NumPy/Pandas Series/Pandas DataFrame; columm(s) to pivot.
+Padding value - Scalar value, used to pad output cells for smaller groups. r
+(Should be chosen to be compatible with wal_array comtents; default = np.nan.)
+checksort - Bool, if True checks that the input is sorted as required.
+Set to False to avoid redundant check, if sure of correctly-ordered input.
+Gensity_target - Float, @-1, determines the extent to which input cata is subdivided;
+represents the % of cells in the pivoted arrays that will be populated
+(i.e. not filled with padding values). Oefault = @.9 (98%)
+Returns:
+; 4, NumPy array, val_array data pivoted along axis 1 with ome axis @ row per unique set of
+by_array values. (For multi-column val array input, output snape is 3-dimensional with
+val_array columns on axis 2.)
+wi 2. NumPy/Pandas (to match input format), corresponding unique group-by column values.
+3. MumPy array, indices that can be used to return arrays based on pivoted outputs te the
+Gs original order, in the form: np.concatenate((LIST OF ARRAYS))[<SORT_INDICES>)
+------------------------------------------------------------------------------------------------------------------------
+original order, in the form:
+np.concatenate((LIST OF ARRAYS])[<SORT_INDICES>] |
+@ Get by-array map
+listmap, by_uniques = by_map(by_array, checksort=checksort)
+@ Count number of items in each group
+nrows_per_gp = listmap[:, 1] - listmap[:, @]
+  Make array indicating subsets of by-groups for pivoting
+spl_subset, ngps = _get_bygp_splits(nrows_per_gp,
+density _target=density_ target)
+@ Make an index array to enable sorting stacked arrays based om qutpwts back to original order
+. Stacksorter = np.argsort(np.lexsort((np.arange(spl_sudset.shape[@}}, spl_sudset)))
+  Generate lists of outputs
+| by_pivot_output = list()
+for gp in range(ngps):
+filt = np.repeat(spl_subset, nrows_per gp) = gp
+by_pivot_output -= [
+__ by_pivot(
+by_array[filt],
+val_array[filt},
+padding value=padding value,
+checksort=False, # Already checked
+a
+------------------------------------------------------------------------------------------------------------------------
+def
+return ({i[@] for i in by_pivot_output],
+{i[1] for i in by_pivot_output],
+stacksorter)
+_get_bygp_splits(nrows_per_gp: np.ndarray,
+density_target: float) -  typing.Tuple(np.ndarray, int]:
+Create groups for a set of "group-by"
+subsets based on distribution of row counts
+for
+each, to limit number of cells with "padding" values in pivoted array(s)
+Inputs:
+nrows_per_pp - NumPy array, list of row counts
+density_target - Float, @-1, determines the extent to which input Gata is subdivided
+represents the % of cells in the pivoted arrays that will be populated
+(i.e. not filled with padding values),
+Returns:
+1. NumPy array, group numbers for each item in nrows per gp
+2. Int, number of groups
+  Get frequency count of number of rows per group, make group counts cumulative
+vw,   = np.unique(nrows_per_gp, return_counts#True)
+v = Mp.append( , v)
+  = ap.append(@, np.cumsum(c))
+  Calculate reauction in number of empty cells to meet density target
+ee) set .
+| Peters = op-cell(density rarger * (v[-1} * c[-1})). eacypa(ian) ~ np. sum(nrows_per_gp)
+x [ee
+------------------------------------------------------------------------------------------------------------------------
+  Add splits until target reached
+spl = np.zeros_like(v, dtype=bool)
+spl(( , -1}] =
+while rctarg > @:
+spl_ix = np.arange(spl.snape(@])[spl]
+spl_crit = list()
+for i in range(spl_ix.snape[ ] - 1):
+vsub = v(spl_ixf{i]: spl_ix[i + 1] + 1]
+csub = c{spl_ix[i]: spl_ix{i + 1] +1
+spl_crit += ((vsub[-1] - vsub[:-1]}) * (csub[:-1] - csub{@)) }.tolist()
+spl[np.argmax(spl_crit)] =
+rctarg -= np.max(spl_crit)
+  Make array indicating subsets of by-groups for pivoting
+| Spl_subset =
+np.sum(np.expand_dims(nrows per_gp, 1) > mp.expand_dims(w[spl)[1:]}, @), axis=1)
+ngeps = np-sum(spl[{1:})
+return spl_subset, ngps
+Get PP OEY pray: typing.-Union[np.ndarray,
+pd.Dataframe,
+pd.Series),
+val_array: typing.Union[np.ndarray,
+pd.Dataframe,
+------------------------------------------------------------------------------------------------------------------------
+pd.DataFrame,
+pd.Series],
+padding value: typing.Union[int, float, str] = np- nan) -> typing.Tuple[np. iden,
+typing.List
+(np.ndarray}):
+From input consisting of values summarized by multiple BY arrays, generates a multi-dimensional array
+in which each BY array value nas its own index on the corresponding axis
+e.g. The following data:
+name day spend
+Ann 1 79.33
+Ann 2 17.82
+Ann 4 68.68
+Bob 3 35.12
+| Bob 5 90.74
+; Charles 1 86.05
+Cnarles 3 50.14
+Becomes (with "name" and "day" columns as BY arrays and "spend" as the walue array):
+pare, 17-82, 0. , 60.60,  . },
+Sp. ie)", S502; .@.", 90.74),
+(86.05, @. , 58.14, 0. , 0. J)
+ie @ Separate row for each name, and a separate column for each day
+Baal r
+------------------------------------------------------------------------------------------------------------------------
+Inputs:
+by_array - NumPy/Pandas Series/Pandas DataFrame; column(s) by whose values output will be
+organized into output array with one axis per column. -
+val_array - NumPy/Pandas Series/Pandas DataFrame; column(s) to pivot into output array.
+padding value - Value with which to fill cells for which no data was included in the input.
+Defaults to np.nan; example above shows results where padding value = @
+Returns:
+1. NumPy array with number of dimensions corresponding to mumber of by_array inputs, plus
+one additional dimension where val_array has more than one column
+2. List of arrays - Unique values for each by_array entry, value labels for each axis
+  Convert by_array into list of column arrays
+by_array_np, in_type = _convert_to_np2d(by_array)
+by_array_spl = [by_array_np[:, c) for   in range(by_array_np.shape[i}))
+# Convert val_array into 2-D array if needed
+val_array_np = _convert_to_np2d(val_array)(@}
+_ @ Get unique value lists from by array, and convert values o indices using wectorized dictionar:
+wmique_vals = list()
+ixcony = list()
+fer 4 in by_array_spl:
+umique vals += (np.unique(i))
+Axcony += [dict(zip(unique vals[-1), np.arange(unique_wals{-1)}.shape[@)))))
+Ax = ([p.vectorize(ixconv(1).get)(by_array_spl[{i}) for 1 in eange(len(by_array_spl)))
+e   Create output orray of correct size and dtype
+------------------------------------------------------------------------------------------------------------------------
+ # Create output array of correct size and dtype
+pivot_array = np.full([len(i) for i in ixconv)] + [val_array_np.shape[1}],
+, padding value,
+dtype=float if padding value is np.nan else val_array_np.dtype)
+@ Use indices to populate array
+pivot_array[tuple(ix[1] for i in range(len(ix)))) = val_array_np
+ @ Remove values dimension if only one values column
+if np.ndim(val_array) == 1:
+pivot_array = pivot_array.reshape(pivot_array.shape[:-2))
+return pivot_array, unique_vals
+\def _convert_to_np2d(in_array: typing.Union[np.ndarray,
+pd.Dataframe,
+r pd.Series}) -> typing. Tuple(mp.edarray, type):
+Convert Pandas or 1-D NumPy input to 2-0 NumPy array, and return walwe to recall input type.
+Inputs:
+. An_array - NumPy/Pandas Series/Pandas Dataframe
+1. MumPy array
+2. type - Input type
+| Wabses: AssertionError if in_array 15 not a NumPy or Pandas object
+_ TypeError if in_array is a NumPy array with >2 dimensions
+Bop fe
+Way i a a re saat
+------------------------------------------------------------------------------------------------------------------------
+assert isinstance(in_array, (np.ndarray, pd.DataFrame, pd.Series))
+out_array = in_array if isinstance(in_array, np.ndarray) else in_array.values
+if out_array.ndim   2:
+raise TypeError( 'Array has too many dimensions")
+elif out_array.ndim == 1:
+out_array = np.expano_dims(out_array, 1)
+return out_array, type(in_array)
+@ef _check_array_sort(in_array: np.ndarray) -> None:
+Checks that columns in 2-0 array are sorted in ascending order, om column @, 1, ..., N
+Inputs:
+in_array: 2-D NumPy array
+Returns: Nothing
+Raises: ValueError if in_array not properly sorted
+try:
+cnk = in_array{1:] >= in_array[:-1]
+cnk{:, 1:] = np.logical_or(chnk(:, 1:},
+np.maximum. accumulate(im_areay[i:, :-2)
+te in_array{:-1, :-1],
+f axisel))
+4f not np.all(cnk):
+raise ValueError( 'Array is not sorted as required')
+| emcept Exception as e:
+if 'not supported between instances' in str(e):
+raise ValueError( Array contains unsortable values')
+else:
+li
+fat
+a
+------------------------------------------------------------------------------------------------------------------------
+Teams Chat Files
+ral
+a
+> git > numpy helpers   src > numpy_helpers 8451
+Name
+=  pycache_
+@ _init_py
+Pr) version py
+@ package logger py
+<2 pyivped
+@ omy
+~ U | Search numpy_helpers 8451
+ e
+modified ae
+42 1241), PM File folder ;
+241 PM PY File
+0261) 11 PM PY File
+.. eu_| PM
+oh en _
+=
+------------------------------------------------------------------------------------------------------------------------
+'import typing
+import numpy as np
+import pandas as pd  
+from .pivot import by_pivot
+# Used to indicate wnere characters will be removed from text, with characters to the rignt shifted to
+fill the gap
+TO_REMOVE_CODE = 9999
+def text_to_codes(txt_array: typing.Union[np.nddrray, pd.Series, List)) + p.ndarray:
+Convert each string in input array into the corresponding series of ASCII codes,
+with zeros for spaces and padding.
+Inputs:
+txt_array - NumPy array/Pandas Series/list of strings
+Returns:
+NumPy array
+  If input is list or Pandas Series, convert to Numpy array
+Mf isinstance(txt_array, list) or isinstance(txt_array, pd.Series);
+txt_array = np.array(txt_array)
+@ Convert to codes array, replace all spaces (32's) with zeros
+>) MrGedes = txt_array.astype(str) view(np.uints2)
+h "pUrcedes = np.unere(
+np.expand dims(txt_array, 1) a  None,
+\ 8,
+* die . bai casita
+------------------------------------------------------------------------------------------------------------------------
+np.where(strcodes .reshape(txt_array.shape[@], 1) == 32
+a,
+strcodes.reshape(txt_array.shape[@], -1)))
+8 Add "padding" column and return
+return np.append(strcodes, np.zeros_like(strcodes[:, :1]), axis=1)
+codes to text(strcodes: np.ndarray,
+underscores: bool
+= False) -> np.ndarray:
+Convert text strings held as ASCII codes back to text.
+Inputs:
+strcodes - NumPy array, character codes
+underscores - Bool, if True replace spaces with underscores im cutpwt text (excl trailing ae
+Returns:
+NumPy array
+@ If any "to-remove" codes have been left in strcodes, remowe amd shift characters left
+if mp.max(strcodes == TO_REMOVE CODE)
+strcodes = shift_left(strcodes)
+@ Replace 32 codes for spaces, excluding trailing spaces
+_werlen = np.max(np.wnere(strcodes   0,
+np.expand_dims(np.arange(atrcodes.shape[1}), @),
+-1),
+| axisel, keepdims=True)
+a ks aoa .
+------------------------------------------------------------------------------------------------------------------------
+axis=1, keepdims=True)
+nottrailing = np.expand_dims(np.arange(strcodes.shape[1}), 8) <= strlen
+) if underscores:
+= sp = 95
+else:
+sp = 32
+strcodes = char_remove(strcodes, 6, newchar=sp, cond=nottrailing)
+return strcodes[:, :
+np.max(strlen) - 1].reshape(-1).view(dtype=*" Gi{mp.max(strlen) + 1}")
+ame char_to_code(char: typing-Union[int, str]) -> typing.List{int):
+Convert specifieo character(s) into list of ASCII codes
+(If input is an integer,
+it is returned unaltered - assuming (omwersiom Mas already occurred.)
+Inputs:
+char - String or integer (If integer, value is returned im @ list.)
+Returns:
+List of ints
+Af isinstance(char, str):
+weturn list({ord(i) for 1 in cnar})
+#@1if isinstance(char, int):
+return (char)
+ot been? ae np ndarray,
+typing-Union[int, str]) => np.ndarray:
+------------------------------------------------------------------------------------------------------------------------
+char: typing.Union[int, str]) -> np.ndarray:
+Indicate which characters in input string (as ASCII codes) match target character(s).
+Inputs:
+strcodes - NumPy array, character codes
+char - String, one or more characters or Int, a character code
+Returns:
+NumPy array, bool
+return np.max(np.stack([strcodes == c for   in char_to_code(char)}), axis=@)
+is_after_cnar(strcodes: np.ndarray,
+char: typing.Union[{int, str]) -> np.ndarray:
+Indicate which characters in input string (as ASCII codes) are preceded Sy target character(s).
+Inputs:
+strcodes - NumPy array, character codes
+char - String, one or more characters or Int, a character code
+Returns:
+NumPy array, bool
+ae
+return np.max(np.stack([np.append(TO_REMOVE CODE " np.ones jike(streedes{:, :1)),
+- strcodes({:, :-1j,
+axisel) ==  
+def is_before_cnar(strcodes: np.ndarray,
+char: typing.Union[int, str]) -> np.ndarray:
+Indicate which characters in input string (as ASCII codes) are followed by target character(s).
+Inputs:
+strcodes - NumPy array, character codes
+char - String, one or more characters or Int, a character code
+Returns:
+NumPy array, bool
+return np.max(np.stack([{np.append(strcodes[:, 1:},
+TO_REMOVE_CODE * np.omes_like(streodes[:, :1]}),
+axis=1) == c
+for c in char_to_code(char)}),
+axis=6)
+@ef shift_left(strcodes: np.ndarray) -> np.ndarray:
+se \ anal
+ddbere "TO_REMOVE CODE" values nave been inserted in place of characters flagged for removal,
+| Pemove them and shift subsequent characters to the left to fill the gap.
+strcodes - NumPy array, character codes
+Returns:
+! + MumPy array, character codes
+a ]
+------------------------------------------------------------------------------------------------------------------------
+sortorder = np.lexsort((np.wnere(strcodes == TO_REMOVE _CODE, 1, @).reshape(-1),
+np.repeat(np.arange(strcodes. shape(@]), strcodes.snape[1]})))
+strcodes = strcodes.reshape(-1)[sortorder].reshape(strcodes. shape)
+return np.where(strcodes == TO_REMOVE_CODE, 6, strcodes)
+def char_remove(strcodes: np.ndarray,
+char: typing.Union[int, str],
+newchar: typing.Optional(typing.Union[int, str}] = Mone,
+cond: typing.Optional[(np.ndarray) = None,
+close_gaps: bool = True) -> np.ndarray:
+Replace occurrences of specified character(s) in each row of text array
+Inputs:
+strcodes - NumPy array, cnaracter codes
+char - String, one or more characters or Int, a character code; character(s) to be replaced
+mewchar - String, one character or Int, @ character code; charecter to replace "char" with.
+cond - NumPy array, booleans matching strcodes; if specified, character replacement only
+takes place where True.
+close gaps - Bool, if True ano "
+to-remove" codes have been inserted in place of characters to
+be removed, shift remaining characters left to close resulting gaps.
+(Set to False to defer this step, e.g. if several removals are being done $0 ~-
+the gap-closing step is only executed once)
+Returns:
+fumPy array, character codes
+ame
+ee ee ea]
+------------------------------------------------------------------------------------------------------------------------
+@ Get code for replacement character; use TO_REMOVE CODE if newchar not specified
+newchar = TO_REMOVE_CODE if newchar is None else char_to_code(newchar) [6]
+@ Set cond as array of Trues if no cond specified, expand to 2D if needed
+if cond is None:
+cona = np.ones_like(strcodes[:, :1], dtype=bool)
+else:
+if np.ndim(cond) == 1:
+assert cond.snhape[@] == strcodes.shape[@]
+cond = np.expand_dims(cond, 1)
+strcodes =
+np.where(np.logical_and(cond, np.isin(strcodes, char_to_code(char))),
+newchnar,
+strcodes)
+if close_gaps ana newchar == TO_REMOVE CODE:
+return shift_left(strcodes)
+else:
+return strcodes
+Pemove bracketed text(strcodes: np.ndarray,
+pall close gaps: bool = True) => Ap. ndarray:
+Find remove bracketed text. Character values are replaced with "to-remove" code and
+} pom wsing snift_left(), with option to defer the latter step. 3
+------------------------------------------------------------------------------------------------------------------------
+Inputs:
+strcodes - NumPy array, character codes
+close_gaps - Bool, if True and "to-remove" codes have been inserted in place of characters to
+be removed, shift remaining characters left to close resulting gaps. 4
+(Set to False to defer this step, e.g. if several removals are being done so that
+the gap-closing step is only executed once)
+Returns:
+NumPy array, Character codes
+lpcode = char_to_code(*(*)(@)
+| mpcode = char_to_code(")*)[6)
+strcodes =
+np.wnere(np.cumsum(np.where(strcodes == Ipcode, 1,
+np.where(strcodes == rpcode, -1, @)),
+axis=1) > @,
+TO_REMOVE CODE,
+strcodes)
+strcodes = char_remove(strcodes, ')', close gaps=False)
+if close_gaps:
+return shift_left(strcodes)
+else:
+return strcodes
+Sete cose Letrcodes: np.ndarray)
+7 Replace any lower-case letters with upper-case equivalent.
+" Japyts. ie
+& ar
+> Np.ndarray:
+------------------------------------------------------------------------------------------------------------------------
+Inputs:
+strcodes - NumPy array, character codes
+Returns:
+NumPy array, character codes
+return np.where(np.logical_and(strcodes >= 97, strcodes <= 122),
+strcodes - 32,
+strcodes)
+substr(strcodes: np.ndarray,
+start: typing.Optional[int]
+= None,
+end: typing.Optional[int] = N
+jone) -> np.ndarray:
+Return substring of text based on slice indices.
+Input:
+strcodes - NumPy array, character codes
+start, end - Ints, slice indices
+Returns:
+NumPy array, character codes
+w=
+return strcodes(:, start: end)
+(def add_prefix(strcodes: np.ndarray,
+e prefix: str) -> np.ndarray;
+- , ) p y
+Ada td prefix to text, unless string is unpopulated,
+------------------------------------------------------------------------------------------------------------------------
+Add a prefix to text, unless string is unpopulated.
+Input:
+strcodes - NumPy array, character codes
+prefix - String, value to add to each string in txt_array.
+Returns:
+NumPy array, character codes
+prefix_array = np.repeat({char_to_code(prefix)],
+strcodes.shape[@}, axis=@).astype(np.uwint32)
+prefix_array =
+np.where(np.min(strcodes == @, axis=l, keepdims=True), @, prefix_array)
+return np.append(prefix_array, strcodes, axis=1)
+def split_to_columns(strcodes: np.ndarray,
+=> typing. Cist([np.nadarray):
+arrays.
+split_char: typing.Optional[str] #
+Split array of strings by spaces or by a specified character, returming results as list of "column"
+Inputs:
+Strcodes - NumPy array, character codes
+split_char - Str, single character by which to split input strings J
+(leave unspecified to split by spaces).
+Retures:
+Last of NumPy arrays, character codes for each subsection of input text.
+i opt = Sp.cumsum(is char(strcodes, split char[:1}), axisel) ;
+rh return [sbif eft(ap.where(spl_ flags  = i,
+------------------------------------------------------------------------------------------------------------------------
+return [shift_left(np.wnere(spl_flags == i,
+char_remove(strcodes, split_char{:1)),
+TO_REMOVE_CODE)}
+for i in range(np.max(spl_flags[:, -1}) + 1)]
+split_to_rows(strcodes: np.ndarray,
+split_cnar: typing.Optional[{str] = @) -> typing.Tuple[sp.odarray,
+mp.odarray):
+Split array of strings by spaces or by a specified character, placing each substring on new row.
+Return accompanying array of indices to map each word back to the corresponding input row.
+Inputs:
+strcodes - NumPy array, character codes
+split_char - Str, single character by which to split inpwt strings
+(leave unspecified to split by spaces).
+Returns:  
+1. NumPy array, character codes.
+2. NumPy array, indices.
+ord
+  Mark start of each supstring
+split_cnar = char_to_code(split_char)( ) :
+BS = mp.logical and(char_remove(strcodes, split char, @) tx @,
+np.append(np.full((strcodes.snape(@), 1), split char),
+strcodes(:, :-1),
+axisel) == split char)
+# Create long arrays for input row numbers, word numbers and character codes, excluding spaces
+spl_ix = np.where(char_remove(strcodes, split_char, 6) == @,
+=i; *
+np.cumsum(ss, axis=1) - 1).reshape(-1)
+powix = np.repeat(np.arange(strcodes.shape(@}),
+strcodes.shape[1})[(spl_ix f= -1]
+strcodes = strcodes.resnape(-1)[spl_ix |= -1)
+spl_ix = spl_ix{spl_ix != -1]
+@ Pivot to one row per substring with corresponding array for inpwt row number
+strcodes_split, row_spl_ix = by_pivot(np.column_stack((rowix, spl_ix)),
+a - strcodes,
+padding _value=@)
+  Return input row index and word
+return strcodes_split, row_spl_ix[:, @]
+ef contains(strcodes: np.ndarray,
+strcodes targ: np.ndarray) -> np.ndarray:
+ane
+Determines whether tne text strings in one array contain the text strings in another.
+Inputs -
+Strcodes - MumPy array, character codes (strings to search) |
+f strcodes_terg - NumPy array, character codes (strings to search for in strcodes)
+| Returns: a
+neues NumPy array, bool
+------------------------------------------------------------------------------------------------------------------------
+assert strcodes_targ.snape[@] == strcodes.shape[ ]
+  Get array widtns
+tclw = strcodes.shape[1)
+tc2w = strcodes_targ.shape[1]
+@ Make flag to identify matches, initially all False
+match = np.zeros(strcodes.shape[@], dtype=bool)
+@ Make list of "outstanding" row indices, (no match yet, still some non-space cnaracters to compare)
+np.arange(strcodes.shape(@])[~np.min(strcodes_targ == 8, axis=1)]
+os_ix =
+  Loop over substrings of strcodes that strcodes_targ could match to
+for sl in range(tclw):
+e1 = min(sl + tc2w, tclw)
+e2 = min(tc2w, tclw - sl)
+# Identify and record matches
+#ilt = np.min(np.logical_or(np.logical_and(np.cumsum(strcodes_targ[os_ix][:, : 2] != @, axis=1) >
+e, a :
+strcodes_targios_ix][:, :e2] == @),
+strcodes(os_ix}[:, sliel} == | targ{os_ix}[:, :e2]), axis=1)
+filt = np.logical_ana(filt, np.max(strcodes_targ{os_ix){:,
+matches of all-zeros)
+se2] '+ @, axis=1)) @ (Exclude
+gatcn[os_ix{filt]] = True
+  Remove indices for matched rows, rows where window om Strcodes Mas moved past last non-zero
+@s_ix = os ix[np.logical _and(~filt, ~np.min(strcodes{os_ix)[:, sl:] == @, axis=1)))  
+_ & Break loop if no more rows to check
+"4 os5_ix.shape( ] == @:
+break
+|. SAP Apa
+------------------------------------------------------------------------------------------------------------------------
+4 qg@77209 >  git > numpy_heipers * src > numpy_helpers 6451 -~U Search num) y_helpers 6451
+ws) "Name Date modified Type Som
+o = _pycache_ 4/23) 024 1/31 PM File folder
+:   _int_py "2a 133 PM PY File
+i @) version py 42 met 1PM PY File
+@ package logger py nem PY File
+Teams Chat Files ba aid =, oS
+2 prvped ae Tene
+bs Bouy aasm) jm
+;
+veated Videos  
+t :
+ty

@@ -1,0 +1,2515 @@
+- QSDusk (CL) > Users   g977209 > gw > corebec-laq-app >
+a
+wil
+Name
+a
+B45)
+ge
+w
+B ginud
+Tauren Chat Fades.
+B ides
+A app
+3 helm
+B venv
+! giignore
+: docker-compote yrs
+} Dockerfite
+@ README ma
+4 requremen.un
+Search corepce (aq app
+Oate modified
+6/13. 2924343 Ph
+1716 9 ue Aas
+ot le aM
+Siac aM
+a ee oe
+a er |
+aren te
+rt re
+Fide folder
+Fle fokter
+Fde folder
+Fite fotder
+Fue tokjer
+Fee totter
+Fie fokser
+Tem Document
+Vet Foe
+MO File
+Jet Oecueet
+------------------------------------------------------------------------------------------------------------------------
+Tot Fetes
+ede
+s oer 2 OT 20S + gt +
+carened tag ape cane
+How do you want to open this fle"
+|| internet Expiorer
+| Notepad
+|| Office AML rrardies
+Paint
+Pyc thar oh
+| Window: Media bie.
+je | Word
+a
+WoidPad
+hoe
+------------------------------------------------------------------------------------------------------------------------
+Cha Fes
+youers > Q977209 > git + carence faq apr 2 #
+How do you want to open ths file"
+|e Internet Explorer
+Notepaa
+|| Office XML rs arities
+Paint
+PyCham Jus!
+> | Windows: Mentca Phe
+ma |
+WordPod
+------------------------------------------------------------------------------------------------------------------------
+cra Be
+ustts   3977209 + git
+corene  tag ape ae
+How do you want to open this Flie-
+internet Expsorer
+Office XML rare fle s
+Wachoves Marcia
+WordPad
+%
+  PyChuinn ooo
+------------------------------------------------------------------------------------------------------------------------
+  BUILD STAGE
+FROM docker-all.artafactory.8451.cloud/core-images/pytnon:3.9-build as buila
+ARG PYTHON_PACKAGE_REPO_URL=artifactory.8451. cloud/artifactory/api/pypi/python-all/simple
+@ Set a virtualenv to isolate and collect dependencies.
+ENV VIRTUAL_ENV="/opt/venv"
+ENV PATH=" /opt/venv/bin: $PATH"
+cory...
+  Mount secrets and install dependencies.
+RUN \
+--mount=type=secret, id=ARTIFACTORY_USERNAME \
+--mguntstypecsecret, id=AATIFACTORY_PASSWORD \
+set -eux && \
+uv venv S(VIRTUAL_ENV) 88 \
+uv pip install \
+-4 wttpe://$(cat /run/secrets/ARTIFACTORY_ USERNAME): ${cat 'run secrets. ARTIFACTORY_PASSWORD)@
+S(OVTHOM PACKAGE REPO URL} \
+-F requirements .txt
+O APP STAGE
+ROM docker-all.artifactory.8451.cloud/core-images/python. 3.9 a3 app
+@ Use the veow from the build stage.
+1 -tromebuild "/opt/venv" "/opt/venv"
+im FLNT Ud Ete" /ept/venv"
+eee T
+------------------------------------------------------------------------------------------------------------------------
+${ PYTHON _PACKAGE_REPO_URL} \
+-f requirements .txt
+@ APP STAGE
+FROM docker-all .artifactory.8451.cloud/core-images/python:3.9 as app
+@ Use the venv from the duild stage.
+COPY --fromebuild "/opt/venv" "
+ENV VIRTUAL_ENV="/opt/venv"
+EMV PATH="/opt /venv/bin: SPATH"
+/opt/venv"
+# Copy app source to the pre-configured app directory.
+COPY --chown=e451:e451 app/ ./app/
+copy . 451/ ./.8451/
+8 Expose port 8886
+AN SERVICE PORT=9080
+EXPOSE ${SERVICE_PORT)
+@ Set EMV values for OBX SQL warehouse
+GON DATABRICKS _HOSTsadb-664486018495 7510.10. azuredataoricks net
+EMV OATABRICKS HTTP _PATH=/5q1/1.0/warehouses/cd96059dc Jef rede
+@ Run app server via Gunicorn
+WMOMEDIA app
+Rum python -= dash_helpers.run_eultipage setup
+t gumicorn --bind  .0.6.0:4080 maln:server
+------------------------------------------------------------------------------------------------------------------------
++ OSDwh (C4 > Users   9977209 > gt > corebcc-faq-app
+a
+leeens Chas Files
+Name
+B  past
+gt
+B github
+B sea
+B app
+B heim
+B veny
+'3. gitignore
+* docker-compose yr
+@ REAOME ma
+@ requiremenu un
+vU Search corebec-taq-app
+Date modsfied
+13/2024 3 37 PM
+V1 2602s 98 AM
+17-28-2728 122 Phd
+tt GEDCl  1128 Pe
+WIS Wd ea PM
+"te Hild +B aa
+tS, lat) Oe AM
+* ke 24 Le Abe
+1 le Me ee ae
+[Sl 8
+Type Sine
+Fue folder
+File folder
+File folder
+Fite folder
+Fite folder
+Fle folder
+Fae toider
+Text Document
+ven Fae
+MD Fle Bi
+Test Oacument
+------------------------------------------------------------------------------------------------------------------------
+ash-helpers><6.9.0
+gunicomn=23.8.@
+Missiriter>=3.2.8
+dash-daqred.5.6
+------------------------------------------------------------------------------------------------------------------------
+= QSDak (C) > Users   gI77209 > git > corebcc-faq-app ~ U Search corence faq-app
+"Name Date moditred Type Sane
+Boas EV2OEE 339 PM File folder
++ git VV DA child 9 38 AM File folder
+B gnnub Fue folder
+A idea Fule folder
+B app Fe toner
+mame Oat Fes & helm Fule fodder
+B venv Fae takes
+ " giugnore 'Mele a aM Text Oocumens
+' * docker-compose ymt a eer oe Yh File
+panad Veer, |" Dockerfite i are et) kde
+@ README mas eR a MO File
+------------------------------------------------------------------------------------------------------------------------
+name: "corepcc-faq-app"
+home' https://github.com/8451LLC/corebcc-faq-app #  TODO: change this to your repository
+version: 1.9.8
+appVersion: 1.8.0
+description: "This helm chart generated by cooklecutter deploys corebcc-faq-app using the SDS reusable-
+api-chart."
+I
+sources:
+- https: //githud.com/8451LLC/sds-api-cookiecutter
+gaintainers:
+- nage: "bcc_data_science"
+email: "bcc_data_science@8451.com"
+dependencies:
+- name: reusable-api-chart
+version; +3.5.8
+repository: "@stable"
+apiversion: v2
+------------------------------------------------------------------------------------------------------------------------
+* OSDek (C) > Users > 9977209   git > corebec-faq-app > helm
+a
+Tens Chat Files
+v Search heim
+Name
+* netmignore
+ony
+a eny-values. yaml
+@ vaiues dev yami
+@ vaues pig yam
+a values.prd yarnt
+BB vaues Stg yarn
+a values.ist yam!
+@ aves yam
+Date mockfied
+7
+ray
+2225 OM
+Type Sar
+HELMIGNORE Fle
+mae FINE
+YAML File
+YAML File
+Yaad File
+YAMA Fie
+VAML Fie
+YAML Fie
+VARI Fie
+------------------------------------------------------------------------------------------------------------------------
+# 00 NOT MODIFY THIS FILE
+@ For wore information on the purpose of this file, please visit the link below:
+a https: //github.com/8451LLC/sds-reusable-workf lows/blob/main/.github/work flows /helm-package-and-
+publish-README .adwenvironment-variable-substitution-and-merging
+a This file will replace values during the GitHub Actions "Helm Package and Publish" work flow
+reusable-api-chart:
+image: I
+tag: "${BUILD_ VERSION)"
+global:
+commonLabels :
+custom.8451.com/profit_stream: "${KBS_LABEL_PROFIT STREAMS"
+custom. 8451. com/program: "${K8S_LABEL_PROGAAM)"
+custom.8451.com/value_stream: "${K8S_LABEL_VALUE STREAM) 
+custom .B451.com/product: "${(K8S_LABEL_ PRODUCT)"
+custom.B451.com/capapility: "$(K8S_LABEL_CAPABILITY)~
+custom.8451.com/team: "${KB8S_LABEL_TEAM}"
+custom.8451.com/contact_product: "${K8S_ LABEL CONTACT PRODUC T)*
+custos.8451.com/contact_team: "${K8S_LABEL_CONTACT TEAM)~
+custos.64S1.com/contact_ technical:  $(KBS_LABEL CONTACT TECr@eICAs 7
+------------------------------------------------------------------------------------------------------------------------
++ OSDek (C) > Users > g977203 > gil > corebcc-faq-app > helm
+"Name
+rr * hetmignore
+a Chartyamt
+a values dev yam
+Bi vatues plg.yamt
+4 wes pd yam
+a values stg yam!
+a4 values. Gtyam!
+@ values yan
+v UY 5earcn heim
+Date modified
+243-2924 325 Pha
+124 153 PM
+wtaQEt 4:25.04
+------------------------------------------------------------------------------------------------------------------------
+giobal:
+commontabels:
+app.kubernetes.io/owner: "gavin.gilcnrist_at_8451.com"
+custom.8451.com/profit_stream: "BCC"
+custom.8451.com/program: "Commercial Insights and Loyalty"
+custom.6451.com/value_stream: "BCC"
+custom.8451.com/product: "BCC"
+custom.8451.com/capability: Build
+custom.8451.com/team: "bcc_data_science"
+custom. 8451. com/contact_proguct: "gavin. gilcnrist_at_8451. com"
+custom.8451.com/contact_team: "bcc_data_science_at_845$1. cos"
+custo. 8451.com/contact_technical: "gavin.gilcnrist_et_8451. com"
+reusable-api-chart: I
+Gausth2Proxy:
+enabled: true
+MameQverrige: oauth2-proxy
+amage:
+repository: docker-all.artifactory.8451. loud/Occ "corey << _faQ_ age. Comemcc fag app
+tag: <overridden-by-pipeline>
+resources:
+requests:
+cpu: 25a
+eanory: 51241
+bamits:
+(mu. $0tn
+------------------------------------------------------------------------------------------------------------------------
+cpu: 50@m
+semory: 1024Mi
+akvSecretsSync:
+keyVault:
+vaults:
+primary:
+vaultName: kv-8451-bcc-dev
+vaultSecrets:
+- name: akv-secrets-sync
+type: Opaque
+Gata:
++ objectName: TmCoreBcc -DATABRICKS- TOKEN
+key: DATABRICKS_TOKEN
+extraEnv:
+- name: AZURE_CLIENT_ID
+valueFrom:
+secretKeyRef:
+name: akv-secrets-store-creds
+key: clientid
+- name: AZURE_CLIENT_SECRET
+valueFron:
+secretKeyRef -
+name: akv-secrets-store-creds
+key: clientsecret
+- ame: AZURE_TEHANT_I0
+valeef rom:
+secretKeyllef ;
+asme; oButh2-proxy-auth
+kay: azure-tenant-id
+------------------------------------------------------------------------------------------------------------------------
+  OSDmk (C) > Users   9977209   gt > corebcc-faq-app   helm ~ OU Search heim
+ust "~   Name Date modified Type .-
+Cy 7 petmignore 4,14:-2926 3.25 OM HELMIGNORE File
+@ Chanyami @7127248 355 OM YAML Fie
+, @ eny-vatues yami 3  ELS GIS Pi YAML Fite
+@ vaiues. dev yam ny re) YAML Fite
+nerve Chet Fen @ values pig yamt ls mae ow YAML File
+@ valves. prd yar TS Ma te Ow TAML File
+@ vatues sig.yamt wolke eM TAML Fae
+' Ne? 4   2 And YAM File
+3a alues.tstyamt
+venemrens  wR t
+puted Vedeos
+------------------------------------------------------------------------------------------------------------------------
+eg me mre
+teers wea
+fT
+. bree ari
+4 pe ee eC wig rtert
+edad
+: beiiertal:
+Mephiddime: corencc-fag-app.aks-ur-pig-internal e451 clued
+------------------------------------------------------------------------------------------------------------------------
+= QSDek (C) > Users   g977209   git > corebcc-faq-app * heim
+vest Name
+ry ~_netmignore
+@ Chanyam
+r | env-values. yam
+@ values dev yami
+@ vars prd yam!
+@D values sig yarn
+a values ULyam!
+@ vases yar
+pated Veders
+ ov
+Sewen heim
+Oate modi fed
+noyt
+eid 25 PM
+or |
+Te Ma 4d abe
+eo ae
+Type
+HELMIGMORE Faw
+YOM File
+YAMA File
+VAML Fede
+VAMA File
+YAML File
+YAMA, File
+WAM Far
+------------------------------------------------------------------------------------------------------------------------
+Bp 00 NOT MODIFY THIS FILE
+@ For sore information on the purpose of this file, please visit the link below:
+@ https: //githud.com/B451LLC/ sds-reusable-workflows/blob/smain/.githud/workf lows/helm-package-and-
+publi sh-README.ad#environment-variable-substitution-and-merging
+a This file will replace values during the GitHub Actions "Helm Package and Puolish" workflow
+ceusable-api-chart:
+image: I
+tag: "S(BUILO_VERSION}"
+giobal:
+commonLabels:
+custom.6451.com/profit_stream: "${K8S_LABEL_PAOFIT STREAM"
+custom.B451.com/program: "${KBS_LABEL PROGRAM)"
+custom.8451.com/value_stream: "${(K8S_LABEL_VALUE STREAM)"
+custem.8451.com/praguct: "${K8S_LABEL_PRODUCT)~
+custom. 8451. com/capability: "$(K8S_LABE _CAPABILITY}~
+Custos.6451.com/team: "${KBS_LABEL_TEAM}"
+custam.@451.com/contact_product: "$(K8S_LABEL CONTACT Padtud 1)"
+custom .9451.com/contact_team: "${K8S_LABEL CONTACT TEAM)"
+custom. 6451.comscantact_tecnnical: "${KBS_LABEL CONTACT TECr@atc aa)"
+------------------------------------------------------------------------------------------------------------------------
+OSDask (6) > Users > 9977209 > git > corebcc-laq-app   helm
+451 Name
+ry * netmignore
+@ Chartyami
+a env-veluesyami
+@B vatues dev.yami
+tanere Chaat Files @B vatues plg. yam
+@ vases pra yarn
+rs) Stg.yaml
+@ vases utyamt
+@ vaves yar
+AS .
+vv
+Sparen helm
+Date modified
+3/13/2024 3.25 Phd
+foo tie S12 PM
+B/LMAEA 2:25 PRA
+tele ast an
+a atts PAs
+now
+"el ee Bae
+re
+Type
+HELMIGNORE File
+YAML File
+YAML Fie
+YAML File
+YAML Fie
+valdl, Fite
+Yahi Fee
+vAML Fie
+------------------------------------------------------------------------------------------------------------------------
+> OSDek (C) > Users > 9377203 > gt > corebec-fag-app ,
+learns Chat Files:
+@ README nd
+3 requiremenu ut
+vO Searrhcorebee fag app
+Date madted
+G922924 5 17 PM
+T12E Zs 938 AM
+Mula 2 le aM
+rr ere oe a)
+to Je Maca   ae at
+Ue Ty. a) te Pee
+------------------------------------------------------------------------------------------------------------------------
++ User > g877208 >  gn > corebcc-laq-app   app >
+a
+learns Chaat Files
+vv
+Name
+B _pycacne_
+B assets
+B pages
+B pages.src
+@ _it_oy,.
+6 App Testing pyro
+a mullpage config py
+@ remone_access conhy py
+Search app
+Oate modtied
+SVB 2026 2 17 Pet
+"at eMe
+ary Feria]
+phot. tse
+ae es a)
+a ee a)
+File tolder
+File folder
+Fue toler
+File folder
+PY Fle
+POMS Fie
+PY Pde
+PY Fue
+------------------------------------------------------------------------------------------------------------------------
+* Users > gSTT208 > gt > corebce-taq-app > app > assets
+a
+" Name
+learns Chat Files
+~ OU Searcn app
+Date modted
+Wertting on at
+------------------------------------------------------------------------------------------------------------------------
+= QSDek (C) > Users > 9377209   git > coreber-faq-app   app
+at
+learns Chat Fades
+"Name
+_pycacne_
+= assels
+t pages
+  pages_sre
+* ann py
+@i App Tesung ipynd
+a mulupage conhg py
+@ remote access contig py
+vu
+Date modified
+Bh e785 bs
+wt
+Type San
+bir Oger
+peepee =" Fay rath,
+510 tide
+Foe te der
+om Fae
+PONS Fle
+Py Ee
+oN hte
+------------------------------------------------------------------------------------------------------------------------
++ Users > g37T209 > git > corebcc-faq-app > app > pages
+ed
+warns Chat Flex,
+"Name
+B _pycache_
+@ check tic.py
+; ante nese
+@B home py
+~ UO Sraren pages
+Date modified
+File folder
+PY Fie
+PY Fle
+OY Fite
+PY Fle
+------------------------------------------------------------------------------------------------------------------------
+from dash import register_page
+import dash_helpers
+@ Register app page
+register _page(__name__, path="/check_ltc', mipmes "Check Tc')
+@ Get page layout ana initialize callbacks
+layout = dash_helpers.set_up_page( 'check_ltc')
+------------------------------------------------------------------------------------------------------------------------
+. > gS77209 > gt > corebcc-laq-app > app > pages
+" Name
+$1
+2 _pycacne_
+@ check cpy
+@ check receved.py
+@ cxample_page py
+5 @ nome py
+'eerns Chan Fides
+waned Vedeos
+vv
+DRAIN pages
+Fue folder
+rite
+PY Fite
+Pr Fie
+PY File
+------------------------------------------------------------------------------------------------------------------------
++ User > g977208 > gn > coredcc-faq-epp   ang ? ve
+ast "Mame
+s B _pycacne_
+A assets
+&@ pages src
+4 a it py
+'pews Che Fics
+@ App Tesungipynd
+@ mulupage config py
+@ remore access conta py
+Searcn app
+------------------------------------------------------------------------------------------------------------------------
+> Users > 9977209   git > corebcc-fag-app   app > ~ Us Search app
+wet "Name Date modified Type om
+ry B _pycache_ 4/18/2024 317 PM File folder
+AB assets S/T 1/2724 332 Pha File tokdes
+' Bh pages e182 218 PN Fie folder
+B pages src 7h. uola 16 PM File fakes
+om Fle ads a ernamn rams
+@ Apo Testing.ipynd eka 19M
+@ mutupage config py 'isrice 6 aM PY Fae
+F remate_accesi_config py "* US lat owe PY Fle
+yonnd Vedens
+------------------------------------------------------------------------------------------------------------------------
++ OSDwk (C) > Users > g377209 > git > corebec-fag-app > app
+a
+yataal Videos
+vu
+Name
+B _pycache_
+@ assets
+B pages
+pp testing igre
+@ mutupage config py
+@ remove access config py
+Search app
+Date moditied
+6/98/2924 3 17 PM
+G12304 233 Pw
+Pier teers ee
+eth 2
+WIE  33
+cliente Bd |
+w
+'plas me
+Type i
+File folder
+File folder
+File folder
+oY Fie
+Ov Fae
+------------------------------------------------------------------------------------------------------------------------
+"cells": [
+(
+"cell_type*: "code",
+"execution_count": 1,
+"outputs": (],
+"source": [
+"import sys\n",
+"sys.path.insert(@, "C:\\\\Wsers\\\\g977209\\\ \git\\\\corebec - faq-aopi\ veemv\ALLLID\A\\site-
+packages)"
+ba
+1.
+"metadata": (
+"collapsed*: false,
+"pychare": {
+"name": "#EK\n"
+}
+)
+>
+"cell _type": "code",
+"enacution_count": 2,
+"emcees: {
+"name": "stdout",
+"output type": "stream",
+"tant": [
+"Dash app running on http: //127.0.6.1:8088/\n"
+------------------------------------------------------------------------------------------------------------------------
+}
+}
+).
+"source": (
+"from dash_helpers import notebook_test\n",
+"app = notebook_test()"
+).
+"metadata": {
+*collapsed": false,
+"pychara": (
+"name". "#%\n"
+}
+d
+}
+1
+* data": {
+"kernelspec"": {
+"display_name": "Python 3 ,
+"language": "python",
+"name": "python3"
+},
+~ Lenguage_info" {
+"codemirror_ande": (
+"oame":   "
+"version". 2
+fe
+"#ile_ewtension"-  .py",
+"aumetype": "text /x-python",
+------------------------------------------------------------------------------------------------------------------------
+)
+"metadata": {
+*kernelspec": {
+"displeay_name": "Python 3",
+"language": "python",
+"name: "python3"
+},
+"Language_info": {
+"codemirror_eode": {
+"name": "ipytnon",
+"version": 2
+)
+"#ile_extension": ".py",
+"mimetype": "text/x-python",
+"name": "python",
+"abcoevert_exporter": "python",
+"pygments_lexer": "ipytnon2",
+"weraton":  2,7.6"
+I
+"neformat": 4,
+"aptormat_piner": @
+------------------------------------------------------------------------------------------------------------------------
+~ OSDak (C) > Users   9977209 > git > corebcc-faq-app > app ~ U Search app
+wot io Name
+B _pycache_
+B asses:
+A pages
+B pages src
+laama Chet Files Sm
+a mufupage. config py
+@ remote access. config py
+Date modited
+6 1RZT24 2 17 Phd
+AVS 342 PM
+GTR la 18 Oe
+"Ua chat te ona
+------------------------------------------------------------------------------------------------------------------------
+wultipage_config = (
+'title': 'Core BCC Frequent Requests app',
+'pages': [
+(
+'id';
+'name'
+"gesc'
+stores',
+i
+{
+'id':
+'name'
+"desc"
+).
+{
+"id':
+"name':
+"gesc*:
+}.
+is
+'hidden': True
+"example_page',
++ 'Example Page',
++ 'A simple example of an app page: Select a Kroger store and see the 16 nearest Kroger
+"check_received', :
+: "Check Offers Received',
+: "Check LCM/MM offers allacated by Kroger (ara ~ummer, a ahether they redeened.',
+"check_received_multi',
+"Check Campaigns Received',
+"Check LCH/MM eligibility and campaigns receives Sy Lroger Card number',
+------------------------------------------------------------------------------------------------------------------------
++ Q6Dek (C) > Users   g977209 > git > corebcc-fag-app > app v U Searcn app
+"Name
+s B _pycacne_
+B assets
+% pages
+A pages_src
+@ _inn_py
+a App Testing ipyno
+3a remotm_access_ confay py
+Date modtied
+KIBQG24 317 PM
+QVLI24 333 OM
+GIRLS 1a Pe
+2 Re. 19 OM
+RA S18 Oe
+TIS D la on Pe
+iti
+2
+------------------------------------------------------------------------------------------------------------------------
+remote access_config = {
+*AZURE_TENANT_ID : *5f9dc6bd-f3Ba-454a -864c -c863691193 c5",
+"AZURE_CLIENT_ID': '864cf30c-17fd-4cb4-aleb-dbeadf2@b7bd",
+*AZURE_CLIENT_SECRET': {'kv": 'https: //kv-8451-bcec-dev.vault.azure.net/",
+'name': 'corebcc- faq-app-AZURE-CLIENT -SECRET'},
+"DATABRICKS HOST": "adb-6644860184957510. 18. azuredatabricks.net',
+"DATABRICKS_HTTP_PATH': */sql/1.@/warehouses/cd96d59dc Zef fete',
+"DATABRICKS_TOKEN': ({ kv': 'https: //kv-8451-bcec-dev.vault.azure. ret',
+'name': 'TmCoreBcc -DATABRICKS -TOKEM' },
+------------------------------------------------------------------------------------------------------------------------
+  QSDek (C) > Users   9977209   git > corebcc-faq-app > app v U Search app
+wst "~ Name Oate modified Type me
+. B _pycache_ G/1B/2024 217 PM Fue folder
+& assess QULTEIa 97 OM Fite folder
+' B pages GTR TCM P19 PM Fue folder
+3 pages_src 3) 5S + 16 PM File folder
+tears Chen Fes @ im_ py Panay EEE) PY Fle
+@ App Testing pyre ce De SE 2 1PvN8 Fle
+"TRA te PY Fae
+a multipage config py
+fa prt accom cong py nwaminne =e TET
+yaad Viens
+------------------------------------------------------------------------------------------------------------------------
++ OSDneck (C) > Users >  99772039   git > corebec-faq-app >  app ~ U Srarcn app
+a
+wat Name Date modified Type sae
+ry B _pycacne_ k.S22028 917 PM Fle Polder
+B assets 6UP LI a 3s PM File folder
+' pages File folser
+B pagers,
+a __!nit_ py Py Fle
+joarme Cran Fales
+@ App Tsung ipynd IPE Fle
+a Mmullipage config py DY File
+Y Fie
+@ remone_access cong py
+------------------------------------------------------------------------------------------------------------------------
+caliback_triggers = [
+('store select', 'value'),
+}
+tables_config = {
+"closest_stores_taple': {
+*body_cell_style': {
+'font-size': '14px',
+"text-overflow': 'ellipsis',
+},
+"header_celi_style': (
+'font-size': "14px',
+),
+},
+table_columns_config = (
+'closest_stores_taple'. {
+{
+"column': 'store code',
+'label': 'Store Number ,
+*wioth'. 108,
+}
+{
+'column': 'store_nana',
+'Lebel' 'Store Hane',
+------------------------------------------------------------------------------------------------------------------------
+HF
+,
+"column': 'store_code',
+"label': "Store Number',
+'width': 100,
+"column': 'store_nane',
+*label': 'Store Name',
+'wicth': 208,
+'column': 'address',
+*Jabel': 'Store Address'
+'width': 480,
+"column': 'city',
+"Label': "City',
+'width'; 158,
+'column': 'dist',
+"Label*: 'Miles Away',
+'width'; 128,
+"mam_fat': 'numper-2 ,
+------------------------------------------------------------------------------------------------------------------------
+-ga> corebee faq-app > app > pages.sre > exampie_ page
+ast
+jeemne Chat Files
+Name
+& _pycacne_
+2 tuncuons
+a layout py
+Search esample page
+ah
+Cate rodified
+------------------------------------------------------------------------------------------------------------------------
+ rom dash import dcc, htal
+import dash_bootstrap_components as dbc
+import dash_helpers
+layout = hts) .Div(
+html .N6(chiloren="Store:",
+style={'position': 'absolute',
+'top': '2@px","Jeft': '12px',
+"font-family': ['Arial', 'sans-serif']}),
+dec .Dropoown(id='store_select',
+sulti=False,
+placeholder='Select Store',
+style={'position': 'absolute',
+"top': "6px",
+"left': '48px",
+'width': "58@px",
+"color':  8212121')),
+dash_helpers.get_tabdle( 'closest_stores_ table',
+cell_selectavle=False,
+styles{"top': "64px",
+'left': 'I2px',
+"pottom': 'S@px'}),
+1.
+style={
+'position': 'absolute',
+"top': '"@px',
+"bottam': '@px',
+"left': "Opx',
+"rignt': '@px',
+'padding': '12px",
+'text-align': 'left',
+"packground-color': '#EEEEEE' ,
+------------------------------------------------------------------------------------------------------------------------
+> ga > conebec-faq-epp > app > pages sic example_page ~ U Searcn example page
+ast "Name Cate modified Type co]
+& B  _pycache_  12 2524 18 OM Fue folder
+B funcuons 6 ULSLa PM Fae folder
+' @ config py Qt) cas eM PY Fle
+a tayour py oreaanes 133 et Pr Re
+feares Chas Files
+puted Videos
+------------------------------------------------------------------------------------------------------------------------
+def on_entry(self):
+Triggered on page load.
+8 Populate list of clients in client select dropdown
+self.get_store_list()
+I
+store_select(self)-
+Trigger: Selection made from store list dropdown.
+if self.app_state["store_select.value'] 15 not Hone:
+self .on_store_select()
+------------------------------------------------------------------------------------------------------------------------
+- combct-feq-app > app > pages.src   example page > functions
+vO Search turet ons
+51 ~ Name - Date modified
+ry BA _pycacne_
+i app_tuncs So Lb 4 ds Phd
+' FB vigge yy erryame 133 Pas
+learns Chat Files
+vated Veieos
+------------------------------------------------------------------------------------------------------------------------
+def get_store_list(self):
+Standalone callback to refresh store list dropdown on arriving at page.
+query = f ""
+SELECT DISTINCT store_coae||' '| |Ban_nam_tx AS store
+FROM core_data_products_prd.acds_store.store
+WHERE current_flag IN('Y', 'true')
+AND sto_opn_fl == 'Y*
+AND sto_fnc_tx == 'RETAIL"
+AND sto_mjr_typ_tx IN(*COMBINATION', "MARKETPLACE, 'S.OEM FOOD", "FRESH FARE', "ONE STOP
+SHOPPING' }
+ORDER BY store
+options = self.app_aata.sql(query)[ store'). tolist;)
+self .app_state['store_select.options'] a aptions
+------------------------------------------------------------------------------------------------------------------------
+- agp) pages.
+wast
+'ears Chat Fries
+sc) example_page * functions > app_funcs
+hs
+Name
+a _pycache_
+ D ger store jist py
+@a On_store_setect py
+Seurer app funcs
+Gate mod. fied
+A 19 Ee
+6/11/2024 332 OM
+67
+Bae
+24252 PM
+Type
+Fue fotder
+Ov Fle
+PY File
+------------------------------------------------------------------------------------------------------------------------
+def on_store_select(self).
+Return data for table containing list of stores within S miles of target store
+query =  7""
+SELECT m.store_code,
+@.store_name, I
+m.address,
+a.city7918 = ASIN(LEAST(1, SQRT(POWER(SIN((m. lat - t.lat) / 2}, 2)
++ (COS(t.lat)   COS(m. lat)
+" POWER(SIN((@. long - t.long) / 2), 2))))) AS dist
+FROM (SELECT store_code,
+van_nam_tx AS store_name,
+sto_str_adr_tx AS address,
+sto_cty_nam_tx AS city,
+sto_lat_cd / 186 * PI() AS lat,
+sto_lon_cd / 186   PI() AS long
+FROM core_data_products_prd.acds_store. store
+WHERE current_flag IN('Y', 'true')
+AND sto_opn_fl == 'Y 
+AND sto_fnc_tx == 'RETAIL
+AND sto_mjr_typ_tx IN( "COMBINATION, "MARGE TPL mE,
+SPER FOOD', "FRESH FARE', 'OME
+STOP SHOPPING')
+AND store_code [= '(self.app_state[ 'store select. vaive').salse()(@}}") a,
+(SELECT store_code,
+sto_lat_cd / 188 * PI() AS lat,
+sto_lon_cd / 18@ * PI() AS long
+FROM core_data_products prd.acds store. store
+WHERE current_flag IN('Y', 'true')
+AND store_code  = '{self.app_stete( store select. value'). split()[@}} )  
+OADEA BY dist
+LIMIT 10
+self .app_state['closest_stores_tavle.data']   self. app_data.saqi(query)
+------------------------------------------------------------------------------------------------------------------------
+= src > exampte_page > funcuons > app.funcs
+- * Name
+. & _pycacne_
+@ get store hist py
+@ on nore setectpy
+'omnes Chat Files
+pated Vedoos
+~o
+Sparen apg tunts
+Cate mocfed
+ba TSA OME
+"las BMS
+ertyame 233 Pe
+Type
+Fie folder
+Py Fie
+------------------------------------------------------------------------------------------------------------------------
++ Users > g877209 > gt > corebcc-faq-app   app > pagessr > 
+'ienen Chat Fates
+pared Videos
+Name
+B check Itc
+Bh check received [>
+Bo check_recerved_mum
+  eampie page
+A my_app_page
+vu
+Search pages srr
+Cate modified
+TIES Ela 1B PM
+11/2004 3 23 Pt
+wre tle tte Pe
+Gans 3.23 Ft
+el Dua a ee
+Type Sar
+Fie folder
+File Solder  
+Fie fokder
+------------------------------------------------------------------------------------------------------------------------
+callback_triggers = [
+('card_input*, 'value'),
+('avail_cawpaigns_ table', 'active_cell'),
+('eet_aata_button', 'n_clicks'),
+tables_config = {
+'avail_campaigns_table': {
+"body_cell_sryle': {
+*font-size': '14px',
+"next-overflow': 'ellipsis',
+"border-left': 'lpt solid #D30303 ,
+'border-right': 'lpt solic #030303",
+"porder-top': '1pt solid #030303",
+'border-bottom': 'lpt solid #D303D3',
+}
+"header_cell_style': {
+'display': 'none',
+},
+"neader_row_style': {
+"heignt': '@px',
+ys
+',
+"results table': {
+"pody_cell_style'. (
+"fant-size': "L px',
+"test -overflow': 'ellipsis',
+------------------------------------------------------------------------------------------------------------------------
+*text-overflow': 'ellipsis',
+).
+'neader_cell_style': (
+'font-size': '14px",
+),
+).
+table_columns_config = {
+"avail_campaigns_table': [
+'column': 'campaign',
+'lapel': "Campaign',
+"width': 368,
+'estyle': (( {rnl_flag} = 1 , ('background color' ssFbF@e }+,
+'column': 'rnl_flag',
+'widen': 6,
+}.
+'results_table': (
+'column': 'campaign',
+'label': 'Campaign',
+'width'. 128,
+------------------------------------------------------------------------------------------------------------------------
+'widtn': 128,
+'estyle': [('(campaign_rpt_flag} = 1 ,
+('color': 'transparent',
+'border-top': "ipt solid wFFFFFF'})),
+im
+{
+'coluan': "ehhn',
+'label': 'Household ID',
+"width': 128,
+*estyle': [('(ennn_rpt_flag) = 1 ,
+{'color': "transparent',
+'boraer-top': 'lpt solid eFFFFFF'})},
+}.
+(
+"coluan': 'channel',
+"label: 'Channel',
+'width'; 88,
+"estyle': [('{emmn_rpt_flag)  = 1 ,
+{('color': 'transparent',
+"border-top': "lpt solid SFFFFFF >)),
+)
+{
+"colvan'; 'Nhgroup',
+'label': 'Yest/Control',
+'width'; 180,
+'cotyle': (('(ehnn_rpt_flog) = 1 ,
+('color'. 'transparent',
+'porder-top'; 'lpt solid aFFRFFE'})),
+------------------------------------------------------------------------------------------------------------------------
+'border-top': "1pt solid #FFFFFF'})},
+"column': 'coupon',
+'Label': 'Coupon',
+'width': 686,
+'estyle': (('{ehnn_rpt_flag} = 1",
+{"border-top': "ipt dotted #89B9B9'})),
+'column': 'redeemed',
+"label':
+'Redeemed?',
+'width': 188,
+*estyle
+"column
+'label':
+'width':
+'estyle': [(' (ehnn_rpt_flag) = 1 ,
+'column':
+'width':
+'column
+'width':
+: [C'{ennn_rpt_flag} = 1 ,
+{'border-top': '1pt dotted #898989'))]),
+: 'red_date',
+'Redemption Date',
+10@,
+{'border-top": '1pt dotted #696989" )3},
+"campaign_rpt_fiag',
+a,
+: 'ehhn_rpt_ flag',
+e,
+------------------------------------------------------------------------------------------------------------------------
+- gA > coredcc-feq-app   app * pages sic > check receved
+a
+asi
+jaumes Quant Files
+pated Videos
+Name
+B _pycache_
+B functions
+~ Uo Sean cneci recened
+Date modified
+12-274 118 PM
+Bo Ea 2a PM
+Gfisaas 333
+atl le
+------------------------------------------------------------------------------------------------------------------------
+from dash import dec, ntml
+import dash_bootstrap_components as dbc
+import dash_helpers
+layout = html .Oiv(
+html] .H6(children='Card Number:*,
+style={"position': 'absolute',
+'top': '26px',
+'left': "12px',
+*font-family': ['Arial', 'sans-serif' })),
+dec. Input(id="card_input",
+type="text',
+debounce=True,
+autoFocus=True,
+autoComplete= 'off',
+style={'position': "absolute',
+'top': "6px",
+'left': '140px',
+'width': 'S@6px')),
+htm) .H6(cniloren='Select Campaigns: ',
+Styles{"position': 'absolute',
+"top": '72px',
+'Left's "12px',
+*font-family': ['Arial', 'sans-serif '))),
+Gash _helpers.get_table( "avail campaigns table',
+Stylee('top':  164px",
+"Left': '6@px",
+------------------------------------------------------------------------------------------------------------------------
+'left': '60px',
+"neight': "2@6px'}),
+htal .Button(id='get_data_button',
+children='Get Data',
+n_clicks=8,
+disabled=True,
+style={'position': 'absolute',
+'top': ""320px",
+"left': '12px",
+'widtn': '200px")),
+dash_nelpers.get_table( 'results table',
+cell_selectablecFalse,
+style=('top': '38@px",
+'left': '30pa',
+*pottom'': 'S@px'}),
+dash_helpers.misc. loading _message(id=* loading aessage
+1
+style={
+'position': 'absolute',
+'top': *Opx",
+*bottog': 'Bpx',
+'Left': 'Opx ,
+'right': "Qpx ,
+'padding': "l2px',
+"tent-align': 'left ,
+------------------------------------------------------------------------------------------------------------------------
+~ O Ceara check recewed
+~ gh ? corebct-laq-app > app   pages. * check_receved
+Name Date mud. hed Type sae
+wat
+ry & _pyceche_ OF Bia i 18 PM File toier
+B tuncuons eT Deb F272 OM Fie foiches
+PY File
+@ config py . wor. a eM
+'Roe
+lanes Chat Filles
+pated Veciocs
+------------------------------------------------------------------------------------------------------------------------
+~ Qe: CHEK Cay agr em aps Mages ae! wicheck recened
+a
+Name
+(que Chun Files,
+yeted Victor
+~U  Sesrch check recewed
+Cate modified
+'Wortung on  
+------------------------------------------------------------------------------------------------------------------------
+def on_entry(self):
+Triggered on page load.
+@ Populate List of selectable campaigns
+self .get_avail_campaigns()
+# Rewove "Loading Data..." message
+self .app_state[' loading_message.hidaen'] = True
+def card_input(self):
+Trigger: Value entered into Card Number input box.
+@ Enable/disable Get Data button
+self .update_getdaata_button_status()
+avail_campaigns_table(self):
+Trigger: Click on avail_campaigns_table.
+@ Update highlignted rows in avail_campaigns_tabdle
+self .update_row_hl_avail_campaigns()
+  Enable/disable Get Data button
+self .upaste_getdata_button_status()
+get _Gata_button(self):
+Trigger: Click on "Get Data" button.
+@ Extract data for mhids linked to selected card, for selected campaigns
+wel? get _requasted_cata()
+------------------------------------------------------------------------------------------------------------------------
++ ape > pages_src > check recewed > fu .
+wisi
+a
+Name
+A _pycache_
+A app.tuncs
+Bh wigger.py
+yO Search furcuors
+Date modihed
+tL Dia tie OM
+~ envy e7 Ps
+Type
+File bolder
+File folder
+weet
+------------------------------------------------------------------------------------------------------------------------
+def get_avail_campaigns(self):
+Populate list of available campaigns on arriving at page.
+query = 6 "
+SELECT DISTINCT campaign I
+FROM comms_media_dev.core_bcc.faq_tables_list
+WHERE alloc_redemp == 1
+ORDER BY campaign
+avail_caspaigns = self.app_data.sql (query)
+avail_campaigns['rnl_flag'] = @
+self.app_state['avail_campaigns_table.data'] = avail campaigns
+------------------------------------------------------------------------------------------------------------------------
+* app > peges.src > check recewved > funcuons
+a
+lasens Chat Files
+> app_funcs ~ OU Search app funcs
+Name
++ _pycache_
+Biri. compaignspy ~
+@ get requested_data py
+@ update _getdata_button_surtus py
+4 update_row_fl aval campmgrs Dy
+Date modified
+6192528 2 1B PA
+Wesamaa 116 Pe
+------------------------------------------------------------------------------------------------------------------------
+> agp > pages.src > check received >  functions   app funcs vU Search app func:
+ast "Name Cate madihed
+r. B _pycache_ 6.19  202d 218 PM
+3a get_avail_campaigns py wo ord 116 eM
+5 BD geurequested.smap:, FURS ONDA 1 16 Pld
+@ update _getdas_pution stuns py a etee Meee
+. Fes i a update_row_hl_evael_campagrs py a sd
+vated Vaieos
+------------------------------------------------------------------------------------------------------------------------
+import numpy as np
+import pandas as pd
+def get_requested_data(self):
+Extract data for hhios linked to selected card, for delected Campaigns.
+@ Get unique list of nnds linked to selected cara
+cardnum = self.app_state['card_input.value')[-:11]
+query =  """
+SELECT DISTINCT m.ennn
+FROM (SELECT DISTINCT ennn_gp
+FROM comms_media_dev.core_bcc. fag card enna wi
+WHERE cus_act_no == "{caranum)') g
+INNER JOIN comms media _dev.core_ occ. faq card_emas 1) B OM g ennn_gp = a.ehhn_gp
+ebnns = self.app_aata.sql(query)('ehhn'}.drop_ duplicates, '!.talbist,?!
+ehans_txt s ', '.join({[f""(i} " for 1 in ennns])
+if len(enhns)   @:
+8 Get list of selected campaigns
+campaigns = self.app_state[ 'avail campaigns tadle.data')\
+-query("chl_fleg == 1 }| 'campaign' }\
+-drop_duplicates().tolist()
+Campaigns txt 2 ', '.join([f'''(c}'* for c in campaigns))
+  for hhds for selected campaigns
+@ Extract d
+------------------------------------------------------------------------------------------------------------------------
+8 Extract data for hnas for selected campaigns
+query = f""""
+SELECT a.campaign,
+a.ehtn,
+a.channel,
+a.hngroup,
+a.coupon_id||" - "||d.description AS coupon,
+CASE WHEN a.redeem_flag = 1 THEN 'VY' ELSE "W  END AS redeemed,
+a.red_aate
+FROM (SELECT campaign,
+ehhn,
+channel,
+hngroup,
+coupon_id,
+redeem_fiag,
+red_aate
+FROM comms_media_dev.core occ .feq alla ~eaeep
+WHERE campaign IN({campaigns (xt})
+AND ehhn IN((ennns_txt})) @
+INNER JOIN (SELECT campaign,
+coupon_id,
+description
+FROM comms _media_dev.core_d c. tag offer details
+WHERE campaign IN((campaigns_tat})) @ ON a.campaign = d. campaign
+a a.coupon_id = d.coupon_ia
+result c self .app_data.sql{query)\
+-bort_values(bys[ 'campaign', "ennn', "coupon'])\
+------------------------------------------------------------------------------------------------------------------------
+.sort_values(by=('campaign', 'ehnn', "coupon'))\
+.Peset_index(drop=True)
+@ Add repeat value indicators for campaign and ehhn, to enable conditional border formatting
+ept_campaign = np.append((@),
+(result{ 'campaign' )(1:].values
+sz result[ 'campaign' }(:-1).values).astype(int))
+rpt_ehhn = np.append((@),
+(result('ennn' )[1:). values
+z= eesult({'ehhn'){:-1). values). astype: int: *
+result({'campaign_cpt_flag'] = rpt_campaign
+result("ehnn_rpt_flag') = np.minimum(rpt_campaign, cpt enmn
+else:
+result = pd.DataFrame(({""{k: [  ] for w in ('campaign ,
+'enna,
+'channel'.
+"nngroup: .
+coupon,
+'codec,
+"red_date'}},
+""({k: [6] for k in { 'campaign rpt flag',
+"pan_rpt flag' )))) (50)
+8 Pusm to app state
+self app _state['results_tabdle.data'] = result
+------------------------------------------------------------------------------------------------------------------------
++ spp > pages_oc > check_recewved > funcuons > app _funcs ~ UYU Searcn app tuncs
+a
+st Name
+- B _pycache_
+3a get_avail_campaigns. py
+@ update_getders bution sists pe
+cua fia a update_row hava campers py
+yraned Vedecs,
+Date modified
+& 18 D028 2 18 PM
+a8 115 OM
+VIIA 1
+SVL | 25 Pe
+------------------------------------------------------------------------------------------------------------------------
+fief update_getdata_button_status(self):
+Update enabled/disapbled status of Get Data button.
+1f len(self.app_state['card_input.value'] or "*) > O\
+and self.app_state({'avail_campaigns_table.data']('rnl_flag'}].max() > @:
+self.app_state['get_data_button.disabled'] = False
+else:  
+self .app_state[get_data_button.disabled') = True *
+------------------------------------------------------------------------------------------------------------------------
+> app > peges.src > check recewed   functions   app_funcs v U Search app tuncs
+enme Chat Fes
+posed Videos
+a
+Name
+R _pycache_
+@ get_svail_campagns py
+3 Get_requested_ dats py
+@ update getdate bution stam py
+a update_row_hi_aval_carnpegra py
+Date modfed
+6/18/2524 3 18 PM
+Ti25 ZuZd 116 PM
+1) Zh ITS ETE Pee
+Oya 333.
+&7 GEG 3 5) OM
+rege ai
+------------------------------------------------------------------------------------------------------------------------
+def update_row_hl_avail_campaigns(self) :
+Update hignlighting flag columns in avail_campaigns_taple.
+@ Identify clicked row
+active_cell = self.app_state['avail_campaigns_taple.active_cell']
+4f active_cell is not None:
+rel = active_cell['row']
+@ Get table as Panaas OF I
+df = self.app_state[ 'avail _campaigns_table.aata']
+@ Update highlighting in clicked row
+d@f.loc{rel, 'rhl_flag') = 1 - df.loc(rcl, 'rnl_fieg'}
+@ Push df back to app_state
+self .app_state['avail_campaigns_table.data')  + df
+ @ Deselect table cells
+self .app_state('avail_campaigns_table.selected cells } + {J
+self .app_state['avail_campaigns_table.active cell') =  Mone
+------------------------------------------------------------------------------------------------------------------------
+- app > pegessm > check recewed   functions
+a
+> app_funcs ~U Search app funcs
+Name
+B _pycache_
+@ get_avail_campaigns.py
+a gel_requested_data py
+@ update_getdats burton sumus py
+@} update_ sow ji_pval_compegpapy
+Date modihed
+6/18 2724 318 PM
+728116 PM
+"ist
+"APM
+------------------------------------------------------------------------------------------------------------------------
+* \ners > QO77209 > gn > coredcc-faq-app >  app > pagessre >
+a
+ast Name
+. & check Itc
+. = sel
+\ & check receved mutt
+B example page
+mya
+faes y.8pP page
+Feted Vieos
+~v
+Searen payes or
+Gate roatied
+th  18 16 PM
+O/E24 3.33 Pt
+tel lta te PM
+Lf ow
+" 2.2
+Type Som
+File fokder
+Fae folder
+Fle loader
+Fie tomer
+------------------------------------------------------------------------------------------------------------------------
++ qarebce-leq-app > app > pagessrc > check recerved_mult: >
+a
+ware Chat Pics,
+pated Velecs
+Name
+B functions
+a couflg.py
+@ iayourpy
+v UU Search cneck_recewed_mull
+Oate modfed
+1925 Wa 116 OM
+12S 2ols 3 16 Pt
+VR Mid 116 Pid
+Fde folder
+PY File
+PY File
+------------------------------------------------------------------------------------------------------------------------
+callback triggers = [
+('card_input_single', 'value'),
+('card_input', 'contents*),
+('avail_campaigns_table', 'active_cell'),
+('get_data_button', 'n_clicks'), I
+('show_nonlinked_switch', 'on'),
+('downloag_button', 'n_clicks'),
+}
+store_components = [
+'card_numbers',
+"card_list_id',
+*nidden_results',
+tables config = {
+"pvail_campaigns_taple': (
+"pody_cell_style': {
+"font-size: 'lapx',
+"text-overflow': 'ellipsis',
+'perder-left': "lpt solid #D03D3D)',
+"berder-right': "1pt solid #03D3D3",
+"porder-top': 'Ipt solid #D3D30}',
+'porder-bottos': 'ipt solid #030303",
+i
+header call style' (
+------------------------------------------------------------------------------------------------------------------------
+"'neader_cell_ style': {
+'display': "none',
+}.
+'header_row_style': {
+'height': "@px',
+iD
+},
+'results table': {
+*pody_cell_style': {
+*font-size': "14px",
+"text-overflow': 'ellipsis',
+}
+"header_cell_style': {
+"font-size': "l4px ,
+}.
+}.
+table columns_config = {
+'avail_campaigns_taole - [
+(
+'colusn': "campaign',
+'Label': 'Campaign',
+'width': 300,
+c tyle': ({('(rml_fleg)    1 , ('background-color': 's fFFOO'})),
+}.
+------------------------------------------------------------------------------------------------------------------------
+*column':
+'widtn':
+}
+1
+*results_table':
+{
+"column' :
+"label":
+'width':
+"estyle':
+"column: 'valid_card_id',
+"label:
+'widtn':
+*cstyle':
+'column':
+* Label':
+'width':
+"catyle'
+"chl_flag',
+8,
+"input_card_number',
+'Input Card Nuaber',
+168,
+(('{cara_rpt_flag) = 1 ,
+{'color': 'transparent',
+'porder-top': 'lipt solid #FFFFFE )}},
+"Valid Cara ID',
+198,
+CC' (cara_rpt_flag)   1 ,
+('color': 'transparent',
+"porder-top': '1pt solid @FFFFFF ))),
+'campaign',
+'Campaign',
+120,
++ CC (cap_rpt_flag) = 1,
+{'color': 'transparent',
+------------------------------------------------------------------------------------------------------------------------
+{'color": "transparent',
+'porder-top': 'ipt solid #FFFFFF'}),
+('(emp_rpt_flag} =   && {card_rpt_flag} = 1 ,
+{'boraer-top': 'lpt dotted #89B989"))],
+),
+{
+'column': 'ehhn',
+'Llabel": 'Household ID",
+'width': 120,
+"estyle': (('{cmp_rpt_flag} = 1',
+{'border-top': "1pt solid m#FFFFFF')),
+C'(cmp_rpt_flag) = @ && (card_rpt_flag} - 1.
+{'border-top": "1lpt dotted #898969" )),
+('{ebhn_at_targeting_ flag)   @',
+('background-color': *#C00@06"})]).
+,
+{
+'column': 'eligible',
+'lapel': 'LCM Eligibility',
+'width': 128,
+"estyle': (('{cmp_rpt_flag} >  1 ,
+{'boraer-top'. '1pt solia #FFFFFF >},
+C' (emp_rpt_flag})   8 QA (cara_rpt_ flag}  1 ,
+{'border-top': '1pt dotted #698988')),
+(' (ehnn_at_targeting_fiag) = 6 .
+{ 'background-color': 'scOO0@D6 '})].
+}.
+------------------------------------------------------------------------------------------------------------------------
+"column':
+"label':
+'width":
+"estyle':
+"column':
+"label*:
+'width'
+'estyle*:
+*column' -
+* Lebel':
+'width':
+'estyle':
+'long_term_control',
+'In Long Term Control?',
+80,
+(C (cmp_rpt_flag) = 1 ,
+{'border-top': 'ipt solid #FFFFFF'}),
+('{emp_rpt_flag} = @ && (card_rpt_flag)
+{'border-top': '1pt dotted #898989")),
+('{enhn_at_targeting_ flag) = @',
+('background-color': 'sC00@06"))),
+"event_control',
+'In Event Control?',
+: 88,
+(C' (cmp_rpt_flag) = 1 ,
+{'border-top': "1pt solia #FFFFFF  )y,
+('{emp_rpt_flag}) = @ @& ({cara_rpt elag) = 1 ,
+('boraer-top': "1pt dotted #898989" )),
+('(ennn_at_targeting flag)   @ .
+('background-color': '#C00@06"))}.
+'cnannel',
+"Cnannel',
+a,
+(C' (cmp rpt_flag)  1,
+{'border-top': 'Ipt solid @rrrrre')),
+------------------------------------------------------------------------------------------------------------------------
+),
+{
+{'boraer-top': '1pt solid WFFFFFF'}),
+C' (emp_rpt_flag} =   8& (card_rpt_flag} = 1",
+{'border-top': "1pt dotted #B9B989'}),
+('{ennn_at_targeting_flag) = 8",
+{'background-color': '#sCODD6*})},
+*column': 'coupons_received',
+'label': 'Total Coupons Received',
+'width': 122,
+'estyle': (('(cmp_rpt_flag} = 1 ,
+{'berder-top': 'lpt solio #FFFFFF )>+,
+C Cemp_rpt_flag} = 6 && (card rpt_flag) = 1 
+{'border-top': 'lpt dotted 8898989 ;),
+('({enhn_at_targeting flag) > 6 ,
+{'background-color': 'sCD0@D6"})),
+*nanm_fat': 'numbe}.
+\.
+'column': 'coupons_redeemed',
+'label': 'Total Coupons Redeemed',
+'width': 126,
+'estyle': {(' {cmp_rpt_flag} = 1 ,
+{'border-top': 'pt solid #FFFFFF'}),
+('{emp_rpt_flag) =   && (card_rpt_flag) = 1 ,
+('border-top': "1pt dotted #898989")),
+(*(ennn_at_targeting_flag) = @ ,
+{'background-color': '#C00006"))),
+'num_fmt': 'number-@",
+"coluan': 'ehnn_at_targeting_ flag',
+"widtn': @,
+column': 'card_rpt_flag',
+'width': @,
+'column': 'cap_rpt_flag',
+'width': 6,
+------------------------------------------------------------------------------------------------------------------------
+7 ga > corebec-fag-app > spp > pages_sic >  check_receved_mulu vs Searen cneck teceved mulb
+wt "Name Date modified Type om
+- B functions VIS. 29a 116 PM Fue folder
+1 WIE IT&A 1 te OM PY File
+'oums Chat Files :
+yuned Vedoos,
+------------------------------------------------------------------------------------------------------------------------
+from dash import acc, html
+import dash_bootstrap_components as dbc
+import dash_helpers
+import dash_daq as daq
+layout = btel.Div(
+ntml.H6(children='Enter card number here:',
+style={'position': 'absolute',
+'top': '2@px',
+*left': '22px',
+'font-family': ['Arial', "sans serif' ji,
+dce .Input(id="card_input_single',
+Type="text',
+debounce=True,
+autoComplete='off*,
+style=({'position': 'absolute',
+"top': "l6px",
+"left': '230px',
+'width': "2B2px')),
+dcc.Upload(id=*card_input',
+children=[
+fhuml.Div( 'OR',
+style=({'margin-top': '16px")),
+ntal .Div( "Drop Excel/CSV file here'),
+htm) .Div('On'),
+ntal Oiv('Click nere to browse for Excel/Csv file',
+------------------------------------------------------------------------------------------------------------------------
+html .Div("Click here to browse for Excel/Csv file',
+style={'margin-bottom': '1@px'}),
+)
+style={"position': "absolute',
+'top': '68px',
+'heignt': "15@px',
+"line-neignt': '3@px",
+"left':  12px', |
+'width': 'S@@px',
+'border-width': "lpx',
+'boraerStyle': 'dashed', # If key 1s 'border-style , border vanishes when a file is
+uploaded! Seriously!
+"porder-radius': "Spx',
+'text-align': 'center'), |
+aultiple=False
+ntal .Div(id="upload_confirm',
+style={'position': 'absolute',
+"tap': '230px',
+"left': '12px'),
+html .H6(chilaren='Select Campaigns: ',
+style={'position': 'absolute',
+'top': '2@px',
+'left': ''55@px',
+'font-family': ['Arial', 'sans-serif'j)),
+dosh _halpers .gat_taple('avail_cam s_tabdle',
+stylee('top SQpx',
+------------------------------------------------------------------------------------------------------------------------
+style={"top': "S@px',
+'left': '550px',
+'height': '2@@px"}),
+htual .Button(id='get_data_button',
+children="Get Data',
+n_clicks=8,
+disabled=True,
+style=('position': 'absolute',
+*top': '328px',
+"heft': '12px",
+'width': '2@8px'}),
+heal .Div(children="Note: Grey-highlighted housenold [Ds mere mot i:~wed to the input card ID
++ at time of campaign targeting, Out were liwed to that card at some other
+time.  
++'Use this toggle to include/exclude (seve coms |,
+style={"position': 'absolute',
+"top': "3@0px",
+'left': ''3S@px',
+'width': "725px ,
+'padding': '15px 9Opx 15px L5px'.
+"font-family': ['Arial', 'sank secit'f,
+"font-size': 'llpx',
+'border-style': 'solid',
+'border-radius': 'Spx',
+'border-width'. 'lpt',
+'border-color': '#737373'}),
+Gaq.Baoleanswitch( ide' show_nonlinked_switcn',
+oneTrue,
+------------------------------------------------------------------------------------------------------------------------
+on=True,
+color='#512081',
+style={'position': 'absolute',
+'top': '32@px',
+'left':  160'font-family': ['Arial', '"sans-serif"))}),
+dash_helpers.get_tadle('results_table',
+cell_selectable=False,
+style={"top': '38Qpx",
+left': '38px',
+*bottom'':  16@px*}),
+ntal.Button(io="downlead_button',
+chilaren='Download data to Excel',
+n_clicks=@,
+disabled=True,
+style={"position': 'absolute',
+"pottom': 'S@px',
+"left': ''12px',
+"widtn'': "200px"}),
+dasn_nelpers misc. loading_message(ia> loading message' |.
+dcc .Oowmload(id="download_excel'),
+1
+style={
+"position': 'absolute',
+'top': '@px",
+*pottom': '@px',
+"left". 'Opx',
+'rignt': 'Opx',
+'pasding': '12px',
+'text-align': 'left',
+------------------------------------------------------------------------------------------------------------------------
+= gt > coretce-feq-epp > app > pagessic check_receved_mults
+tenn Chat Fass
+pated Veieos
+Name
+& functions
+a config.p}-?
+SB irony
+~U Search check receved_mult
+Date modtied
+1325 2024 1 16 PM
+= - name ene BY
+Type Pv Fie
+"Sue 613 OB
+Date modbfed 12h M2 15
+------------------------------------------------------------------------------------------------------------------------
+def on_entry(self):
+Triggered on page load.
+@ Populate list of selectable campaigns
+self.get_avail_campaigns()
+# Remove "Loading Data..." message
+self. app_state[' loading_message.hidden') = True
+card_input_single(self):
+Triagger: Value entered into Card Number input box.
+@ Process value entered into idef
+self.process_input_spreadsneet()
+# Enavle/disable Get Data button
+self .update_getdata_button_status()
+avail_campaigns_table(self):
+Trigger: Click on avail_campaigns_cable.
+& Update nighlignted rows in avail_campaigns_table
+self. update_row_hl_avail_campaigndef
+@ Enadle/disable Get Data button
+self .update_getdata_button_status()
+get_data_burton(self):
+Trigger: Click on "Get Data" button.
+@ Extract data for nnids linked to selected card, for selected campeigns
+self .get_requested_data()
+show_nonlinked_switch(self):
+Trigger: Toggle "Show non-linked nouseholds" switch.
+@ Remove rows from results table that relate to non linaed eanns
+self .toggle_nonlinked_nnd_data()
+ caam load_button( self):
+Trigger: Click on "Download dats to Excel" button.
+  Oownlosd date in self.app_state['results table') in Excel tormat
+saif domlosd_excel_data()
+------------------------------------------------------------------------------------------------------------------------
+* app > pegesst > check receved mut > functions
+leaene Chat Fates
+puted Vuiens
+a
+Name
+3 app_tuncs
+@Q wigge.py
+vv
+Search functiom.
+Date modified Type soe
+1135-2078 1 16 Pht Fue fe
+------------------------------------------------------------------------------------------------------------------------
+lamers Chat Files
+check_recerved_multi > functions >  spp_funcs
+a
+Name
+@ down j.excel_date. py
+@ get_avtll_campaigns py
+@ get requested daw py
+@ process inputpy
+a toggle_nonknked Nnd dats py
+@ update gevdata_bunton sums py
+a update row Wi aval campagra py
+vO Searcn app tunes
+Cate modited
+VV2S/AILd 1 16 Phe
+128 Dol 2 16 PM
+wrd4 le tb PM
+2 15 PM
+a4 te Bt
+Tb lo Te Bee
+a feet SY
+Type
+PY Fle
+PY Fae
+PY Fle
+Pv Fie
+Pr Che
+OY Fe
+PY Cle
+------------------------------------------------------------------------------------------------------------------------
+from dash import acc
+import pandas as pd
+from datetime import datetime
+xl_cols = [
+{
+'column': 'input_card_number',
+"Label': ['Imput Cara Number',  '],
+'width': 138,
+}.
+{
+"colusn': 'valid_cara_id',
+'label': ('Valid Cara 10 , ''),
+"widtn': 138,
+}.
+{
+"column': 'campaign',
+"Jabel": ('Campaign', **),
+'width': 78,
+)
+(
+'column'; 'efhnn',
+'label': ['Housenold 10 ,   ),
+'width': 144,
+),
+'column': 'unlinked_ehhn_flag',
+------------------------------------------------------------------------------------------------------------------------
+}
+{
+},
+{
+.
+(
+),
+(
+a
+'column': "unlinked_ehhn_flag',
+'label': ['HHID not linked to',
+'cara @ targeting time'j,
+'width': 158,
+*column':
+"Label'
+'width':
+'column
+"label':
+'width?
+'column
+'label'
+'width'
+"column*
+* Label'
+wisth' :
+"column
+'eligible',
+: ['LOM Eligibility', '"),
+144,
+': 'long_term_control',
+: ['In Control Group', "Long Tera'),
+: 98,
+': 'event_control',
+: ['In Control Group', Event'),
+: 98,
+: 'channel',
+: ('Channel', **j,
+7 98,
+*; 'coupons received',
+: ('Yetal Coupons', 'Received'},
+------------------------------------------------------------------------------------------------------------------------
+'label': ('Total Coupons', 'Received'},
+'width': 98,
+'num_fat': "numd',
+}.
+{
+'column': 'coupons _redeemed',
+"label": ['Total Coupons', "Redeemed'},
+"width": 98,
+}.
+dawmiload_excel_data(self):
+Generate Excel file containing data in self.app_state{ results _ca@le' |
+@ Get required columns from results_table.data, fiu titles
+results table = self.spp_state('results table.data']
+results table['unlinked_ehhn_fleg'] = results_table[ 'ennn_at_Cargeting flag' }.map({@: "  , 1
+results table   results_table({(c{'column') for c in al_cols}}
+yy
+@ Organize column labels; detect where multl-row header needed
+Hlepels < list()
+'hres 2 1
+for   ia xi_cols:
+af 'lgpel' net in c.keys():
+_ Mabeds 0 [ef coluan'))
+------------------------------------------------------------------------------------------------------------------------
+hlabels += (c['column'))
+elif isinstance(c({'label'], (list, tuple)):
+hlabels += (tuple(c[{*label'])]
+n_hrows = max(n_hrows, len(hlabels(-1])})
+else:
+hlabels += [tuple({c({'label']])]
+hlabels = ((c + tuple(('']"n_nrows))(:n_hrows)} for   in hlabels)
+results_table.columns =
+pd.MultaIndex. from_tuples(hlapels)
+@ Get tinestamp for spreadsheet file
+vot = datetime .now().strftime(  XVXm%d_XHAMXS" )
+@ Generate Excel file, push to app_state
+def write_excel(bytes_io):
+with pd.Excelwriter(bytes_io, engine='xlsxwriter') as writer
+@ Add required number formats to workbook
+book_fats = {
+*numd ': writer.book.add_format(('num format 2,0.
+}
+@ Ado Query Results sheet
+sheet_name = 'Query Results'
+results_table.to_excel(writer, sheet neme-ineet name?
+writer .sheets[sheet_name].set_column _pixels(@, @, @, Mone)
+for mc, c in enumerate(xl_cols):
+writer. sneets{sneet_name].sat colusn pivelsa(ncel, mel,
+cl wiata'),
+book _ fats. get(c.get( 'nam_fet')))
+self app state('aomlosa_excel date ] = dcc.cond_bytes(urite_excel, f'corebcc_faq query_(wat}) alsa
+------------------------------------------------------------------------------------------------------------------------
++ pages tc > check recerved_mult   functions > app_funcs
+S13
+'aams Chat Fides
+puted Valeos
+Name
+6B cownoad. vical dora py
+a get_aval_campaigns py
+@ get requested_dats py
+@ process_input py
+a toggle_nontinked nhd data py
+@ update gears bunon wes py
+3 update row hl aval campangrs oy
+~ UO Seah app funcs
+Cate mod fed
+V/25/2024 1 16 PM
+care
+ye
+PIA
+mw
+my
+uw
+me
+~
+Type
+FY Fie
+BY File
+PY Fie
+ay File
+PY Fite
+oY Fite
+------------------------------------------------------------------------------------------------------------------------
+> pages. src + check recewed_muiti   functions > app funcs
+st "Name
+rty 3 download_exce!_data py
+3B seu svat cont Dyna py
+a gel_requetted_data py
+@ process input py
+'eave Chat Fetes a taggie_noniinked nnd data py
+@a update_getdata Dutton stats py
+a update row hi avail campagra py
+~ UU Srarcn app juret
+Cete moated
+a SAA!
+VI2S 2 116 Pad
+a tn Oe
+& CL RE
+es
+Type
+PY File
+Pv ale
+PY File
+PY Foe
+Pe Fle
+PY fre
+PY File
+------------------------------------------------------------------------------------------------------------------------
+def get_evail_campaigns(self):
+Populate list of available campaigns on arriving at page.
+query = f ""
+SELECT DISTINCT campaign
+FROM comms_media_dev.core_bcc.faq_tables_list zt
+WHERE alloc_redenp ==
+ORDER BY campaign
+avail_campaigns = self.app_data.sql(query)
+avail_campaigns['rhl_flag''] = @
+self .app_state['availl_campaigns_table.aata') = avail campaigns
+------------------------------------------------------------------------------------------------------------------------
++ pages si > check_received_mutts > functions   app_funcs vO Seaerh ape funcs
+a
+vst Name
+Date raodified Type
+@ download excel data py
+Ager evel compaigns.py
+\ a get requested data py foo
+@ procesieinput py 9S Mua
+vere Cra Fades @ toggle _nonlinkea nnd, deta py we SEM PY File
+| update getdata bution sama oy _  - ore PY Fue
+@ upaate row ni eval campangrs py arms Py Fide
+------------------------------------------------------------------------------------------------------------------------
+import sumpy as np
+import pandas as pd
+def pandas _to_cte(pdf, name):
+Return text to include the data in a PanJas DF in a SQL query as a CTE.
+cols =  
+> '-join(pdf.columns)
+wals = ' UNION '.join(["SELECT '+', ".join([f "(c} " for c ine}: for ro in pet _values})
+return   WITH {name} ({cols}} AS ({vals})"
+get_requested_data(self):
+sae
+Extract data for nhids linked to selected card, for selected campaigns
+ane
+@ Get list of selected campaigns
+compeigns = self.app_state['avail campaigns table data }\
+-qQuery("rnl_flag == 17)( 'campaign' }\
+-Orop_duplicates().tolist()
+campaigns txt   *, ".join((f"'{c}'" for   in campaigns})
+8 Gefine CTE for input cards (from teap table for a list, or @irectly input for a single value)
+card jist jd = self.app_state['card_list_id.data'}.iloc{ , 6}
+af card Dist id as 'SINGLE':
+Un Sxt = pandas _to_cte(self.app_state['card_numbers.cata'), 'cardlist')
+------------------------------------------------------------------------------------------------------------------------
+cte_txt = pandas_to_cte(self.app_state[ 'card_numbers.data'], "cardlist')
+else:
+cte_txt = f'WITH cardlist AS (SELECT * FROM comms media_dev.core_occ.faq_teap_cardlist_
+{card_list_id}) 
+= * join((f"*{c} " for c in self. app_state[ 'card_numbers cata' ]['cus_act_no'}]J)
+subquery1 = f"""
+{cte_txt}
+SELECT DISTINCT i.input_card_number,
+i.cus_act_no,
+  (Subquery 1 - Get distinct ehhn_gp values for each card ID, flag invalid card IDs)
+cards_txt =  
+CASE WHEN c.cus_act_no IS MAL THER & ELSE
+' 
+NVL(h.enhn_gp, "UNMATCHED') AS enan_gp
+EMD AS valid_card_id,
+FROM cardlist i
+LEFT JOIN (SELECT cus_act_no
+FROM core_data_products prod acds customer. card
+WHERE cus_act_no IN( (cards tat}i\ . Oe 3.cws_act_ao = C.cus_sct_no
+LEFT JOIN (SELECT cus_act_no,
+ebnn_gp
+FROM comms media dev.core Oc. (ag .ard_emnn_v?
+WHERE cus_act_no IN((cards_tut))) 8 OM i.cus_ act_no = h.cus_act_ao
+  (Subquary 2 - List of all nousenolds linkea to ehnn_gp. in Swquery 1)
+mglist =  , '.join((f?'{h}'" for fh in self. app_data.sqi(subquery]}{ 'ehan_gp').drop_duplicates(\})
+equary?   f ""
+SELECT g. input _card_number,
+ -Cus_e@ct_na,
+------------------------------------------------------------------------------------------------------------------------
+g@.cus_act_no,
+g.valid_card_ia,
+g-ehnn_gp,
+NVL(h.ehhn, '") AS ehhn,
+h.cus_act_no AS cus_act_no_2,
+h.from_date,
+h.to_date
+FROM ({subquery1}) 2
+LEFT JOIN (SELECT =
+FROM comms _media_dev.core_bcc. faq card_ennn_  2
+WHERE enhn_gp IN({hglist}))) mh ON g.enwmn_gp = 5. enmn_gp
+  (Subquery 3 - For each campaign, flag the nousenola attamea t2 owe iat card at targeting
+subquery3 = f"""
+SELECT m.input_card_number,
+m.cus_act_no,
+a#.valid_card_ia,
+c.campaign,
+MAX(c.campaign_targ Gate) AS campaign arg dale,
+m.ehnn,
+MAX(CASE
+WHEN cus act_no_2  = cus_act_ no
+AND campelgn_Ctarg date >= trom dete
+AND canpaign_targ_date <  to date TEN 2
+ELSE 6
+END) AS ehhn_at targeting
+FROM ((subquery2}) m,
+------------------------------------------------------------------------------------------------------------------------
+FROM ({subquery2)}) m,
+(SELECT campaign,
+bec_locked_date AS campaign_targ_date
+FROM comms_media_dev.core_bcc.faq_campaign details
+WHERE campaign IN({campaigns_txt}))
+GROUP BY m.input_card_number,
+m.cUS_act_no,
+m.valia_card_id,
+m.ehbn,
+c. campaign
+@ (Final query - Agd actual eligibility ano campaign cata)
+nrlist =  , '.join((f*'{h)'" for nm in self.app_data.sqi( sutqueny }
+query = #"""
+SELECT t.input_card_numper,
+t.valid_cara_id,
+t.campaign,
+t.ehhn,
+NVL(e.overall_eligibility,   ) AS eligible,
+NVL(e.long_tera_control,   ) AS long tere_control,
+WYL(a.event control,   ) AS event control,
+NVL(a.cnannel, '") AS channel,
+NVL(a.coupons_received, 6) AS coupons received,
+WVL(a.coupons_redeemed, @) AS coupons _redeened,
+t.ennn_st_targeting AS ehhn_at_targeting flag
+FROM ( (subquery3)) t
+LEFT JOIN (SELECT  
+| ener}. arop_duplicates()))
+------------------------------------------------------------------------------------------------------------------------
+LEFT JOIN (SELECT =
+FROM comms_media_dev.core_bcc.faq_eligibility
+WHERE ehhn IN({hhlist})} e ON t.ennn = e.ehhn
+AND t.campaign_targ date >= e.frou_date
+AND t.campalgn_targ date < e.to_date
+LEFT JOIN (SELECT ehnn,
+campaign,
+MAX(channel) AS channel,
+CASE WHEN MAX(hhgroup) => "COMT' THEN 'v  ELSE    END AS
+event_control,
+SUM(CASE WHEN coupon_ia IS Mia. THEN @ ELSE 1 EMD) AS
+coupons_received,
+SUM(CASE WHEN coupon ia IS MAL "MEM @ ELSE redeem_flag EMD) AS
+coupons _redeesed
+FROM comms_media_dev.core occ. faq alloc weap
+WHERE campaign IN( {campaigns txt))
+AND ehhn IN((hhlist})
+GROUP BY ehhn,
+campaign) a ON t.ennn 2 a. ehan
+AND U. campaign = a.campaign
+result = self .app_data.sqi(query)
+8 Add extra row for each card/campaign with no valia evan at tise of targeting
+ne_ehan_f111 = result.groupby(('input_card_number', 'valid _cand_id', 'campaign'),
+as_indexeFalse)['ehhn_at_targeting flag' ).max()\
+-query("enhn_at_  ting _fleg es @")\
+  'valid_caca_ia', 'campeign'))
+------------------------------------------------------------------------------------------------------------------------
+{U'Saput_card_number', 'valid_card_id', 'campaign' ]j
+no_ehhn_fill{'ehnn'} = "NONE"
+no_ehhn_fill{'eligible'] =   
+no_ehnn_fill('long_term_control') =  '
+no_ehhn_fill{"event_control') =   
+no_ehhn_fill('channel'] =   
+no_enhn_fill{'coupons_received']
+no_ehhn_fill{ 'coupons_redeemed' }
+=@
+no_ebhn_fill{'ehhn_at_targeting_fla
+c)
+e}=1
+result = pd.concat((result.query("ennn '=   "), no_enmn_fill}}s
+.$ort_values(by=[*input_card_number',
+'campaign',
+"ehnn_at_targeting Flag',
+"ennn' j,
+ascending={True, True, False, True}: ceset_.aaee, dropalrue)
+@ Lf show_nonlinked_switch 1s OFF, separate off rows where eam at Carpeting flag == @
+af self.app_state[ 'snhow_nonlinked_switch.on' }:
+self .app_state['hidden_results dats') = None
+else:
+self.app state['hidden_results.data')  = result .query("eann_at Cargeting flag == 6 )
+result = result.query("ehhn_at_targeting_flag == 1 )
+# Add repeat value indicators for card, campaign to enable conditional border forsatting
+rpt_col_flags = dict()
+rpt_card = np.append((6},
+(result(*input_card_number' }[1:].values
+== result(*input_card_number")[{:-1]- values). astype/int))
+rpt_col_flags({*card_ept_flag'] = rpt_card
+cmp = np.appena([@),
+(result[ 'campaign' )[1:].values
+result{ 'campaign' ){:-1}.values).asCype.i7t
+rpt_col_flags['cap_rpt_flag'] = np.minimum(rpt_cap, rpt_ cara)
+result = pd.concat((result.reset_index(drop=True),
+pd.DataFrame(rpt_col_ flags)).
+axis=1)
+  Push to app_state
+self.app_state['results_tadle.data'] =  result
+# tmable Excel download button Lf >@ rows returned
+af self epp_state['results_table.data').snape(@) >  :
+self .app_state{ 'download_button.disabled') = False
+else:
+self.app_state[ download_button.disabled']   True
+------------------------------------------------------------------------------------------------------------------------
++ pages src > check recenved multi  functions > spp_funcs ~ UO Searcn app furcs
+ws "Name Date modtied Type See
+. @ downlond_excel_data py 1a USI 116 Phd
+a4 get_avail_campaigns.py "YLT tle) 16 Ps
+; 0 get requestad_data.py Tams 1:16 Pad
+a process_inpul py woo rer 2
+Chat Fes Bi toggie_nontinked nnd data py mol emu
+a update_getdata bution status py 2 +P
+@ update _row.t aval. compenyra. se Wh me te
+'vs oe
+------------------------------------------------------------------------------------------------------------------------
++ pagessc ) check_tecerved_mults   functions   app_funcs v0
+a
+Name
+a download_excel_date py
+a4 gei_evail_campaigns py
+@ get requesied data py
+a toggie_nantinked nnd data py
+@ update _getdata bunon ststus. py
+Searen app funcs
+Date modtied
+VS 25 Qsd 1 16 Ph
+@ upaate row ht avad campagra py a lets wt
+Type
+PY File
+PY Fae
+PY Fee
+PY Fie
+PY Fle
+PY Fe
+4
+Sor
+Cie e
+aa
+------------------------------------------------------------------------------------------------------------------------
+iaport numpy as np
+import pandas as pd
+import base64
+import io
+import random
+import string
+from datetime import datetime, timezone
+from dash_helpers import dbxsql_utils
+def generate_rancom_string(achr=7):
+Return a random string of alphanumeric characters
+return ''.join(random.choices(string.ascil_lowercase   string digits,  omctr))
+drop_old_cardlists(self):
+Remove card list tables from catalog matching prev id (the list teing replaced)
+or that are sore than 3@ minutes old.
+prev_ideself .app_state['card_list_id.data' |
+erey_id   prev_id.iloc( , 6] if prev_id is not None and prev_id.shape([ ) else None
+query     r"
+SELECT table_nane,
+last _eltered
+------------------------------------------------------------------------------------------------------------------------
+last_altered
+FROM comms_media_dev.information_schema. tables
+WHERE table_name LIKE 'faq_temp_cardlist_% 
+templist = self.app_data.sql(query)
+timenow = datetime .now(timezone.utc)
+drop_list = [fn for fn, dt in templist.values
+if (timenow-dt.to_pydatetime())}.seconds >  1808
+or fn == f"faq_temp_cardlist_{prev_1d}"]
+for   in drop_list:
+dbxsql_utils.drop_taple(f'comms_media_dev.core pec .{F) "3
+def process _single_input(self)-
+Process single card value entered into input bow,
+if self .app_state['card_input_single.value"} 1s not Mone.
+  Create table populated witn single input value
+self .app_state('card_nuabers.data')  = pd.Dataframe({
+"input_card number': (self.app_stete['card_input single. value' )),
+'cus_act_no': {self .app_state[card_input_single.value' }{.al)})
+ 
+@ Update cara_list_ia to indicate single input value
+self .drop_old_cardiists()
+calf app state{'card_list_id.data']   pa.DateFrame({'id': [ SIMGLE'}))
+------------------------------------------------------------------------------------------------------------------------
+self. app_state{ 'card_list_id.data'] = pd.DataFrame({ 'id': [ 'SINGLE' ]})
+@ Confirm data load on screen
+self .app_state('upload_confirm.children') = 'Single card number entered'
+def process_.
+input_spreadsheet(self):
+Detect list of card numbers in input file ana confirm onscreen.
+af (self.app_state['carc_input.filename'] 1s not Hone
+ana self.app_state['card_input.contents') is not None):
+filename =
+filedata =
+self.app_state['card_input. filename' j
+base64.b64decode(self.app_state{ card_input contents 'ospiit, . ){1})
+self .app_state['carda_numbers.data'] = None
+try:
+@ Make list of tables for each spreadsneet tad (or one Cable,
+if 'csv' in filename:
+.? CS input)
+sheetdata = [pd.read_csv(10.StringlO( Fi ledata. decode, "Latin 1 ))))
+elif 'xls' in filename:
+xl_file = pa.ExcelFile(fileaata)
+sheetdata = [xl_file.parse(s) for s in sl tele. anewt names)
+else:
+sheetdata > ()
+self.app_state{'upload_confire.children']   'Upload tile aust de .csv or Excel'
+  Scan sheets and columns, grab likely card numbers, cedupe and strip check digats
+card names = (]
+------------------------------------------------------------------------------------------------------------------------
+card_nums = []
+for s,   an [(s,  ) for s in range(len(sneetaata)) for c in sheetdata[{s].columns]:
+col_vals = sheetdata(s][c].values.astype(str)
+filt = np.char.isnumeric(np.char.replace(col_vals, ~.",  "))
+col_vals{filt) = col_vals[filt].astype(float).astype(int).astype(str)
+col_vals(col_vals == 'nan') =  "
+col_vals = col_vals[{col_vals '= '"}
+if col_vals.shape[9]:
+col_vals_codes = col_vals.view(np.uint32) resnape'cci_ ais.snape(@), -1)
+strlen = np.sum(col_vals_codes != @, axis=1 
+filt = np.logical_and((strlen == 11) | (strlen == 12 ,
+col_vals_codes{:, @] .: oa 4a
+if np.mean(filt) >  6.25:
+card_nums  = np.unique(col vals{filej]s toisst,*
+card_nums = np.unique(card_nums).astype(str)
+Card_nums_f11 = card _nums.view(np.uint32).resnepe, card sms snape(@), -1)[:, :11]\
+reshape, Ll. etemy .ull')}
+self.app_state['card_numbers.data'] > pu. Oatabramec{ inet card _mumper': card_nums,
+"cwt_& to': card mas _f11})
+  Agd cara list as temp UC table, dropping previous list (and any ald ones)
+self .drop_old_cardlists()
+rstr = generete_random_string()
+ bxeql _utils.pdf_to_taple(self app state( 'card numbers. aata'),
+f comms_media_dev.core_dcc. faq _temp_cardlist_(rste}')
+walf app _state{ 'card list _id.data']   po. OataFrame({ id': (rstr)))
+------------------------------------------------------------------------------------------------------------------------
+.Peshape(-1).view('<U21")
+self.app_state{'card_numbers.data') = pd.DataFrame(('input_card_number': card_nums,
+"cus_act_no': card_nums_f11})
+@ Ada card list as temp UC table, dropping previous list (and any old ones)
+self .drop_old_cardlists()
+rstr = generate_random_string()
+dbxsq)_utils.pdf_to_table(self.app_state[ 'card_numbers .cata'!,
+f 'comms media_dev.core_bec. fag_"emp_cardlist_(rstr}')
+self.app_state['card_list_id.data'] = pd.Dataframe({ id": fester ps
+  Confirm number of unique card numbers in detected ist, of report failure to detect list
+if self.app_state['card_numbers.data') 1s Mone:
+self.app_state['upload_confirm.cnildren'] = "Mo card ~ambers taund in input file'
+else:
+n_cards = self.app_state( 'card numbers data]. thage @!
+self.app_state{uploag_confirm.cnilaren') = # (A <n) wtiaue card numbers uploaded from
+file'
+except Exception as e:
+self.app state[ 'upload confirm.children | -   there wai an error processing this file"
+8 Clear card_input data from memory
+self.app_state['card_input.filename']   None
+self .app_state('card_input.contents']   None
+@ Clear value from single card input box
+self .app_state['card_input_single.value')   None
+------------------------------------------------------------------------------------------------------------------------
++ pagesere > check recewed mult > funcnons   app_funcs ~ U Search app funcs
+"Name
+. @ download _excel_data py
+a get_avail_campaigns.py
+' @& ger requetted_cata py
+process nprpy
+a toggle noninked hWnd data py
+a update_getdsts bution status py
+@ upaate row bi avet compara py
+jones Chan Flies,
+Date modhed
+1125 2aa +16 PM
+VE QET a 1 Te PM
+aa eR Ba
+16m
+occa
+us 27th Oe
+ee Re Te
+Type Some
+PY File
+PY Fae
+PY File
+my Fde
+PY Fie
+PY Fle
+------------------------------------------------------------------------------------------------------------------------
+import numpy as np
+import pandas as pd
+def toggle_nonlinked_nhd_data(self):
+Add or remove results table rows for non-linked nouseholds.
+result = self.app_state["results_table.data' )
+if result.shape[@}:
+1f self.app_state["show_nonlinked_switch.on' }:
+Af self.app_state["hidden_results.data'] is not Sone
+pd.concat((result, self.app_state[ Aicdes cesuits sata']))\
+result =
+.s0rt_values(by=['input_card nummer',
+'campaign',
+'ennn_at_targeting_vlag)'ehnn'),
+ascending=(True, True, False, True}).reset_index(drop=True)
+self.app_state[ 'hidden_results.data']} = None
+else:
+self.app_state{ "hidden_results.data'] = result.query("enhn_at_targeting_flag == @")
+result = result.query("enhn_at_targeting_flag == 1 )
+@ Add repeat value indicators for card, campaign to enable conditional border formatting
+ept_col_flags = dict()
+ept_card = np.append([6),
+(result('input_card_number'](1:) values
+== result('input_cara_numper")[. 1}. salaes . astyne, int))
+ept_col_flags{'cara_rpt_flag') = rpt_cara
+rpt_cmp = np.append([@),
+{result{ 'campaign' }(1:).values
+== result[ campaign' ][: 1) valves. astype. tath)
+rpt_col_flegs('cap_rpt_flag'] = op.minisua(rpt cap, rpt cerned
+result = pd.concat((result.drop(columnss( 'card rpt flee', "cmp _rpt_flag'})
+-feset_index(arop True),
+pa.DataFrame(rpt_col_flags)),
+axissl)
+@ Push to app state
+wolf app _state{ 'results _table.aata') = result
+------------------------------------------------------------------------------------------------------------------------
++ peges_src > check recerved.muft: > tunctons > app_tuncs ~ DO Searcn ape tuars
+iaaeve Chat Fides
+a
+Name
+a download excel data py
+3 get_avail_campaigns py
+@ gel_requested_data py
+@ process _input py
+@& update getdata button slate py
+a Update row At avail Campagra py
+Date modified Type fan
+PY Fe
+PY Fie
+Py File
+EY Fae
+PY Ele
+PY Fue
+------------------------------------------------------------------------------------------------------------------------
+def update_getdata_button_status(self):
+oe
+Update enabled/disapled status of Get Data button.
+@ Enaple button only 1f cards and campaigns selected
+1f self. app_state['card_numbers.data'] is not None\
+and self .app_state[ 'card_numbers.data'].shape(@] > @\
+and self.app_state('avail_campaigns_table.data']['enml_flag }.eax'*   @:
+self app_state{'get_data_button.disabled') = False
+else:
+self.app_state['get_data_button.disabled'] = True
+------------------------------------------------------------------------------------------------------------------------
++ peges.src > check recerved_muti > functions   app_tuncs   U Search app tures
+Name
+a download_exce!_data.py
+a get_avail_campaigns py
+@ get requested_data py
+@ process input py
+@) toggle nontinked nd data py
+@B upaate row Naval campers Dy
+Date modified
+ToS c02d 116 PAO
+Ore lla prs OM
+wT let TR PM
+PY Fhe
+PY Fide
+------------------------------------------------------------------------------------------------------------------------
+def update_row_hl_avail_campaigns(self):
+Update highlighting flag columns in avail_campaigns table.
+@ Identify clicked row
+active_cell = self .app_state['avail_campaigns_table.active cell}
+if active_cell is not None:
+rel = active_cell[ 'row' ]
+@ Get table as Panoas DF
+af = self.app_state[ 'avail_campaigns_taple.aata')
+@ Update haghlignting in clicked row
+af.loc{rcl, 'rhl_flag'] = 1 - df.loc({rcl, 'rml_flag')
+@ Push of back to app_state
+self .app_state['avall_campaigns_table.aata') < of
+  Deselect table cells
+self.app_state['avail_campaigns_table.selected ceils} + ()
+self .app_state{'avail_campaigns_table.active cell'] 2 Mone
+------------------------------------------------------------------------------------------------------------------------
++ pagessre * check receved_muin > funcions > app_tuncs ~ U Seairn app tuncs
+Oate modted Type Som
+si "Name
+s @ download _excel_data py 1125 2024 116 OM PY Fle
+a gel_avail campaigns. py PY File
+' @ get_requested_dats py PY File
+@ process _input py CY File
+PY File
+. @ \oggte noniinked nid asta py
+'ears Chat Files
+a update_getdala_bution status py "14 iba te Pee
+PY Fle
+------------------------------------------------------------------------------------------------------------------------
+~ mers > g977209 > gn > corebcc-fag-app > app > pages_src > v UO learn pages ote
+wst . Name Date mogthed Type Saw
+a BM check _itc to Tad 6 Ba File folder
+} check _recewed ee Se) File folder
+' B check secetved_mutt SUPR/2eas TG Pe
+B example page eo lle 7 Be Fie toider
+B mya ae a Fue f
+, Onat Fies YY aPP page me fonder
+puted Vaieos
