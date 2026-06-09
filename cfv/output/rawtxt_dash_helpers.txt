@@ -1,0 +1,2866 @@
+} = Umer: » g977209 + gt > dash neipers > src > dash helpers
+
+@ gat wierd py
+@ mine py
+@ munipege setup py
+
+
+QA + dash neipers > src > dash helpers > run_ multipage setup
+
+“~ Name
+
+
+@ Since I nave so mucn trouble getting multipage setup to run from within gunicorn without
+@ pereissions problems, I'm gonna cheat ano run it separately beforehand, using
+@ “RUN python -m dash_helpers.run_multipage_setup” in the Oockerfile, which will execute this script,
+
+from .. 1laport multipage setup
+
+multipage_setup.main()
+
+
+
+} + Users » 877209 > git > Gasn_helpers > src > dash nelpers »
+
+wl tebe | a8 PO
+WER 2 4) Pd
+oer2aenss 1 09
+
+
+«version import _ version__
+
+. import multipage_setup
+
+.get_from_module import get_modules, get_from_sodule’
+.Set_up_page import set_up_page
+.get_howepage_layout import get_homepage_layout
+-app_layout import app_layout
+
+-callback_utils import AppStateDict, pb sncalibackig
+-table_utils import get_table
+
+-tab_utils import get_tabs
+
+. Import misc
+
+.get_user_1d import get_user_id
+
+. waport data_utils
+
++ Awport adls_utils
+
+- import dbxsqi_utils
+
+sfotepook_test Lmport notebook test
+
+
+@ wat up page py
+a iad util py
+A table vin Py
+
+
+“""Siaplified version management.
+
+Python packages can contain version numpers in various location
+
+(1.e. setup.py, _init__}. This leads to a bit of a painful process
+
+of remembering wnere all version numbers are located and need to be 1
+changed when 1ts time to bump the version number. APTS has found
+
+that centralizing the version numper to this filellocation an easy
+
+way to manage versioning.
+
+—version_ = "8.9.8" “ght iy:
+
+
+B _pycocne_
+run mutupage semp
+
+a Se Up page py
+dia ulle py
+@ tatie uph py
+
+
+from azure.identity import OefaultAzureCredential
+from arure.storage.olob import BlobServiceClient
+from 10 import ByteslO
+
+import pandas as pd
+
+class ADLSData(opject).
+
+def
+
+_ init__(self, adls_patn):
+
+Create helper object for accessing dos blob data and reading parquet files.
+self.adls_path = adls_patn(:-1) if adls_path.endsnitm('/°) alse adls_patn
+self.parse_adls_ patn()
+
+self .get_container_client()
+
+self.get_dlop_list()
+
+parse_adls_patn(self)-
+Parse Storage Account, Container and file path from a full ADLS pata
+Defines attributes:
+
+catr - Name of container
+
+Se_env - Mame of Storage Account including env
+
+petn - File mame including full path
+
+self.cntr, self.sa_env, self.patn «= \
+self .adis_patn. replace(’ epfse://', '*)\
+Peplace(’
+
+
+fee kaa Forma Vew Help
+© Troe azure. identity import Oefaul tazureCredential
+from azure.storage.blob import BlobServiceClient
+foe i from io import BytesIO
+Lamport pandas as po
+
+ienp
+
+wean
+
+class ADLSOatat object) }
+def init__(self, adls_path):
+
+Create nelper object for accessing ank blob data end reading perqect files.
+
+: self.adls_path = adls_path[:-1] if adls_patn.endmite(’/") else edls_patn
+self.parse_adls_patn()
+self.get_container_client()
+- self.get_bdlop_list()
+
+4 def parse_adls_patn(self):
+
+Parse Storage Account, Container and file path from a full ALS path
+ad Oefines attributes:
+cate - Name of container
+
+ta_env - Name of Storege Account including env
+patn - File name including full path
+»
+
+aelf.catr, self.sa_env, self.path « \
+
+ree a rue ee coy
+J téron azure. identity import OefaultAzureCredential
+abies azure.storage.blob import BlopserviceClient
+;from io import Bytesi0 .
+
+import pandas as pd f ,
+
+=p
+veal class ADLSData(opject): ‘
+def init__(self, adls_patn): aaa
+
+Create helper opject for accessing ani blob data end reading perqurt files.
+
+self.adis_patn = adls_patn{:-1]) 1 edls_path.enductte(’/*) eles als pata
+self .parse_adls_patn()
+self.get_container_client()
+self.get_blob_list()
+
+def parse_adls_patn(self):
+Parse Storage Account, Container and file path frem a full ADAS path
+Oefines attributes:
+
+cntr - Name of container
+
+fa_env - Mame of Storage Account including env
+
+path - File name including full path
+eelf.cate, self.sa_env, self.path = \
+self .adls_path.replace(‘abfssis/', ‘') \
+
+m io
+
+ort pandas as pd
+
+ss ADLSData(object):
+
+def
+
+ef
+
+deport BytesIO.
+
+_ init__(self, adls_path):
+
+Create helper object for accessing ADL blob data and reading parquet files.
+
+self.adls_patn = adls_patn(: i) if F adls_path. endswitn(” /°) else adls path
+self .parse_adls_patn()
+
+self .get_container_client()
+self .get_blob_list()
+
+parse_adls_patn(self):
+
+Parse Storage Account, Container and 1 file path from a full AAS pach
+Oefines attributes:
+cntr - Name of container
+sa_env - Name of Storage Account including env
+path - File name including full path
+self.catr, self.sa_env, self.path © \
+eelf.adis_path.replace(‘abfss://', °*) \
+-Foplace(‘@’, ' °) \
+-Peplace('.dfs.core.windows.net/', ° ') \
+
+‘bie LGN bormal view Help
+|fros azure.identity import DefaultAzureCregential
+{from azure.storage.blob import BlobServiceClient
+
+.from io import BytesIO Mi ye”. PES el
+ Umport panoas as pd }
+
+Class ADLSData(opject):
+def __init__(self, adls_path):
+
+Create helper object for accessing ADLG blob data and reading parqurt files.
+
+self.adls_ path = adls_path{:-1} if adls_path.endswith('/’) else adls path |
+self.parse_adls_path() by
+self.get_container_client() ; y- we
+
+self .get_bloo_list()
+
+Gef parse_adis_patn(self):
+Parse Storage Account, Container and file path from eo full ADLS path
+Defines attributes:
+
+cate - Name of container
+Sa_env - Name of Storage Account including env
+path - File name including full path
+
+ealf.catr, self.sa_env, self.path = \
+
+self .adis_path.replece(‘abfss://°, ‘°) \
+replace(’@’, ' ') \
+
+Peplacet'.d{s.core windows.net/'. ' ‘3 \
+
+from azure.identity import DefaultAzureCredential
+from azure.storage.blob import BlobdServiceClient
+from io import BytesIO
+
+iaport pandes as pd
+
+class ADLSData(object): . : : P
+def init__(self, adls_patn): ee . ih. Al ron ae Ay ca
+Ls Create helper object for accessing ADLE blob deta and reading parqert files. t '
+aan uF
+self.adls_path = adls_path[{:-1] if adls_peth.endswith('/") else adls_path
+‘4 self.parse_adls_patn()
+A self .get_container_client()
+self.get_blob_list()
+
+det parse_adls_path(self):
+Parse Storage Account, Container and file path from a full AQLS path
+~ a" Defines attributes:
+
+oa Wen cnte - Name of container
+ag Sa_env - Name of Storage Account including env
+aa path - File name including full path
+
+eolf.crtr, self.sa_env, self.path = \
+eolf .adls_patn.replace(‘abfsa://', ‘') \
+Red replace('a’, °°) \
+a See . yo.
+ee ye A -replace( .048.core windows.net/', \ . J
+
+in hii sil
+
+s ADLSData(object):
+def init__(self, adls_ path):
+
+aes : are pa
+Create helper object for accessing ADUb blob data and Feading parquet files.
+
+self.adls_path = adls_path[:-1] if adls_path.endswith('/") else adls path
+self.parse_adls_patn()
+
+self .get_container_client() co. ..
+self.get_blob_list() i et,
+ae As
+
+def parse_adis_patn(self):
+
+Parse Storage Account, Container and file path from a full ABS path
+Defines attributes:
+
+cotr - Name of container
+
+Sa_env - Name of Storage Account including enw
+path - File name including full patn
+
+eelf.cntr, self.sa_env, self.path » \
+self.adis path.replace('abfsa://', ‘‘) \
+-replece(‘@’, °°) \
+
+es eee Ub Cane widow: ret
+
+-_anasek z= «>
+
+¢rom azure ioentity import DefaultAzureCredential
+from azure.storage.blob import BlobServiceClient
+from io import BytesIO
+import pandas as pd
+
+class ADLSData(opject):
+def init__(self, adls_path):
+
+Create helper ovject for accessing apuk plob data and reading parquet files.
+self.adls_patn = adls_path[{:-1) if adls_path.endswith("/") else adls_psth Ai
+self.parse_adis_path() i
+self.get_container_client()
+self .get_blob_list()
+
+parse _adls_path(self):
+Parse Storage Account, Container and file path frem a full AMS paths,
+Oefines attributes:
+
+cater - Name of container
+
+Sa_env - Name of Storage Account including env
+
+path - File name including full path
+eelf.cntr, self.sa_env, self.patn © \
+self .adls_patn.replace( abfas://', '') \ .
+Feplace(‘@’, ° ") \ fac
+-Peplace(’.dfs.core.windows.net/', ' ') \me
+
+trom azure.identity impore DefaultAzureCregential
+from azure.storage.dlob import BlobServiceClient
+from io import BytesIO
+import pandas as pd
+
+class ADLSData(object):
+def init__(self, adls_path):
+
+Create helper object for accessing ADLE blob data and reading parquet files.
+self.adls_patn = adls_path[:-1] if adls_path.endsmith('/") else odls_ path f
+self .parse_adis_ patn()
+self.get_container_client()
+self.get_plob_list()
+
+def parse_adls_patniself):
+Parse Storage Account, Container and file path from « full aS. A obi)
+Oefines attributes:
+catr - Name of container
+Sa_env - Name of Storage Account including env
+path - File name including full path
+self.cntr, self.sa_env, self.path = \
+self.adls_path.replace( ebfss://', ‘°) \
+replace(‘w, °°) \ ‘=
+-Feplace(’ .dfs.core.windows.net/', °°) \
+
+
+j -replace(’.dfs.core.windows.net/", * *) \
+-split() al
+
+def get_container_client(self):
+Create the ContainerClient object used to interact with the storage account container
+Defines attributes:
+container client
+token_creaential = DefaultazureCredential()
+blob_service_client = BlobServiceClient(
+account_url=f"nttps://{self.sa_env}.blov. core. inden met”,
+credential= token_credential
+
+)
+self.container_client = ploo_service_client.get_container_cliest (self .cutr)
+
+get_blop_list(self):
+
+Get list of blops at ADLS location, split into deta blews and folder plobs®
+bl_list = [b.name for b in self.container_cltent. List _Blo@a(mame starts withaself. F pared]
+self.olobs = (J
+self.folders 2 set()
+for bin ol list:
+1f » sx self.path:
+self .vlops.append(b)
+elif b.startswith(f"(self.patn}/"):
+self .vlops.append(b)
+
+
+def _get_blob(container_client, blob):
+
+sel£.blobs.append(b)
+self.folders.ada(self.path)
+self.blobs = [b for b in self.blobs if not (b in self. folders)]
+
+def delete(self):
+
+Delete all blobs at ADLS location (data blobs first, then folders)
+self .container_client.delete_blobs(*self.blobs)
+self.container_client.delete_blobs( self. folders)
+self.get_vlop_list()
+
+Read a single parquet blop ang return as ByteslO object. -eanEM
+
+doamloader = container_client.get_biob_client(bloveeloe) .dmmlead_plob( ) ii
+buffer = BytesIO()
+deen loader .readinto(butfer)
+
+return buffer
+
+perquet_to_pdf(adls path):
+
+mn mm mee elle
+
+adisdata = ADLSData(adls_patn)
+parquet_blobs = [b for p in adlsdata.blobs if b.endswith(‘.parquet*)]
+if len(parquet_blobsi >» @:
+
+return pd.concat((pa.read_parquet(_get_blob(adlsdata.container_client, blob),
+engines" pyarrow') =
+‘ for blob in parquet_blobds}).reset_index( dropsTrue ) ay
+
+else:
+retuen Nonemig “, Sef a
+‘3 Tre
+
+def pdt_to_parquet(paf, adls_path):
+
+Write the contents of a Pandas DF to a parquet file et MAS lecation
+buffer = BytesI0()
+pat .to_parquet(buffer, index=False)
+
+adisdata = ADLSData(adis_patn)
+adisdata.delete()
+
+adlsdata.container_client.uplosd_blop(f"(adladeta.path)/éatea. parquet”,
+buffer.getvalue(), <=
+overwriteslrue)
+
+Copy perquet data from one ADLS location to another.
+
+adisdata.delete()
+adlsdata.container_client.upload_bdlob(f"{adlsdata. path}/data.parquet”,
+buffer .getvalue(),
+
+fe ee —
+
+def parquet_to_parquet(from_adls_path, to_adls_path):
+
+Copy parquet data from one ADLS location to another.
+from_adlsdata = ADLSData(from_adls_ path)
+to_adlsaata = ADLSData(to_adls_path)
+to_adlsdata.aelete()
+
+if len(from_adlsaata.blops) » @:
+for blob in from_adlsaata.blobs: ;
+buffer = get_blob( from_adlsdata. contaliee ue teat, ‘elee)
+to_adlsdata.container_client. upload_blob(bloe. replece(fran_ad)]sdata.path, to_adlsdata.patn),
+buffer getvales(),
+
+dat delete » aata(adis patn):
+
+@elete ai) dats at ADLS location
+
+ML SData(adls_path) delete()
+
+
+Uaers > 9977208 > git > dash_nelpers > src > dash helpers
+
+a
+
+vO Searcn dath_helper,
+Name
+
+i —pycache_
+© run_mulupage setup
+@ _inn_py
+@ version py
+Hit edis_utts py
+@ app iayout py
+@ caltoact_uin py
+a data _utis.py
+@ annsq_wh py
+@ get trom _moase py
+
+a multipage utup py
+@ nciedoot test py
+
+" py typed
+
+Bh an uns py
+@ une ule py
+
+¢rom dash import html, dcc, page_registry, page_container
+import dash_bootstrap_components as dbc
+
+effo_logo = f'./assets/effo_logo_white.png’
+
+Ank_style = {
+“widtn’. ‘128px’,
+*heignt': ‘36px",
+‘margin’. ‘@px Spx’,
+‘color’: ‘wnite’,
+‘porder': ‘2px solia wnite’ 2
+“font-size: 14px',
+‘font-weignt': ‘normal’,
+‘text-align’: ‘center’,
+‘vertical-align’: ‘middle’,
+“Line-neight': ‘32px',
+
+dot gat _page_buttons(pages_config):
+return (
+
+abc .Colt
+intel .A(
+ntwl Olv(cnildrenspage.get('name’, page['ia’)),
+styleelnk_style),
+href «page(‘path'),
+
+
+href=page(‘patn'],
+style={ textDecoration’: *
+),
+)
+for page in pages_config
+if page.get( ‘hidgen’, False)
+
+def create_navbar(pages_config,
+title,
+page_buttons):
+
+Return layout components for top-of-page navigation ber.
+
+fMavbar = dbc.Navbar(
+
+dbc .Container(
+
+1" dbc . Row(
+
+dbc .Col ( :
+ntml. Ing(arceeffo_logo, height 38)
+),
+dbe .Col(
+ntml .A(dbc .NavoarBrand(title, className. logo as-2°),
+hrefe'/',
+rm styles('font-weight’: ‘bela’,
+
+
+},
+
+),
+),
+
+‘font-weight’: ‘bold’,
+‘textDecoration’: ‘none’})
+
+»,
+
+) - Ho Saree
+
+sol
+
+align=‘center’,
+className='g-9',
+
+dbc . Row( att va
+
+get_page_buttons(pages_config) if page_buttons else []
+{
+dbc .Col(
+html. A(html.Iag(seceeffo_logo, height=28),
+hrefs'https: //wer.6451.cam*,
+target="_blank’,
+stylea( ‘margin-left’: *
+width= ‘suto’,
+)
+],
+
+align2'center',
+ClassNames'g-0°
+
+fluid=True, .
+styles{'position’: ‘absolut
+
+‘top . ‘@px’,
+‘pottos’: ‘Opx',
+
+‘Left’: ‘Opx', Shae
+
+“left Opx',
+‘right’: “@px ',
+‘margin’: ‘Opx')
+eo oe’
+), 5
+
+1,
+color="dark",
+dark=True,
+sticky=‘top’,
+style=( mi
+‘position’: fixed’ 5M
+‘top’: ‘Opx’, .
+‘left’: ‘@px’,
+“neignt’: ‘5@px",
+‘rignt': "Opx’,
+‘font-family’: [‘Open Sans’, ‘sans-serif’,
+*backgrouno-image’: ‘url("./assets/effo_gradiont .png
+~ *backgrouna-size’: ‘cover’,
+fmin-neight’: ‘S@px",
+background-color’ ‘transpar
+
+Gat app _Sayout (pages _config,
+ttt Leatone,
+fevbar page buttons=Falee): Fy
+
+
+)
+
+return navbar
+
+app_layout(pages_config,
+title=None,
+navbar _page_buttons=False):
+
+Return layout for multi-page app
+
+@ Fix position of page container to sit under navbar
+cntix = {1 for 1, j in enumerate(page_container.chilaren)
+if }.10 == “_pages_content‘}[®)
+
+page_container.chilaren[cntix].style = (‘position’:
+
+return ntal Divi
+
+{
+
+create_navbar(pages_configepages config,
+titlestitle or '*,
+page_buttonsenavber_page_buttons),
+
+page container
+
+
+}
+
+» Users » 9977209 > gh > aash_nelpers > src > Gash helpers v Us Search dash helpers
+
+a
+
+Name Oste modified
+
+S44/2024 2:03 PAA
+S/G/AIDA 2 47 Phd
+SRSTEM 2 67 Pd
+
+B _pycacne_
+| ran_mulupage setup.
+a _IMt_ py
+@ versionpy
+@ dls uuls py
+
+4
+
+@ notedoor ext py
+
+import dash
+
+import pandas as pd
+import types
+import inspect
+from .data_utils import AppData
+
+class AppStateDict(dict):
+
+Like a regular dict, but when asked to fetch table data that is stered ie
+JSON format, converts it to Pandas
+
+def init__(self, indict): oa
+for key, value in in_dict. items():
+super().__setitem_ (key, value)
+
+def _getites_(self, key):
+value = super().__getitem_ (key)
+
+aoe ee
+
+® Convert “.data” items into Pandas when first fetched :
+Af key.split(’.‘){1] == ‘cata’ and not isinstance(velue, p@.OntaFrame) and value is not Mone:))
+value = pd.DataFrame(velue) *
+super().__setitem_ (key, value)
+
+"dal and _state(self):
+
+def end_state(self):
+
+Return key/values as (regular) dict, with any Pandas DataFrame values converted :
+back to JSON format.
+
+outdict = dict()
+
+for key in self .keys():
+value = super()._ getitem_ (key)
+
+# Convert any “.data” items held as Pandas OFs to dict
+if key.split('.')[1] == ‘data’ and isinstance(value, pé.Ostaframe):
+value.columns = {c.lower() for ¢ in value.columns]
+value = value.to_dict( records’)
+
+outdict{key] = value
+
+return outdict
+
+class OashCallbackMgr (object):
+def init. (self,
+
+page_prefix, a
+functionsstone | Si .
+callback_input=None,
+
+callback _statesNone,
+callback_outputsNone,
+app _datacNone) 1, -
+
+
+app_aata=None )
+
+Initialize callback manager object. Creates # single master callback encapsulating
+all functions, inputs and outputs
+Args:
+page_prefix - Page-iaentifying prefix added to components IDs in page layout to avoid
+conflicts in multi-page app.
+functions - Dict of callback functions (as (“func_name’: <function>)).
+callback_input - List of (component, property) Tuples, callback Input dependencies.
+callback_state - List of (component, property) Tuples, callmack State Sependencies.
+callback_output - List of (component, property) Tuples, calleect
+app_aata - AppData object, functions for handling detasets.
+®# Define component prefix from page_prefix
+self.capfx = f'{page_prefix}_°
+@ Ada callbacks from functions dict
+if functions is not None:
+for k, v in functions. items(): es SS
+if ‘self’ in inspect.signature(v). parameters:
+setattriself, k, types.Methodlype(v, self));
+else.
+setattr(self, k, v)
+
+9 Define callback dependencies, set u
+self. setup_master_callback(callback_input,
+callback state,
+callback output)
+
+def
+
+callback_output)
+
+@ Initialize self.app_state with null values
+self.app_state = AppStateDict({i: None for 1 in self.input_keys})
+
+# Aga AppData object to manage data operations
+self.app_data = AppData({}, (}) 1f app_data 1s None else app_data
+
+master_callback(self, “args):
+Invoke functions to update dasnboard date depending on triggers. .
+Args:
+
+args - List of values from app dependency iteas
+Returns:
+
+list of updated values corresponding to args
+8 Get current app_state values as dict
+self.app_state = AppStateDict({J: args(i} for i, j ia emmerate(self.iaput_keys))})
+
+6 Identify trigger function to execute
+@ Execute pre-callback function if specified
+© if hasattr(self, ‘pre_callback’):
+
+s self.pre_caliback()
+
+@ Execute triggered callback
+Af pesattr(self, funcname): =f
+
+if hasattr(self, funcname):
+exec(f"self.{funcname}()")
+
+@ Gatner updated app_state values to return to app
+eng_state = self.app_state.end_state()
+
+return (ena_state[i] for i in self.output_keys]
+
+setup_master_callback(self,
+calloack_input,
+callback state,
+callback_output):
+
+® Define keys for fetching data from app_state dictionary, excletiag temp iteus
+chk = lambda x: (1 for 1 in x if len(A.aplit(’.°)) oo 2 amd lem(i.eplit(’.’)[1])]
+callback_input = cnk(callback_input or [}) or [‘saim_diw.te")
+callback_state = cnk(callbsck state or (})
+self.output_keys = chk(callback_output or ())
+callback _state.extend((k for k in self.output_heys
+
+if not k in ([*callback_input, “eallbeck_state}})) 1a
+self. input_keys = callback _input « callback state
+
+8 Define dependencies for master callback func
+Callback _deps_in = (*[aasn. Input(f"(self.capfx}(k.aplit(’.*)(@})°,
+
+k.ephitc’.)(L))
+for k in callback input),
+
+Add master callback function to app with required Input, State and Output dependencies y
+@ Define keys for fetching data from app_state dictionary, excluding temp items
+chk = lambda x: [i for i in x 1f len(i.split(’.*)) == 2 and len(i.split(’.‘)(1))]
+callback_input = chk(caliback_input or [])} or [‘main_div.id’} i
+callback _state = cnk(callback_state or [}) :
+self.output_keys = chk(callback_output or []) a
+callback_state.extend((k for k in self.output_keys
+if not k in ([{*callback_input, *callback_state})})
+self.input_keys = calloack_input + callback_state
+
+8 Define depencencies for master callback func
+
+callvack_deps_in = [*(dasn.Input( "(self .capfx)(k.splie(’.°)(@}}".
+k.sphitc’.*){2})
+
+for k in callback_input),
+
+*(aasn.State(f"(self.capfx)(u.aplit(’.*}{0})°,
+k.sphic(’.)ER))
+
+5 for k in callback _state}}
+
+callback _deps_out = (dasn.Output(f"(self.capéx}(k.aphit(’.*)[@)}°,
+k.splatc’."){U})
+
+for k 1n self.output_heys]
+
+@ Add callback info to global callback list =
+
+4f len(callback_deps_in) and len(callback_deps_out):
+dash.callback(callback_deps_out,
+
+callback _deps_in)(self.master_ callback).
+ee (om =
+
++ Users > g977209 > gt > dash_helpers > src > dash heipers ~ OY Search aasn helpers
+
+a
+
+Name Ome modfied
+
+5/4/2024 203 Pra
+SAQ/IEM 2.47 OM
+SARTRE 2.47 hd
+CE2EM 1 28 PA
+
+Ml pycache_
+| run_multipage setup.
+i _in_py a
+a Version py
+a adis_utils py
+B app.uyoupy
+callback py
+data_utis py
+Jbasqi_ubis py
+4 get_from_module py
+
+@ mutpage vatup py
+a Notebook est py
+Dy typed
+sa: up page py
+Bb wth py
+@ lable wb py
+
+import pandas as pa
+import os
+
+from . import adls_utils
+from . imsport dbxsql_utils
+from .get_from_module import get_from_module
+
+from azure.identity import DefaultAzureCredential
+from azure. keyvault.secrets import SecretClient
+
+@ Set up DefaultAzureCreaential object for accessing key vaults
+AZ_CREDENTIAL = DefaultaAzureCredential()
+
+def get_secret_from_keyvault(kvk):
+Retrieve secret from Azure key vault,
+Must be logged in to Azure CLI in terminal (type az Joris ona fellow promot) ‘
+try:
+client = SecretClient(vault_urlekvk[ kv’), Ha
+credentialaAl “CREDENTIAL)
+return client.get_secret(kvk[ ‘name’ ]).value
+eacept Exception as e:
+if ‘SecrethotFound’ in str(e) or ‘Name or service not knom*
+return None
+i else:
+reise
+
+fm str(e):
+
+
+def check_env_values(keys):
+Check if specified environment values are populated; if not, try to populate
+from remote_access_ config and/or Azure KeyVault.
+
+@ Get remote_access_config dict if available
+rm_acc_cfg = get_from_module( ‘remote_access_config’,
+‘remote_access_config’,
+1f_missing=(})
+popflags = [}
+for key in keys:
+if os.getenv(key) is None:
+8 If required value not set in environment, loek im remete_access_ config
+v = re@_acc_cfg.get(key) is. rid
+om
+# If value from remote_access_config 1 @ KeyWault/tey pair, get walue from KeyVa
+if isinstance(v, dict) ana ‘kv’ in v and ‘name” ia w:
+v = get_secret_from_keyvault(v)
+
+# If still no value, return False
+
+if v is not Hone:
+os.environ(key] = v
+popflags «= [True]
+
+else:
+
+popflags «= (False)
+
+port lags es (True]
+
+
+Class AppOata(object):
+
+popfilags += [True]
+
+return popf lags
+
+replace_filepath_placenolders(path, replace_dict):
+Return filepatn with placenolaer strings replaced by real values.
+Ares:
+path: String, file path with placeholders to be replaced by real valees.
+replace_dict: Dict, keys = strings to replace, values = replacement strings
+Returns:
+String, file patn with placenolder strings replaced with “real” valees.
+for k, v in replace _dict.items():
+patn = patn.replace(k, v)
+
+return path
+
+dof init__(self, data_config, static_sre):
+
+Identify environment, set up data locations dict . 297" *
+@ If values nseded for Azure access not in os.enviren, try to read from local config/Key Vamsit
+at_peys » ("AZURE CLIENT ID’, ‘“AZURE_CULENT SECRET’. a ANAT TEMANT_ID° 0°] ~ een
+af pay flags = check_env_values(ez_keys) ray ae Tog ge Se 9 Loy “
+
+
+az_env_flags = check_env_values(az_keys)
+
+@ If no values available, set self.local_test to True, set self.data_locs dictionary accordingly
+if min(az_env_flags):
+
+self.local_test = False
+
+self .data_locs = data_config.get(‘azure’) or {}
+else.
+
+self.local_test = True
+
+self.data_locs = data_config.get(‘local’) or {)}
+
+@ 1¥ values needea for DBX SQL access not in os.enwiren, try to read fram local config/Key Vault
+dbxsql_keys = [‘DATABRICKS_HOST', ‘DATABRICKS_HTTP_PATW’, "OATABEIOKS TOKEN}
+dpxsql_env_flags = check_env_values(dbxsql_keys)
+
+@ If no values available, set self.dbxsql_enveFalse
+self.dbxsql_env = min(dbxsqi_env_flags) ine
+
+@ Initialize static source dict (to hold tables after first read)
+self.static_src = {k: None for k in static sre}
+bos Sie
+
+read(self, key, replace_dicteNone):
+Read data from storage and return Pandas D
+args: -
+key: String, to identify dataset. i
+replace_dict: Dict, used to translate placeholder strings in Gata_dict
+Returns:
+Pandas OF
+
+
+Pangas DF
+filepath = replace_filepath_placenoloers(self.data_locs{key],
+replace dict or (})
+if self.local_test:
+if os.path.exists(filepath):
+return pd.read_parquet(filepath)
+else:
+if filepath.startswitn( ‘abfss://"):
+return adls_utils.parquet_to_pdf(filepath)
+lif self.dbxsql_env:
+try:
+return dbxsql_utils.table_to_paf( filepath)
+except Exception as e: 7
+1f not (‘NOT_FOUND’ in str(e))3
+raise ;
+
+op?
+
+ty
+
+Return data corresponding to key as Pandas OF (eitner fetched from static sre
+or loaded from storage).
+
+Args:
+
+key: String, to Identify dataset.
+
+replace dict: Dict, used to translate placeholder atrings im data_dict.
+
+
+def
+
+@ Fetch Pandas OF from self.static_src if it's there
+pdf = self.get_from_static_src(key)
+
+@ If table not populated (not static source table, value not yet populated)...
+if paf 1s None:
+
+# Extract from storage
+
+pof = self.reaa(key, replace_dict=replace_dict)
+
+® Populate static source if needed
+self.ada_to_static_src(pdf, key)
+
+return pdf
+
+save(self, paf, key, replace_dict=None):
+Write contents of pdf to storage.
+args:
+pdf: Pandas DF, dataset to be saved.
+(If None, any existing saved date at target lecation will be eeleted.)
+key’ String, to tdentify dataset.
+replace_dict: Dict, used to translate pleceholéer atrings in data_locs.
+Returns.
+Nothing
+
+filepatn « replace filepath plec hi
+
+Af self.local_test:
+if pét is None:
+
+: Af pdf 1s None:
+ag =f os. path.exists(filepath):
+os. .remove(filepath)
+
+else:
+if not os.patn.isdir(os.path.dirname( filepath)):
+os.makedirs(os.path.dirname( filepatn))
+pdf .to_parquet(filepath, index=False)
+else:
+if filepath.startswitn( abfss://'):
+1f pdf 1s None:
+adls_utils.delete_data(filepath)
+else:
+adls_utils.pdf_to_parquet(pdf, filepath)
+elif self.dbxsqi_env:
+if pdf 1s None:
+dbxsql_utils.arop_table(filepatn)
+else:
+dbxsql_utils pdf_to_table(pdf, filepatn)
+else:
+raise Exception('No data saved')
+
+def sal(self, query, key=None);
+Execute SQL query and return result as Pandes OF. Only avai lane if Connection to
+Oatabricks SQL Warehouse exists. ;
+args:
+Quary: String, query to execute. i : ape gia”
+key : Options1 string, used if query result should ve stored in selt. ttatic a
+
+
+key: Optional string, used if query result should be stored in self.static_sre
+and subsequent extracts pulled from there instead.
+
+Returns:
+Pangas OF
+
+®@ Fetch Pandas DF from self.static_sre if it's there
+
+pdf = self.get_from_static_src(key)
+
+if paf 1s None:
+® Execute query
+if self.dbxsql_env:
+paf = dbxsql_utils.execute(query)
+else:
+raise Exception('No Databricks SQL Marenowse awellable’)
+
+@ Populate static source 1f needed
+self.add_to_static_src(pdf, key)
+
+return pdf
+
+def get_from_static_src(self, key):
+Fetch Pandas DF from self.stetic_sre if it's there
+ri args:
+key: Dataset label, listed in static_src_ tables list in config.
+Returas;
+Pandes OF or lone
+
+Me gags PET tae
+woe =
+
+
+@ Populate static source if needed
+self.add_to_static_src(pdf, key)
+
+return pdf
+
+eet_from_static_src(self, key):
+Fetch Panaas OF from self.static_src if it’s there
+Args:
+
+key: Dataset label, listed in static_src_tavles list is comfig.
+Returns: -
+Pandas OF or None yy
+
+return self.static_src.get(key)
+
+aod_to_static_src(self, pdf, key):
+Add Pandas OF to self.static_src, 1f key 1s listes im static_sre_tables list in config
+Args:
+
+pdf: Pandas OF
+
+key: Dataset lavel,
+Returns: x
+
+Mone
+© Populate i ci source if needed
+
+if key in self.static_src.keys() and pdf is not Nene:
+self.static_src{key]
+
+
+Users + 9977209 » gn > dash_helpers >» src > dasn_nelpers ~ UO Search dasn_ helpers
+
+a
+
+Name Date modkied
+
+B _pycache_ 54/2024 2.03 Pid
+© run_mulupage_setup 56/2824 2.47 Pt
+& _im_py SAGARA 247 Pa
+
+@ version py orem 1429 Ps
+@ adis_uvis py av2mpe 1028 as
+@ app _layoutpy Gtiamba tan Pee
+BD callback_utils py hin. =? oe. Te
+@ anta_udapy
+
+o@ dossgi uss py
+
+@ get from_mocuse py
+@ 901 romapage yma py
+a get user id py .
+@ misc py
+
+@ noiedoor ten py
+
+from databricks import sql
+import os
+
+fut_cony = {‘object': ‘string’,
+‘category’: ‘string’,
+*float32°: ‘douple’
+‘float6é4': ‘aouvle’ EA
+"int32°: ‘ant’, cn *
+rinté4’: ‘bigant'’}
+
+def execute(sql_instr):
+
+Execute SQL code on Databricks SQL Warehouse, return ” results in Pundes OF ./]
+Ares: ;
+sql_instr: String, SQL code to execute.
+Returns:
+Panaas OF
+mith sql.connect(server_hostnamesos.environ( ‘DATABRICAS MOST"),
+Attp_patheos .environ[ ‘OATABRICKS HTTP PATH"),
+access_tokenzos .environ( ‘DATABRICKS TOREM)) as connection:
+am with connection.cursor() as cursor:
+4 4 cursor ..execute(sql_instr)
+i return cursor. fetchall_arrow().to_pandas()
+
+aA
+dot drop taple(teble):
+
+def
+
+def
+
+drop_table(table):
+Drop table from Oatabricks SQL Warenouse
+args:
+table: String, name of table to drop (as catalog. schema.table)
+Returns: v J
+Nothing
+
+execute(f"DROP TABLE IF EXISTS {table}“)
+
+table_to_pdf(taple):
+Read taple from Databricks SQL Warehouse and return as Penden OF
+Args:
+table: String, name of tavle to read (as catalog. scheme. table
+Returns: nad
+Pandas DF
+
+return execute(f"SELECT * FROM (table}")
+
+pdt _to table(pdf, taple, appendeFalse):
+ane ao
+Create table in Databricks SQL Warehouse from Pandas ig {oo
+args. =
+pdt: Pandas OF iB
+
+A table: String, nome of table to create/insert data into (as catalog. schema. table) pea
+
+Read table from Datavricks SQL Warehouse and return as Pandas OF
+args:
+table: String, name of table to read (as catalog. schema. table)
+Returns:
+Pangas OF
+
+return execute(f"SELECT “ FROM {table}™)
+
+pdf _to_table(pdf, table, append=False):
+Create table in Databricks SQL Warenouse from Pandas DF (ception te append)
+Args:
+
+pof: Pandas OF
+
+table: String, name of table to create/insert data late (as catalog. schema. table)
+Returns:
+
+Wothing
+af not (append);
+
+drop_table(taole)
+
+clist « °, “.join((f'{c) (fat_conv(pdf[c).dtype.name})° fer ¢ in pet. celumns))
+enacute(f°CREATE TABLE IF NOT EXISTS (table) ({(clist})")
+
+walues » ',’.join((f"((',’.Join((repr(c) for c in e.values()})))°
+for r in pdf to_dict('records')})
+
+euacute(f"LESERT INTO {table} VALUES (values)")
+
+sles oe ; a ge pee Saas Maa a 3
+
+
+Users » 9977209 > git > aash_nelpers » src > Gash nelpers
+
+ee eee, a ee ee eee
+
+ve Search dash_helpers
+Name aa
+a _pycache_
+5 run_mullpage_setup
+@ mop
+@ version py
+r adis_utls py
+@ app isyoupy
+@ caitoact_utits py
+@ ata wus py
+4 get from module py
+© cet nomepoge lagna gy
+@ gat user d.py F
+mx py :
+@& multipage setup py
+@ notebook wat py
+
+Py \yped
+Bint up page py °"
+Binks py
+@ ule wus wy
+
+vty
+
+import pkgutil
+import sys
+
+def get_modules(path=None):
+
+Return dict of modules at specified path (module nase: module object)
+if not (path is None or isinstance(path, list)):
+
+path = (patn]
+return {k: 1 for 1, k, _ in pkgutil.iter_msodules(path))
+
+Gef get_module(moaule_name,
+path, I
+try_sy$_patn):
+Import module from specifies path. If not found there aad
+try_sys_path=True, try to import from locations on sys.path,
+@ (Make sure module 15 not in sys.modules - won't load otherwise)
+for 1 in [1 for 1 in sys.modules.keys() If 1.startswith( ‘module_aame TE
+del (sys.modules[i})
+
+adis « {)
+adi s .entend((v.fing_moaule(k).load_module(k)
+
+for k, v in get_mocules(path). 1tems() if, hk on sodule name}
+a¢ lea{adis) a6 and try_sys_patht ME es
+
+if len(mdls) == @ and try_sys_patn:
+adls.extend([{v.fing_module(k).load_module(k)
+for k, v in get_modules().items() if k s= module_name])}
+
+if len(mdls) ==
+return None
+else:
+return adls[@]
+
+def Get_from_sodule(mocule name,
+ob]_name,
+path=".°,
+try_sys_patn=False,
+1f_missing=None):
+
+Return object from module 1f possible.
+if missing determines benavior if object cannot be retrieved:
+When == “RAISE’, raise an error and stop.
+then == any other value, return that value in place of reqersted object.
+
+@d) = get_module(mocule_ name,
+patn,
+try_sys_path)
+
+{4 adl is None:
+
+‘OF Af_missing «= ‘RAISE’:
+
+raise Exception(f’ (module name) not found’)
+
+return if siseing EPPO RS
+
+else
+
+
+def get_from_moaule(moaule_name, —
+obj_name, gating
+path="
+
+try_sys_path=False,
+1f_missing=None):
+
+Return object from module if possible.
+if_missing determines behavior if object cannot be retrieved:
+When == ‘RAISE’, raise an error and stop.
+When == any other value, return that value in place of requested object.
+
+ad] = get_podule(module_name,
+patn,
+try_sys_path)
+if adl is None:
+if if_missing == “RAISE:
+
+ee raise Exception(f'{module_name} not found’)
+“ae else.
+
+return i1f_missing
+
+else:
+if not hasattr(adl, od) name):
+. if if_missing <= ‘RAISE’:
+wal raise Exception(('{obj_name} not found in (medule_ name) eosule’)
+
+else:
+return if missing
+else:
+retura getattr(adl, obj _nane)
+
+| Users > g977209 > gt > dash_nelpers > src > dash _nelpen ~ UU Search dash helpers
+
+a
+
+Name Date mocfed
+
+B _pycache_ 5/4/2024 203 Phd
+
+§ run_mutupage_setup SAG/2UBA 2 47 PA
+@ _inn_opy SAR/MIDA 2 AT Pea
+@ version py enemas) aa
+a adis_utls py 4M 82
+@ app tayoutpy Gta 1 as
+@ caliback vais py GRO 1228
+@ cata_utits py qrnanns 1259 me
+@ apes! uns py pocmte s aw
+
+AB get trom moan py
+@ 1 homepa alee me
+: ‘Type PY te
+Bn Use iy ab ae
+Bin 0y | Dane mated WANE 242 Pas
+@ mutupsge setup py
+@B noradook vost py ven 10
+" py typed Ms = a arene 9.28
+@ wip page py _ O/TiGRe 1 a ma
+Bw wh py
+
+Bure vin Ff oa Gh Ir
+
+
+€rom dash import ntml, acc
+
+def get_nomepage_layout(pages_config,
+leave_space_for_neader=False,
+
+: link_wiatn=450,
+link_heignt=168,
+' link_gaps=5@):
+Generate page layout object for app home page.
+Ink_style = {
+‘position’: ‘absolute’,
+‘widtn’: f'{link_wiatn}px',
+“heignt’: f'(link_neagnt)px’,
+‘padding’: ‘1@px ,
+‘color . °#522181',
+*boroer’: ‘3px solid #522181',
+“text-align : ‘center’,
+‘vertical-align’: ‘middle’,
+‘Mne-neight': “24px ,
+*taxtDecoration’: ‘none’
+
+whstble pages « (page for p im pages_contlg
+
+fgtura otal .Div(
+. ide’bome main aiv',
+
+
+id="home_main_div',
+childrenshtml .01v(
+
+html .A(
+chiloren=page.get('desc’, page({'id')),
+nref=f"/{page[‘1d°}}",
+style=(
+**Ink_style,
+*top': F fane(on / 3) * (link height + link_gaps)) + Link pops} px
+“left': €°(((pn % 3) ° (link_width « ink gaps)) « link gaps}px’,
+}
+
+}
+for pn, page in enumerate(visible pages)
+
+={
+‘position’: ‘absolute’,
+‘top’. “Opx’, ay
+
+‘bottom’ ‘O@px”
+"left': ‘Opx',
+“ragnt’: ‘Opx",
+‘padding’: ‘12px',
+‘Cext-align': ‘left’,
+
+‘position’: ‘fixed’,
+‘top’: "SOpx' if leave space. for sees te or
+
+
+href=f"/{page['id']}",
+style={
+
+“"Ink_style,
+‘top’: f'{{int(pn / 3) ° (link_height + link _gaps)) - link_gaps}px',
+
+‘left’: f'{((pn % 3) * (link_width + link gaps)) + link gaps}px ,
+
+}
+)
+
+for pn, page in enumerate(visible_pages)
+
+“position’: °
+“top : ‘@px',
+‘bottom’: ‘@px’ y
+‘left’: ‘@px",
+‘rignt’: “Opx',
+padding : ‘l2px',
+‘text-align’: ‘left’,
+
+": ‘S@px’ 1f leave_space_for_neader else ‘@px’,
+‘@px’,
+‘epx',
+
+
++ Users » 977209 > git > dash_helpers > src >» dash_nelpers v UY Search dasn_helpers
+
+a
+
+Name
+
+A _pycache_
+
+Mf run_mulupage setup
+@ _im_py .
+@ version py
+
+a adis_utils py
+
+@ app.uyonpy
+a callback_utils py
+a data_utih py
+@ dbxsqi uti py
+a get from moduse py
+i se. pornepags Jara
+@ get user it py
+
+@ mac py
+
+a mullipege setup py
+@ notebook sort wy
+
+” py typed
+
+yee CIN a?
+; ap eae a
+
+8 ubie wih py
+
+ae
+
+—_ oa a
+
+from flask import request
+import base64
+import pandas as pa, a
+?
+
+def get_user_id(): ~
+
+Get user ID from flask.request.headers.
+autnorization_heager = request.headers.get( Authorization”)
+autnorization_neader:
+jwt_body = authorization_neader.split(".”)(1]
+jwt_body = jwt_pooy + "=" ° divmod(len(jwt_body), 4)(2}
+Jwt_body dict = eval(str(base64.urlsafe_b&é4decode( jut_bedy), “wtf-8*))
+
+uid = Jwt_pody_dict{ “unique_name’].split(‘'@*)(®}
+
+return pd.DataFrame({‘user_id': (uld]))
+else: ae {=
+; © If no header (e.g. if testing locally), set up e Gummy weereme
+return pd.DataFrame({‘user_id': {°ul23456°)))
+
+
+| > Umer » gSTT209 > git > dash_helpers > src > dash_nelpers
+
+Name
+
+B _pycache_
+Bf run_mulupage_setup
+bers,
+4 fit py
+@ versionpy
+a adis_utils py
+@ app sayour py
+@ callback wth py
+@ cau uth py
+@ avis) ws py
+
+DD oer user ity
+a misc py
+a multipage setup py
+@ notebook rest wy
+py typed
+Bi ier up page my |
+Bab ut py i
+@ une utils py
+
+
+ros dash import ntml
+
+def losding_message(id="loading_message’,
+message_text='Loading Data...°,
+initially_hidgen=False):
+
+Return layout component for a loading message to prevent user access to content
+wmile data is loading; can be toggled off by setting “hidden” property to True
+
+chiladren=[
+
+html. H4(cnildrenamessage text,
+style=('position’: ‘ebsolute’,
+‘top’: "200px",
+“height’: ‘12@px‘,
+‘left’: °30@px",
+‘width’: ‘60@px', fs
+‘padfing’: ‘4Spx 23Spu’,.e 48
+‘color’. ‘rgpa(is, 2, 23. 1)",
+‘background-color’: ‘egba(2S$, 28S, 35S,
+‘Eindex’: ‘98°) - Z
+
+),
+
+L
+hiadenzinitially_nidden,
+B styles{‘position’: ‘fixed’,
+‘top’: ‘Opx',
+“pottom’: ‘@px', ?
+
+initially_hidden=False):
+
+feturn layout component for a loading message to prevent user access to content
+while data is loading; can be toggled off by setting ‘hidden’ property to True
+return ntal .Div(id=1d,
+
+children=[
+ntml.Ha(childrensmessage_ text,
+style=(‘position’: ‘absolute’,
+‘top’: ‘20@px",
+‘height’: °120px°,
+‘left’: '38@px',
+‘width’: °60@px",
+‘padding’: ‘45px 235ga°,
+‘color’: ‘rgba(i9, 2@, 23, 1)*.
+“packground-color’: ‘rgea(zS3, WS, 25, 1)°,
+‘z-index’: '99') i re
+
+),
+1,
+nidden=initially hidden,
+styles(‘position’: ‘fixed’,
+
+‘top’: ‘Opx’,
+“pottom’: ‘Opx’, ig
+"left': ‘Opx', =F
+
+‘rignt'’: ‘Opx',
+‘background-color’: ‘rgba(@, @, @, @.3)',
+‘z-index’ ‘98°})
+
+
+Users > g977209 » gn > dash_nelpers » sre > dash_nelpers ~ U Search dash_hetpers
+
+a
+
+Name Oste modified Type
+
+B _opycache_
+| run_mulupage_setup
+@ _im_py
+
+a version py
+
+a adis_uuls py
+
+@ app ayo py
+@ callback _utila py
+BB aaa tts py
+@ 00159) _vs py
+a4 get from_modute py
+
+PY POL, a bea ma
+Bi cat up page py SEF: : a) Sr Er DY)
+@ ad ute py = —. $y BMA 2 47 Pea
+@ ule wth py ; ; *  QAhame sabe
+
+import os
+import snutil
+import socket
+import platfora
+import argparse
+from .get_from_module import get_from_module
+
+PAGE_SCRIPT_TEMPLATE = \
+from dash import register_page
+import aash_helpers
+
+@ Register app page
+register_page(__name__, path='PATH', names NAME’)
+
+@ Get page layout and initialize callbacks
+layout = dash_helpers.set_up_page( “PAGE')
+
+ee ee Se
+from dash import Dash
+Amport dasn_pootstrap_components as dbc
+
+from dash_nelpers import app_lsyout i.
+from qultipage_config import multipage config
+
+@ Inatialize app and aefine layout
+ape + Desh( _pane_,
+
+app = Dash(__name_,
+external_stylesneets=[dbc. themes.BOOTSTRAP],
+use_pages=True)
+
+app. layout = app_layout(multipage_config[ pages’),
+
+multipage _config.get( ‘title’ ))
+
+# Run app
+server = app.server
+if _ name == ‘_main_‘:
+
+app.run_server(host=‘HOST’, port=PORT)
+
+def get_port_from_args():
+parser = argparse.ArgumentParser()
+parser.add_argument("--port”, type=str)
+args = parser.parse_args()
+return args.port
+
+det set_host_and_port(port):
+
+Set values for host and port number
+
+4f pletfore.systea() in('Windows’, ‘macOS'):
+@ for locel testing, use localhost : 8080
+host = °127.0.0.1°
+
+
+port = 8880
+elif ‘DATABRICKS RUNTIME _VERSION’ in os.environ:
+@ Unfortunately, it's not possible to run a Dash app from Databricks
+@ using tne public version of Dash; we would need Dash Enterprise
+raise Exception(“notebook_test module can’t be run from Databricks”)
+elif socket. gethostname().startswith( ‘cdc-Inx-ps-’):
+®# For on-prem Python servers, use specified port (terminal or notebook)
+host = socket.gethostname()
+a if port is None and not 1n_notebook():
+j port = get_port_from_aregs()
+if port 1s None: 1
+raise Exception(f ‘Must specify port to use on (host}")
+
+else:
+ha ® Otherwise (usually AKS), use 0.6.0.0: 8000
+a host = '@.0.0.0°
+" port = 8080
+
+0S .environ[ 'DASHHOST J} = host
+os.environ[ ‘DASHPORT'] >= str(port)
+
+Get in_notebook():
+try:
+
+fram [Python taport get_ipytnon
+
+if ‘IPKernelApp’ not in get_ipython(). contig:
+
+return False J
+
+except LaportError:
+return False
+
+encept Attributefrror:
+
+except AttributeErrors
+return False
+
+else: Ye
+return True’
+
+aake_py(template, replacements):
+
+Generate string for a .py script from template and list of find-replace value pairs.
+tmp_ins = template. split('\n')
+script = [tmp_Ins(@}.strip()]
+
+if len(tmp_lns) > 1:
+tmp_ind = min([len(1nm) - len(ln.lstrip())
+for ln in tmp_ins(2:]
+if len(In.strip())))
+for In in tmp_Ins[1:]:
+ln = in{ctmp_ind: ]
+for v, w in replacements:
+In = In.replace(v, w)
+script v= (ln)
+
+retura ‘\n', join(script).strip()
+: ae
+
+
+Generate main.py script (unless running in Jupyter) and pages scripts.
+
+@ Set environ values for host and port number to use for Dash app :
+set_host_and_port(port=porc)
+
+@ write aain.py script if not running in notebook
+if not in_notedook():
+x py = make_py(MAIN_SCRIPT_TEMPLATE,
+((HOST', os.environ[ ‘DASHHOST']),
+‘ (*PORT’, os.environ{ ‘0 aT’ })))
+open({ "main.py', ‘w').write(py) -
+
+8 Write page scripts to pages folder
+af os.path.isdir( pages’):
+
+shutil.rwtree( ‘pages’ )
+os .mkdir(" pages‘)
+
+@ (Home/landing page)
+By = make_py(PAGE_SCRIPT_TEMPLATE,
+[('PAGE’, ‘home'),
+('NAME’, ‘Home Page’),
+('PATH’, °/°)))
+wht open('pages/home py’, ‘w') as f:
+€ .write( py)
+
+© (hep pages)
+multipage config » get_froa_module(‘ “mult page. config’,
+
+
+@ Write page scripts to pages folder
+if os.path.isdir( ‘pages’ ):
+
+shutil.rmtree( "pages" )
+os .mkair( ‘pages )
+
+© (Home/landing page)
+py = make_py(PAGE_SCRIPT_TEMPLATE,
+| [( PAGE’, ‘home'),
+('NAME’, ‘Home Page'),
+(PATH’, */°)})
+with open( ‘pages/home.py’, ‘w') as f:
+f write(py)
+
+© (App pages)
+aultipage_config = get_from_module( ‘multipage_config’,
+‘multipage _config’,
+1f_missings RAISE’)
+for k 1m multipage _config{ ‘pages’ ):
+Y, Ppath = os.path. join( ‘pages_src’, k{ ‘1d’ ])
+assert os.path.exists(f"(rpath)/layout py”)
+By = make _py(PAGE_SCRIPT_TEMPLATE,
+[U'PAGE', k[*td"]),
+U'NAME', k[‘name‘)),
+C'PATH', f° 7(k('18°))")))
+with epen(os.path.join( ‘pages’, f"(k[‘1d'}).py"), ‘w') as ¢:
+
+' € .wite(py) eye en EN
+
+
+_
+
+Users >» 9977209 > grt > aasn_nelpers > src > dash_helpers v © Search dash_hetpers
+
+a
+
+Name
+
+a _pycache_
+t | run_mulupage setup.
+a Int py
+
+@ versionpy
+a adls_utls py
+@ app _inyout py
+A callback, utta py
+@ ania_uths py
+8 doxsqi_vuts py
+
+
+¢4rom dash import Dash
+
+import dash_bootstrap_components as dbc
+import os
+
+import sys
+
+.get_from_module import get_from_module
+
+fron
+
+free.
+.app_layout import app_layout
+.Set_up_page import set_up page
+
+frou
+from
+
+def notebook_test(port=None, page="ALL"):
+
+Enables aeveloper to test a multi-page Dash app in a Jupyter aetebeok, for easier
+development ano aebugging. Test the whole (aulti-page) agp er a single pagr.
+Testing a single page gives access to the DashCallbackgr objects cemtaining
+
+app_state data, functions, etc.
+The port parameter must be specified when using céc-lan-ps-@815 er similar on-pres
+Python server, and should be selected to avoid conflicts with other appe/esers.
+
+and pages src folder). Use the following code to tes
+
+import multipage_setup
+
+the waale app:
+
+from dash_helpers import notebook test
+Op, _ = Notebook test(ports<PORT NUMBER>)
+
+‘ail from dash_helpers import notebook_test
+app, callback_mgrs = notebook_test(port=<PORT NUMBER>, page=‘<PAGE ID>‘)
+
+Returns.
+1. JupyterDash app object
+2. If page '= ‘ALL’, list of DashCallbackMgr object(s)
+multipage_config = get_from_module( ‘multipage_config’,
+“multipage_config’,
+if_missinge RAISE’) :
+
+@ (Workaround for issue with running multi-page app in aotebosk )
+
+fix_ind = not hasattr(sys.modules(‘__main__’}, ‘_file_°)
+
+if fix_inga:
+setattr(sys.moaules['__main_‘), °‘_file_
+
+df page == ‘ALL’:
+
+aultipage_setup.main(portsport)
+
+app = Oash(' main’, Pa
+external_stylesheetse(dbc. thenes BOOTSTRAP), |
+
+abt Ne pages_foldersos.path.abspatn( ‘pages’)) S;
+
+| it: agp. layout = app_layout(multipage_config[ ‘pages’ ],
+
+multipage _config.get(‘'title’)) So
+
+assert page in (pl id'] for p in multipage_config( pages‘ )]
+aul Uipage_setup.set_nost_end_port(port)
+
+ME wae en, alc;
+
+if page == “ALL :
+gultipage_setup.main(port=port
+app = Dasn( _ main_', Bo
+external _stylesheets=[dbc. themes .BOOTSTRAP ), Rams
+pages_foloer=os.path.adspatn( ‘pages’))
+app.layout = app_layout(multipage_config[ ‘pages’ ],
+multipage_config.get(‘title’))
+
+else:
+assert page in [p[‘id') for p in multipage_configl ‘pages ))
+multipage. setup.set_host_and_port(port)
+
+app = Dash(*_ main_',
+‘ external_stylesheets=[dbc. themes . BOOTSTRAP))
+
+app.layout, callback_mgrs = set_up_page(page, return_callbect_agretree)
+
+@ (Reset sys.modules)
+if fix_ina:
+del(sys.modules({‘_main_‘}._ file_)
+
+app. .run(host=os.getenv( ‘DASHHOST'),
+port=os.getenv( ‘DASHPORT’),
+jupyter_mode= ‘external ')
+
+Jeturn app, calibsck_agrs
+
+ij ate
+
+
+Users > g977209 > gt > dash_nelpers > src > dash_hnelpers ~U Search dash _heipers
+
+“Name Oate modded Type
+B _pycache_ SsA/2EBA 203 PA Fite folder
+W run_mutupage setup. S@/2024 247 PN File foides
+3 _int_py = VASA 2 £1 Pe PY Fle
+@ versionpy am PY File
+@ adis_vuts py 4AM 102 Ps Or File
+a app _layout py Ova EE OY Fee
+@ callback vats py Pr File
+@ cata utes py OY Fae
+@ doxsq1_vus py Py Fae
+oY Fin
+PY in
+Pv Fée
+Wy hae
+
+QV eae
+
+arene pai ou
+ql aaae 1 aa wee
+AAEM 20 me lee
+
+i rt
+
+
+impo
+
+import inspect
+from dash import dec, ntml
+
+import numpy as np
+
+from
+from
+fros
+fres
+
+def
+
+nee @dls = get_modules(func_path)
+
+i a Obj = getattriamdl, obj_nm) p é
+i 1f (callable(obj) ano nasattr(oby, ° nek
+¥ and obj. _ —code__.co_ filename. ‘ artawith( func _patn)
+
+rt os
+
+-get_homepage_ layout import get_nomepage_layout
+-Callback_utils import DasnCallbackMgr
+-data_utils import AppData
+
+.get_from_module import get_modules, get_from_sodule
+
+get_callback_functions(func_path):
+Gather and return dict of callback functions (as {°func_name’: <«fumctiom>})
+for app from specified path and subfolders (recursive).
+@ Initialize empty lists for functions, names
+funcs = dict()
+
+func_path = os.path.abspath( func_path)
+1f os.path.isdir(func_path)-
+@ Gather functions in current directory
+
+for k, v in adls.items():
+
+ad) « v.find_module(k). load _module(k)
+for obj_nm in dir(mdl):
+
+_.¢ede_")
+
+ana obj.__code__.co_filename.startswith( func_path)
+and ‘self’ in inspect. getargs(obdj. — code) ares i
+and obj_nm not in funcs. Keys de
+funcs[obj_nm] = obj
+
+@ Gather functions from subfolders wt
+pathlist = [os.path.join(func_path, 1) for 4 in os.listdir(func_path)} F
+for p in pathlist: i
+sd_funcs = get_callback_functions(p)
+funcs .update({k: v for k, v in sd_funcs.items() if aot (k im famcs.keys())})
+
+return funcs
+
+def _strip_comments(func_src):
+
+femove commented-out strings from input source code text.
+QSTYLES = [77 ae
+func_src_new = ‘* wae a
+ptr = 0 ws x
+while True. ws le
+qst «© np.array(([ptr + func_src[ptr:}.index(q), lene), qn}
+for qn, q in enumerate(QSTVLES) 1f @ in fune_sre(pte:)))
+if qet.shape[@): :
+@ix, alen, q = qst([np.lexsort((-ast[{:, 1), qatt:, @))))(@)
+qend « ‘\n’ If QSTYLES[q] == ‘®' alee QSTYLES[q]}
+fame src nae ce func_src(ptr:qix)
+
+
+def
+
+func_sre_new += func_sre(ptr:qix}
+
+ptr = (qix + func_src(qix + qlen:].index(qend) + (2 * qlen))
+
+func_src_new += "\n' if QSTYLES(q) == ‘#’ else func_src[qix:ptr] _
+else: ‘e
+func_src_new += func_sec(ptr: ]
+break
+
+return func_sec_new
+
+func_effects(funcs, func_name):
+Return list of app_state variables affected and downstream functions
+javoked by running callback function.
+func_sre = inspect. getsource(funcs[func_name.split(*.*) en)
+func_src = _strip_comments(func_src)
+
+@s_out = set()
+de_state = set()
+@6_funcs 2 (func_name.split(' ')(@))
+while ‘self ‘ in func_sec:
+fume _src c func_src({func_src.index('self."):
+if func_src.startswitn( ‘self.app_state’):
+@ Detect upsates to or usage of app_state values |
+ix = func_erc.index(']')
+ops var « func _src(16:ix - 1)
+func secs func_erc({in © 1:).strip()
+
+func_src = func_src(ix + 1:].strip()
+
+if not func_src.startswitn(‘==') and ‘=" in func_sre(:2]:
+ds_out.ada(aps_var)
+
+else:
+ds_state.add(aps_var)
+
+else:
+
+# Detect invocation of other functions
+
+if *(° an func_src:
+
+= func_src.index(‘(*)
+
+else:
+
+break
+if func_src(5:ix]) in funcs.keys():
+suofunc = func_src(5:1x]
+ds_funcs.aad(supfunc)
+func_sre = func sre(ix:).strip()
+add_o, add_s, add_f = func_effects(funcs, subfunc)
+ds_out.update(add_o)
+ds_state.update(add_s)
+ds_funcs.update(add_f)
+else:
+
+func_sre = func_src(5:}
+
+re@urn ds_out, as state, ds_funcs
+
+Got api it col loacks(funcs, callback_triggers):
+
+net Spiit_callba ks(tunca; (atiback«ceiggere}p/
+see poo ro fyartepatag ss. and oa’ dn func_sec(:2):
+Pivide calloack trigger -ond-deta lists into groups based on overlapping effect
+
+@ For each trigger get affectea outputs, required State data and functions used
+tr_out # dict() z
+tr_state = dict() Katina of other functions
+tr_funcs = aict() ice
+for t in [".‘.join(f) for f in callback _triggers):
+dso, dss, dsf = func_effects(funcs, t.split(’.*)(@})
+try:
+tr_out(t].upaate(asa) bryce
+except KeyError:
+tr_out[t} = aso
+try:
+tr_state(t}. upoare( ass)
+except KeyErrar:
+tr_state(t]}) = ass
+try:
+tr_funcs(t).upaate(asf)
+except KeyError:
+tr_funcs(t] = dsf
+
+epAset « list((cp for v in tr_out.values() for cp in v}}
+cpu = dict(sio(cplist, range(len(cplist})))
+7 HEre m list(range(Jen(cplist)))
+| for v in tr_put .values(): :
+
+for v in tr_out.values():
+v = list(v)
+for 1 in range(len(v) - 1):
+for j in range(i + 1, len(v)):
+cp_erp = (cp_erp[cp_ix{v[i}]] if g == cp_grp(cp_ix[v[J}}] else g for g in cp_grp)
+
+@ Get list of functions, callback triggers and data for each group
+split_callback_aata = [(]
+
+for g in set(cp_grp):
+
+gp_out = sorted({cplist[i] for 1 in range(len(cplist)) if cp_gre{i} = g))
+gp_in = sorted((k for k in tr_out if max({cp in gp_owt fer cp ia tr_owt(k}) or [False])])
+gp_funcs = {k: funcs[(k) for k in {f for t in gp_in for € in tr_famcs[t})}
+
+gp_state = sorted(list({s for t in gp_in for s in (r_stete(t) if aot (s in gp_in)}))
+
+split_callback_aata -= ((gp_funcs, gp_in, gp_state, gp_eut)}
+
+return split_callback_data
+
+def get _page_plan(rpath):
+Locate and loac page layout and config modules (layout, comfig, gata_comfig), ~
+return as dict. (Throw exception 1f leyout not present, return empty List/dict
+tor ahy other items not present.)
+
+ratura {
+
+
+‘layout’,
+
+rpath,
+if_missing="RALSE'),
+*store_components’: get_from_module( ‘config’, ae
+
+‘store_components' , Baw
+rpath, %
+if_missing=[}),
+
+get_from_module( config’,
+
+‘static_src tables’,
+
+rpatn,
+
+if_missing=[(}),
+get_from_module( ‘config’,
+‘callback triggers’,
+rpath,
+if_missing=()).
+
+“data_config': get_from_module('data_config’,
+
+*data_config’,
+
+if _missing=()),
+
+f ‘static_src_tables':
+
+‘callback_triggers’:
+
+~
+
+dof set _up_page(page_id, :
+leave_space_for_neader«True, Hm
+return_callback_mgrofalse): &
+
+if page_id == ‘home’:
+# For home/landing page, generate layout from multipage config
+multipage_config = get_from_module( ‘multipage config’,
+*multipage_config’,
+1f_missing="RAISE’)
+page_layout = get_homepage_layout(multipage_config[ ‘pages’],
+leave_space_for_headersleave_space_for_header)
+callback_mgrs = []
+
+# Define relative path for page-specific objects
+rpath = os.path.join('pages_src', page_id)
+
+@ Get page setup dict components and config dicts from somales
+page_plan = get_page_plan(rpath)
+@ Finalize page layout, adding dcc.Store components a 4
+page_items = page_plan[‘ layout‘)
+if callable(page_items):
+page_items = page_items()
+store_comps = (dcc.Store(idsi) for 1 in page plan
+
+page_layout = ntal .Div(
+
+id=" {page_1d)_main_div",
+childrens(page_items, “store comps),
+styles(
+
+‘position : ‘fixed’,
+
+‘top’: 'SOpx’ if leave_space_for header e else *Opx’ i ais eu
+‘porte’: px" SOE ae Set A pares, alt 2h
+
+‘top’: "S@px 1f leave_space_for_neader else ‘@px',
+‘bottom’: ‘@px',
+‘left’. ‘Opx',
+‘rignt': ‘@px',
+
+#@ Set up AppData object to manage data operations;
+app_data = AppData(page_plan[‘data_config' J,
+page_plan[ ‘static_src_tables’])
+
+# Set up callback functions; define triggers, import fumctions, set op OesmCallbackMgr objects
+funcs = get_callback_functions(os.path. join(rpath, °fwactions”))
+callback_triggers = [('on_entry’, ‘')] Af ‘on_entry” im (emcs.Reys() else [()
+callback_triggers.extend(page_plan( ‘callback triggers’ })
+callback_mgrs = [)
+for cb_params in split_callbacks(funcs, callback_ triggers):
+
+callback _mgrs += (DasnCallbackMgr(page_id, °*cO_parems, age_Gata))
+
+@ Add page prefixes to layout component ids
+for k in page_layout:
+page_layout(k]).1¢ = f"(page_1d)}_(page_layout(h}.1¢)%
+
+Of return_celloack_mgr:
+return page layout, callback _mgrs
+
+A page_layout
+
+
+Users > 9977209 » gt > dash_helpers > src > dash helpers ~ © Search dash helpers
+
+ry
+
+1G wt wee py
+
+Oste modded
+
+Name
+
+54/224 2:03 Pid
+SG/204 2.47 Pd
+
+B _pycache_
+a run_multipage_setup
+
+a _init_py aus OSM 2.47 A
+@ version py umn an
+Bi acs uuis PY vam em
+@ app layout py errpamee 1 an oa
+@ calback_utls py SVQROE 12.35 Fs
+@ asta tits py Ce:
+@ dong we py srvamna 108 aan
+@ 91 from_ monte py SAG 0
+@ 901 homepage layes py 27? cera
+get user py :
+
+Bmx py
+
+a mullipage setup py
+a Notebook tert py -
+
+” py typed ees as
+
+Bw ull py
+@ une utils py
+
+from dash import dcc, ntml
+import copy
+
+default_style = {
+
+‘div container’: {
+‘position’: ‘absolute’,
+“top: ‘12px’,
+‘bottom’: ‘1l2px',
+‘left': ‘l2px',
+‘pight': ‘12px',
+
+),
+
+*selector’. {
+“height': “44px’,
+‘width’: '548px",
+
+4
+*porder-top-left-radius’: "3px",
+“porder-top-right-radius’: "3px",
+‘border-bottom’: ‘Ipx solid #06D6D6'
+‘boraer-top’: ‘1px solia #06D606',
+‘padding’: 6px",
+
+font-weignt': ‘normal’,
++ ‘color’: '8212121',
+ip a “packgroundColor': ‘#CCCCcc’,
+Ve
+“salected_tab’: {
+; ‘vorder -top-left-radius’: ‘3px’,
+Fig "Porder-top-rignht-radius': ‘3px’,
+
+
+‘border-top-rignt-radius’: “3px ,
+*porder-bottom': ‘1px solid #D6D6I
+‘porder-top': ‘2px solid #512081",
+‘padding’: ‘6px',
+
+‘font-weignt'. "bold',
+
+‘color’: °#512081', i
+‘packgroundColor’: ‘sFFFFFF',
+
+div’: ¢
+
+‘position’: ‘aosolute’,
+‘top’: ‘48px',
+‘bottom’: ‘@px",
+‘left’: ‘@px',
+
+‘right’: ‘@px'
+
+det get_tan(tab_id, label, content, wPly teed
+
+@eturn Layout component for tab content “rg
+
+return dcc.Tap(lapel=ladel,
+valuestab id,
+childrenshtal .Div(content,
+stylesapply_atyle[ ‘tab_div')),
+styleespply_style(‘tap'), a
+selected_stylecapply style ‘selected tad'}) #
+
+
+selectea_style=apply_style[ ‘selected_tap‘])
+
+4
+7h
+
+i
+
+def get_tabs(tabs_ic,
+tabs,
+initial _select=6,
+**kwargs):
+
+Return layout components for tabs with specified content (List of dicts)
+@ Get valid arguments from kwargs
+
+override_div_style = kwargs.get(‘style’, (})
+override_selector_style = kwargs.get('selector_style’, ())
+
+@ Combine default style dicts with user inputs for style te agply
+apply_style = copy.deepcopy(default_style) 5
+apply_style[‘div_container’].update(override_div_style)
+apply_style{ ‘selector’ ).update(overrige selector_style)
+Af apply_style{ selector’) .get( height’): "ed
+apply_style[‘tab_div’](‘top’] « f"{int(epply_style( ‘selector’ }{ ‘meignt’). replace(’t px’, “‘)) + 4)
+ou?
+
+return htal .Div(
+
+{
+“res dec. Taps(idstabs id,
+. valuestabs[initial_select}(‘tab_id'),
+
+stylesapply_style(' selector’ YD a patties
+
+tabs,
+L initial_select=6,
+ae **kwargs):
+
+Return layout components for tabs with specified content (list of dicts)
+@ Get valid arguments from kwargs
+
+override_div_style = kwargs.get(‘style’, {})
+overrioe_selector_ style = kwargs.get(‘selector_style’, 0)
+
+®@ Compine default style dicts with user inputs for style to apply
+apply_style = copy.deepcopy(default_style)
+
+apply_style[ ‘div_container’ ].upaate(override_div_style)
+apply_style[ ‘selector’ ].upgate(override_selector_style)
+
+if apply_style[ selector').get(‘heignt'):
+
+apply_style{'tab_div'}( top’) = f"(intCapply_style{* selector’ Ww melget }- replace( ’ px’, “)) « 4)
+, nm : , SIME Ns
+
+dec. Tabs(id=tabs_ ia,
+
+value=tabs(initial select }{‘tabd_id'}
+cnildren=[get_tabd(*'t, apply _styleeagply style) fer t in tabs},
+stylesapply_style{ ‘selector’ ))
+
+
+|
+
+Users > 9977209 » git > aash_neipers * src > dash_neipers ~ UW Search dash_heipers
+
+a
+
+ecu ot
+
+Name
+
+M _ pycache_
+4B run_multipage_setup
+r _Int py
+a version py
+2B ads vis py
+@ opp tayour py
+@ cailback_utits py
+a data_utds. py
+@ atsg wth py
+a get_from_ module py
+@ pet nomepene layout gy
+@ get user py
+@ mix py
+a mullipage setup py
+@ notebook test J
+” py typed
+aun up
+au
+
+Bh table vile py
+
+Toth
+ae
+
+&19-200 | a8 Ped
+
+yRRE ITS ot
+
+import os
+
+import inspect
+
+import copy
+
+from dasn import html, dasn_table
+
+from .get_from_module import get_from_module
+
+default_style = {
+
+“div_container’: {
+‘position’: ‘absolute’,
+‘top’: “@px",
+‘bottom’: ‘Opx",
+‘left’: ‘Opx’,
+"overflow-x": ‘auto’,
+‘overflow-y’. ‘auto’,
+
+‘pacding’: ‘4px 6px’,
+
+*boroer-style': “solid’ »
+‘border-widtn’: ‘ipx’, |:
+text-align’: ‘left’,
+
+‘overflow’: ‘hidden’,
+
+“text -overflow’: ‘clip’!
+‘font-family’: [‘Arial’, ‘sans-serif’),
+‘color’: ‘#131417',
+
+‘perder -left': ‘1pt solia #73737)",
+‘porder-rignt': ipt solid #737373",
+“porder bottom’: ‘Ipt solid #737373",
+"Ben -sizing’: ‘boraer-box', —s
+
+
+“box-sizing’: ‘border-box',
+
+},
+
+*header_cell’: {
+‘padding’: ‘4px 6px’,
+‘border-style’: ‘solid’ ty
+‘border-width’: ‘1px’,
+
+‘text-align’: ‘left’,
+
+‘overflow’: ‘hiagen',
+
+“text-overflow': ‘clip’,
+‘font-family’: [‘Arial’, ‘sans-serif’],
+font-weight’: ‘bold’,
+“packground-color’: °#512681',
+
+color’: ‘aFFFFFF’,
+
+“pox-sizing ; ‘border-box’,
+
+(44
+
+),
+‘header_row’: {
+“heignt’: '38px',
+
+dasn_table.FormatTemplate.money(?),
+dasn_table.FormatTemplate.money(@). group( True),
+dasn_table.Format.Format(groupetrue, groupse{}}),
+: dash_table.Format.Format(),
+: dash_taple.format.Format(precisions2,
+scheseadash_| tole. Forest. Scheme, ¢ _
+: dash_Uple.format format (precisionsé, Px -f
+
+
+‘number -6': dash_table. Format .Format(precision=6,
+scheme=dash_table. Format. Scheme. fixed),
+‘pet-1°: dash_table.FormatTemplate.percentage(1),
+
+‘ w = 7
+
+det get config dicts(table_1d):
+
+Return table ana column config dicts from tables_config module, if it exists.
+path = os.path.dirname([i.filename for 1 in inapect.stack() if “layowt’ ia i. filenase}(@})
+table_styles = get_from_module( ‘config’,
+‘tables_config’,
+path,
+if_missing=(}).get(teble id, {))
+column_defs = get_from_module(‘config’,
+f “table_columns_config’,
+
+path,
+if_missinge()).get(tadle_i@, ())
+* eT
+return table styles, column_defs .
+oY 2
+
+af get _wead_components(columns, columns_cfg, apply_atyle):
+Gature table head (ntal.Thesd) object for table
+
+0 Gat list of visible coluans
+
+# Get list of visible columns
+vis_cols = (c for ¢ in columns if columns_cfg(c)[‘width'] >» 0)
+
+@ Organize column labels; detect where multi-row head needed
+
+hlabels = dict()
+
+n_hrows = 1
+
+for ¢ in vis_cols:
+
+if ‘label’ not in columns_cfg{c].keys():
+hlabels{c) = [c]
+
+elif isanstance(columns_cfg[(c}(‘label'J, list):
+nlabels[c) = columns_cfg(c][‘label’)
+n_Nrows = max(n_nrows, len(hladels(c)))
+
+else:
+nlabels[{[c) = (columns_cfg(c]{‘lavel')}
+
+for c in vis_cols:
+hlapels[c] = (hlapels(c] « {°'] * n_Nrows)(:n_Arene}
+
+®@ Generate html components for nead row(s)
+head_components = list()
+for r in range(n_nrows):
+@ Identify unique head strings in row (by hey), eqs ing these that stretch across columns
+Alist = list() ; P
+splist = dict()
+cttl_prev = °*
+for nc in range(len(vis_cols)):
+cwtl « hlabels(vis_cols[(nc))(r]
+AF cttl «sz ‘':
+
+4
++
+
+
+pass
+elaf cttl (= cttl_prev:
+hlist += [vis_cols{nc]]
+else:
+try:
+splist{ctth] += 1
+except KeyError:
+splist{cttl] =
+cttl_prev = crtl
+
+& Generate ntal.Th component for each head cell
+PFow_components = list()
+for c in nlist:
+@ Calculate rows and columns to span
+sp_r = min({1 + 1 for 1, J in enumerate(hlavels[c}[r «© 2:) = (°2")) af j fs °'))
+sp_c = splist.get(hlapels(c][r}, 1)
+
+®@ Generate style dict for cell
+style_dict = (**apply_style[ ‘header_cell’))
+if sp_c c= 1:
+style_dict{‘min-width’] » f*(coluans_cfg[¢}[ ‘wi@en’ ) pea”
+style _dict(‘max-width’]) © f"(columns_cfg{c}( ‘wieth* }}gx* :
+style_dict(‘boraer-top-color') « style _dict{ ‘Backhground-color') if r =. @ else style, dict”
+({‘coler’)
+
+elisa otyle_dict| ra
+| ‘color’ | *
+
+style_dict{*border-pattom-color') » style dict[‘Backgreund-celor’) if r+ spr us anes xf
+ol
+_ btyle_dict(‘border-left-color’] « style dict( background-color’) if vis_cels[®) © ¢ else.
+
+
+style_dict[
+
+“return (htwl.Thead(head_components) ]
+
+def get_table(taple_id, “"kwargs):
+
+Aeturn layout components for Dash table configured per ingut parameters.
+
+@ Get valid argusents from kwargs
+call _selectadle flag = bool (kwargs.get(‘cell_ selectable’, True))
+@verride _div_style = kwargs.get(‘style‘, {})
+
+® Get comfig details for table, coluans
+
+@ Compile row_components into html.Tr component, edd (to Rend components
+head_components += [html.Tr(row_components, styleeagply_style({ ‘heager_row")))
+
+style_dict( ‘border-left-color’) = style_dict[ background-color’) if vis_cols[@) == c “ae
+A,
+
+‘color’] ;
+style_dict[‘boraer-right-color'] = style_dict[‘background-color'] if vis_cols[-1] == ¢ else
+
+‘color')
+
+® Add ntml.Th component to row _components i
+row_components «= (html. Th(children=hlabels{c)}[r],
+
+rowSpan=sp_r,
+
+colSpan=sp_c, sl
+
+styleastyle_dict)} ih
+. ee
+fat!
+
+ee os . a
+
+8 Get config details for table, columns
+table styles, column_defs = get_config_dicts(tabdle_id)
+
+@ Get list of columns and formatting details from colusn_defs
+columns = list()
+columns cfg = dict()
+for i in column_defs:
+cname = if column’). lower()
+columns «= [cname]
+columns_cfg[cname] = {k: v for k, v in 1.items() if kh ts
+if not (‘width' in columns _cfg{cname].keys()):
+® Set column width to 108 where not specified
+columns_cfg[cname][‘widtn’] = 168
+
+* column’)
+
+@ Create conditional style dict ano populate rules for calumn widths,
+cond_style = {c: dict() for c in columns)
+tot_width = @
+for c in coluans:
+af columns_cfg(c][‘widtn'’) s= @:
+cond_style(c]('display'} = ‘none’
+else:
+ws columns cfg{c}{‘widtn’ ]
+tot_width eo» w
+for p in [‘min-width', ‘max-width’):
+cond_style(c)(p} = f° (w)px'
+cond _style[c)[ text-ellgn’] = ‘right’ if ‘num_fut' in columns_cfg(c).keys() else ‘left*
+| cand style « Wie: { column_id': c}, **cond .style[¢}} for c in ey
+eee
+
+14 ad vt ae, 1
+Pea Ze Te
++ me 5 5 “
+* Mm _ ee a a ve
+
+8 Add rules to effect conditional cell style
+for ¢ in columns:
+
+@ Define table columns, ada number formats (via the MUMBER FORMATS dict above FF
+® or using dash_table Format/FormatTemplate object), Flag if etitanle. an
+col_gefs = list()
+table_editable flag = False
+for ¢ in columns:
+
+|
+a
+
+for r in columns_cfg[c].get(‘cstyle’, (J): °
+cond_style -= [
+
+“filter_query’: r[@},
+*column_id': ¢
+
+col_def = {‘id': c, ‘name’: c)
+if ‘num_fat’ in columns cfg(c].keys():
+col_def( type’) = ‘numeric’
+Af isinstance(columns cfg(c]}({‘num_fat'), ater):
+col_def[(‘format') « numper_formats(columns_cég(c)}{ ‘eum_fat’}}
+else:
+col_aef{ format’) = columns _cfg[c}{‘num_fat'}
+44 columns_cfg(c).get(‘editable', False} and fot, Aa ctg(c)(‘wiatn’) we 6):
+col _def (‘editable’) » true - — are j
+
+
+True
+Trueg
+
+col_oef[ ‘editable’ }
+table_editable_flag
+col_defs += [col_aef]
+
+#@ Combine default style dicts with user inputs for style to apply
+apply_style = copy.deepcopy(default_style)
+apply_style{ div_container' ].update(table_styles.get(‘div_style’, (}))
+apply_style[‘div_container’].update(override_div_style)
+if apply_style[‘div_container’J.get(‘rignt’) 1s None:
+@ (Puts tne scroll bar to the immediate right of the table, But if table is
+®# too wide for the screen specify a “right” style to Lisit width te the s o)
+apply_style[ div_container’}[‘width'] = f*{tot_wi@th © 1B}ga”
+apply_style[‘boay_cell’).upaate(table_styles.get( ‘body_cell style’, (})})
+apply_style[‘header_cell'].update(table_styles.get( ‘header_cell_ style", (}))
+apply_style[ ‘header_row’].upoate(table_styles.get( "header_reu_style’, {)))
+
+ve
+
+return htel .Div(
+
+ntal. Table(
+
+get_nead_components(columns,
+columns cfg,
+spply_style),
+
+style={
+‘border-collapse’: ‘separate’,
+‘border-spacing’: ‘@px',
+‘position’. ‘sticky’,
+top’: ‘Opx',
+
+‘g-index’: ‘1°
+
+apply_style),
+style=(
+“porder-collapse’: ‘separate’,
+‘border-spacing’: “@px’,
+‘position’: ‘sticky’,
+‘top’: “@px’,
+“g-andex': ‘1°
+
+}
+),
+
+dash_table.DataTable(id=table_id,
+columns=col_defs,
+data=[],
+page_actions="none’,
+style_tables{‘width': €°(tot_wi@t® ger’,
+‘z-index’: °O'),
+style_datazapply_style[ ‘body cell’),
+style_data_conditionalacond_style,
+csse[ :
+{‘selector’: ‘tr:first-cnild’, ‘eule’: “display: none'}, ¢ y
+(‘selector’: ‘.das\-spreagsmeet tr’, ‘rule’: “height: 16p2;‘}
+),
+editablestable editadle flag,
+Cell _selectablescell_selectadle_flag,
+selected_celise{})
+
+Stylesapply_style(‘div_container' }
+
+
+| * Users » g977209 > ga > aasn_helpers > src > dash helpers ~ U. Search dasn_neipers
+
+a wh py
+
+Name
+
+@ _pycache_
+8 run_multipage setup
+& om
+
+@ version py
+
+Bi ads vis Py
+
+@ app you py
+@ cattoact_uits py
+a data_utils py
+@ oxsq)_utls py
+
+@ mupage vetup py
+@ noiedoar sent py
+
+cn onmen Eeem:
+
+aun up page py
+
